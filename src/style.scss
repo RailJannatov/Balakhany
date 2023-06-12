@@ -1,6 +1,9 @@
 @import "./header/index.scss";
 @import "./main/index.scss";
 body {
+  img {
+    width: 100%;
+  }
   background: #eee;
   margin: 0;
   padding: 0;
