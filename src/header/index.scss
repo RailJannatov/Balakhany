@@ -1,0 +1,75 @@
+header {
+  .menu {
+    li {
+      a {
+        font-family: "Suisse Intl-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-right: 59px;
+        color: #ffffff;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      .last-link {
+        margin: 0;
+      }
+      .main-links {
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      position: relative;
+      display: inline-block;
+
+      &:hover {
+        .dropdown {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .dropdown {
+        display: none;
+        position: absolute;
+        top: 116%;
+        left: 0;
+        background: #ffffff;
+        border-radius: 24px;
+        z-index: 1;
+        padding: 24px;
+        gap: 24px;
+        width: 364px;
+        li {
+          display: block;
+          margin-bottom: 16px;
+          a {
+            display: block;
+            font-family: "Suisse Intl-Medium";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #46525a;
+          }
+        }
+      }
+    }
+  }
+  .project-logo {
+    margin-top: -19px;
+  }
+  .project {
+    li {
+      a {
+        font-family: "Suisse Intl-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #13171a;
+      }
+    }
+  }
+}

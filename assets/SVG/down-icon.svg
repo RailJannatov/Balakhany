@@ -1,0 +1,39 @@
+  <svg
+                  width="52"
+                  height="52"
+                  viewBox="0 0 52 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="52"
+                    height="52"
+                    rx="26"
+                    fill="#C59B48"
+                    fill-opacity="0.12"
+                  />
+                  <path
+                    d="M19.3334 19.3333L32.6667 32.6666"
+                    stroke="#C59B48"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M32.6667 19.3333V32.6666H19.3334"
+                    stroke="#C59B48"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="51"
+                    height="51"
+                    rx="25.5"
+                    stroke="#C59B48"
+                    stroke-opacity="0.12"
+                  />
+                </svg>
+         

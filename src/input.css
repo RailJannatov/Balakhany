@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./main.css";
+
+headers nav .sub-menu {
+  display: none;
+  background: #ffffff;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 24px;
+}
