@@ -802,3 +802,70 @@ footer {
     }
   }
 }
+#managers {
+  .president-company {
+    background-color: #ffffff;
+  }
+  .president-name {
+    font-family: "Suisse Intl-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    color: #13171a;
+  }
+  .position {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #6d7a84;
+  }
+  .detail-description {
+    margin-bottom: 60px;
+    p {
+      font-family: "Suisse Intl-Regular";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #9ba5b5;
+    }
+  }
+  .more-btn {
+    width: 152px;
+    height: 44px;
+    border: 1px solid #c59b48;
+    border-radius: 100px;
+    padding: 10px 20px;
+    span {
+      font-family: "Suisse Intl";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #c59b48;
+    }
+  }
+  .employee-fullname {
+    font-family: "Suisse Intl-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #13171a;
+  }
+  .employee-position {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6d7a84;
+  }
+  .employee-card {
+    background: #ffffff;
+    border-radius: 20px;
+  }
+}
