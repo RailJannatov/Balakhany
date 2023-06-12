@@ -1,0 +1,917 @@
+header .menu li {
+  position: relative;
+  display: inline-block;
+}
+header .menu li a {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 59px;
+  color: #ffffff;
+}
+header .menu li a:last-child {
+  margin-right: 0;
+}
+header .menu li .last-link {
+  margin: 0;
+}
+header .menu li .main-links:last-child {
+  margin-right: 0;
+}
+header .menu li:hover .dropdown {
+  display: flex;
+  justify-content: space-between;
+}
+header .menu li .dropdown {
+  display: none;
+  position: absolute;
+  top: 116%;
+  left: 0;
+  background: #ffffff;
+  border-radius: 24px;
+  z-index: 1;
+  padding: 24px;
+  gap: 24px;
+  width: 364px;
+}
+header .menu li .dropdown li {
+  display: block;
+  margin-bottom: 16px;
+}
+header .menu li .dropdown li a {
+  display: block;
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #46525a;
+}
+header .project-logo {
+  margin-top: -19px;
+}
+header .project li a {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #13171a;
+}
+
+main .title-dot {
+  display: inline-block;
+  margin-top: 6px;
+  margin-right: 8px;
+}
+main .title-main {
+  font-family: "HeadingNow-66Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #22292e;
+}
+main video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 880px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+main .slider-text-style {
+  font-family: "HeadingNow-66Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+main .slider-text-substyle {
+  font-family: "Suisse Intl-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  width: 720px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+main .btn-brand {
+  font-family: "Suisse Intl-Regular";
+  background: #c59b48;
+  border-radius: 100px;
+  padding: 10px 20px;
+  align-items: center;
+  color: #ffffff;
+  width: 152px;
+}
+main .about-more-icon {
+  display: inline;
+}
+main #about-us {
+  background: #f4f7fa;
+}
+main #about-us .main-about-us {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 68px;
+  line-height: 72px;
+}
+main #about-us .main-about-us .changeable-text {
+  color: #474646;
+}
+main #about-us .short-about-us p {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #6d7a84;
+}
+main #company-activity {
+  background: #f4f7fa;
+}
+main #company-activity .activity-main-title {
+  margin-bottom: 60px;
+}
+main #company-activity .accordion .contentBx h4 {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #9ba5b5;
+}
+main #company-activity .accordion .contentBx .content-activity-subtitle {
+  font-family: "Suisse Intl-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+  color: #22292e;
+  margin-top: 8px;
+}
+main #company-activity .accordion .contentBx .content {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+main #company-activity .accordion .contentBx.active .content {
+  height: 215px;
+}
+main #company-activity .accordion .contentBx .accordion-item {
+  background: #fbfbfb;
+  border: 1px solid #eeeeee;
+  border-radius: 24px;
+}
+main #company-activity .accordion .contentBx .accordion-item p {
+  font-family: "Suisse Intl-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+  color: #c59b48;
+}
+main #company-activity .accordion .contentBx .accordion-item .item-content p {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #46525a;
+}
+main #cover-black-oil {
+  background-image: url("https://images.unsplash.com/photo-1516199423456-1f1e91b06f25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2349&q=80");
+  height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+main #cover-black-oil .black-oil-info p {
+  font-family: "Suisse Intl-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  width: 760px;
+}
+main #cover-black-oil .black-oil-title {
+  font-family: "HeadingNow-66Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+main #statics .static-card {
+  background: #ffffff;
+  border-radius: 24px;
+}
+main #statics .static-card .card-logo {
+  margin-bottom: 252px;
+}
+main #statics .static-card .card-info .info-title {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #46525a;
+}
+main #statics .static-card .card-info .oil-capacity {
+  font-family: "Suisse Intl-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 68px;
+  line-height: 72px;
+  color: #c59b48;
+}
+main #statics .card-number {
+  font-family: "Suisse Intl-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: right;
+  color: #dfdee7;
+}
+main #projects .project-card-wrapper img {
+  width: 738px;
+}
+main #projects .image-wrapper {
+  position: relative;
+}
+main #projects .image-wrapper .img-date {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  color: white;
+  padding: 6px 5px;
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+main #customer-ideas .customer-swiper {
+  background-color: white;
+  position: relative;
+}
+main #customer-ideas .swiper-slide {
+  display: flex;
+  justify-content: space-between;
+}
+main #customer-ideas .swiper-button-next::after,
+main #customer-ideas .swiper-button-prev::after {
+  content: "";
+}
+main #customer-ideas .swiper-button-next .arrow-icon {
+  position: absolute;
+  right: 1431px;
+  top: 187px;
+}
+main #customer-ideas .swiper-button-prev .arrow-icon {
+  position: absolute;
+  bottom: -195px;
+  left: 34px;
+}
+main #customer-ideas .swiper-wrapper {
+  padding: 24px;
+  height: 440px;
+}
+main #customer-ideas .customer-image {
+  width: 48px;
+  height: 48px;
+}
+main #customer-ideas .customer-info .customer-fullname {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #22292e;
+}
+main #customer-ideas .customer-info .customer-position {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #9ba5b5;
+}
+main #customer-ideas .customer-feedback {
+  background: #f4f7fa;
+  border-radius: 20px;
+  width: 724px;
+  height: 440px;
+  margin-right: 50px;
+  padding: 24px;
+}
+main #customer-ideas .customer-feedback-info {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #22292e;
+}
+main #partnors .wrapper {
+  padding-top: 100px;
+}
+
+footer {
+  background-color: #0e0e0e;
+  position: relative;
+}
+footer .rectangle {
+  background: rgba(255, 255, 255, 0.1);
+}
+footer .first-ellipse {
+  height: 189.1463470459px;
+  width: 376px;
+  left: -105px;
+  top: 0px;
+  border-radius: 0px;
+  background-color: #003152;
+  filter: blur(200px);
+  position: absolute;
+  left: -7.29%;
+  right: 81.18%;
+  top: 0%;
+  bottom: 80.97%;
+}
+footer .second-ellipse {
+  height: 378.2926940918px;
+  width: 376px;
+  left: -109px;
+  top: 465.822265625px;
+  border-radius: 0px;
+  background-color: #003152;
+  filter: blur(200px);
+  position: absolute;
+  left: -7.57%;
+  right: 81.46%;
+  top: 46.86%;
+  bottom: 15.08%;
+}
+footer .third-ellipse {
+  height: 378.2926940918px;
+  width: 312px;
+  left: 1175px;
+  top: 95.580078125px;
+  border-radius: 0px;
+  background-color: #003152;
+  filter: blur(200px);
+  position: absolute;
+  left: 81.6%;
+  right: -7.71%;
+  top: 9.62%;
+  bottom: 52.33%;
+}
+footer #header .footer-title {
+  color: white;
+}
+footer #header .select-language {
+  font-family: "Suisse Intl";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+footer #header .header-title {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+footer #links .link-title {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #9ba5b5;
+  margin-bottom: 20px;
+}
+footer #links li {
+  margin-bottom: 16px;
+}
+footer #links li a {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+}
+footer #address-info .info-title {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9ba5b5;
+  margin-bottom: 12px;
+}
+footer #address-info .info-value {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+footer #address-info .info-value-social {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-left: 24px;
+}
+footer #address-info .rectangle {
+  margin-top: 60px;
+}
+footer #author-info .author-privacy {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6d7a84;
+}
+
+#main-projects {
+  padding-top: 114px;
+}
+#main-projects .project-main-title {
+  font-family: "HeadingNow-66Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #22292e;
+}
+#main-projects .page-name {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #13171a;
+}
+#main-projects .current-page {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9ba5b5;
+}
+#main-projects .slash {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#main-projects .project-short-info {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #46525a;
+}
+#main-projects .tab {
+  overflow: hidden;
+}
+#main-projects .tab button {
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  background: #ffffff;
+  border-radius: 100px;
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 20px;
+  color: #6d7a84;
+}
+#main-projects .tab button:hover {
+  background: #c59b48;
+  color: #ffffff;
+}
+#main-projects .tab button.active {
+  background-color: #c59b48;
+  color: #ffffff;
+}
+#main-projects .project-card img {
+  width: 738px;
+}
+#main-projects .project-card .card-info-title {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #13171a;
+}
+#main-projects .project-card .card-info-subtitle {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9ba5b5;
+}
+#main-projects .image-wrapper {
+  position: relative;
+}
+#main-projects .image-wrapper .img-date {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  color: white;
+  padding: 6px 5px;
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+#main-projects .tabcontent {
+  display: none;
+}
+#main-projects .pagination-number,
+#main-projects .pagination-dots {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 100px;
+  margin-left: 8px;
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #6d7a84;
+}
+#main-projects .pagination-number.active,
+#main-projects .pagination-dots.active {
+  background-color: #eee1c8;
+  color: #c59b48;
+}
+
+#detail-head {
+  height: 864px;
+}
+#detail-head .cover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 768px;
+}
+#detail-head .cover-image img {
+  width: -webkit-fill-available;
+}
+#detail-head .head-text {
+  font-family: "HeadingNow-66Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+}
+
+#general-info .info-title h2 {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #22292e;
+}
+#general-info .info-description p {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6d7a84;
+}
+
+#oil .oil-plant-image {
+  position: relative;
+}
+#oil .oil-plant-image .img-loc,
+#oil .oil-plant-image .img-date {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  color: white;
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 16px;
+  gap: 8px;
+  width: 116px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+}
+#oil .oil-plant-image .img-date {
+  left: 151px;
+  width: 127px;
+}
+#oil .oil-plant-image img {
+  width: -webkit-fill-available;
+}
+#oil .oil-plant-image .oil-plant-text {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+}
+#oil .oil-plant-image .oil-plant-text p {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Utility/100 */
+  color: #ffffff;
+}
+
+#oil-consumer .info-title h2 {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #22292e;
+}
+#oil-consumer .info-description p {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6d7a84;
+}
+
+#oil-consumer-info .consumer-title {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 52px;
+  color: #13171a;
+}
+#oil-consumer-info .consumer-image-wrapper .large-image img {
+  width: -webkit-fill-available;
+}
+#oil-consumer-info .consumer-image-wrapper .oil-plant-image {
+  position: relative;
+}
+#oil-consumer-info .consumer-image-wrapper .oil-plant-image .img-loc,
+#oil-consumer-info .consumer-image-wrapper .oil-plant-image .img-date {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  color: white;
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 16px;
+  gap: 8px;
+  width: 116px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+}
+#oil-consumer-info .consumer-image-wrapper .oil-plant-image .img-date {
+  left: 151px;
+  width: 127px;
+}
+#oil-consumer-info .consumer-image-wrapper .oil-plant-image img {
+  width: -webkit-fill-available;
+}
+#oil-consumer-info .consumer-image-wrapper .oil-plant-image .oil-plant-text {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+}
+#oil-consumer-info .consumer-image-wrapper .oil-plant-image .oil-plant-text p {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+#energy .info-title h2 {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #22292e;
+}
+#energy .info-description p {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6d7a84;
+}
+
+#connect-projects img {
+  width: -webkit-fill-available;
+}
+#connect-projects .image-wrapper {
+  position: relative;
+}
+#connect-projects .image-wrapper .img-date {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  color: white;
+  padding: 6px 5px;
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+#connect-projects .card-info .card-title {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #13171a;
+}
+
+body {
+  background: #eee;
+  margin: 0;
+  padding: 0;
+}
+body .title-head-style {
+  font-family: "HeadingNow-66Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #22292e;
+}
+body .title-large-info {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6d7a84;
+}
+body .title-info-dot {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c59b48;
+}
+body .card-style {
+  background: #ffffff;
+  border-radius: 24px;
+}
+body .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+body .card-info-title-style {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #13171a;
+}
+body .card-info-subtitle-style {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9ba5b5;
+}
+body .card-button {
+  border: 1px solid #c59b48;
+  border-radius: 100px;
+  color: #c59b48;
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 20px;
+}
+body .swiper {
+  width: 100%;
+  max-height: 700px;
+}
+body .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  background-color: transparent;
+}
+body .swiper-wrapper {
+  padding-top: 220px;
+}
+body .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .swiper-pagination-bullet {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1000px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+}
+body .swiper-pagination-text {
+  margin: 0 5px;
+  font-size: 14px;
+  color: #000;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+body .swiper-pagination-text.active {
+  opacity: 1;
+}
+body .full-image {
+  width: -webkit-fill-available;
+}/*# sourceMappingURL=style.css.map */

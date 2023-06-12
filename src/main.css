@@ -1,0 +1,88 @@
+.font-20 {
+  font-size: "20px";
+}
+.font-18 {
+  font-size: "18px";
+}
+.font-16 {
+  font-size: "16px";
+}
+.font-14 {
+  font-size: "14px";
+}
+.right-nav li {
+  font-size: 16px;
+}
+
+.brand-light {
+  color: #eaeffd;
+}
+.brand-base {
+  color: #245deb;
+}
+.brand-dark {
+  color: #183a8d;
+}
+.utility-white {
+  color: #ffffff;
+}
+.utility-background {
+  color: #f3f3f7;
+}
+.utility-gray-2 {
+  color: #949eb8;
+}
+.utility-gray-1 {
+  color: #48516a;
+}
+.utility-black {
+  color: #183a8d;
+}
+.accent-100 {
+  color: #f5f5f7;
+}
+.accent-200 {
+  color: #eeedf2;
+}
+.accent-300 {
+  color: #dfdee7;
+}
+.accent-400 {
+  color: 0c0cc;
+}
+.semantic-info {
+  color: #218aeb;
+}
+.semantic-warning {
+  color: #218aeb;
+}
+.semantic-error {
+  color: #e12623;
+}
+.semantic-success {
+  color: #13aa34;
+}
+.blur-white-20 {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+}
+.blur-white-20 {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+}
+.blur-white-16 {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.16);
+}
+.blur-white-12 {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+}
+.blur-white-8 {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+.blur-white-4 {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.04);
+}
