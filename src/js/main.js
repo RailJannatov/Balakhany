@@ -118,3 +118,17 @@ function updateActiveButton(index) {
     }
   });
 }
+const openModalBtn = document.querySelector(".open-modal-btn");
+const modal = document.querySelector(".president-detail-modal");
+const closeModalBtn = document.querySelector(".close");
+const body = document.querySelector("body");
+
+openModalBtn.addEventListener("click", function () {
+  modal.style.display = "block";
+  body.style.background = "rgba(0, 0, 0, 0.5)";
+});
+
+closeModalBtn.addEventListener("click", function () {
+  modal.style.display = "none";
+  body.style.background = "#eee";
+});

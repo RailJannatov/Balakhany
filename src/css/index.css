@@ -1,8 +1,8 @@
-header .menu li {
+header .nav-list .menu li {
   position: relative;
   display: inline-block;
 }
-header .menu li a {
+header .nav-list .menu li a {
   font-family: "Suisse Intl-Regular";
   font-style: normal;
   font-weight: 400;
@@ -11,20 +11,17 @@ header .menu li a {
   margin-right: 59px;
   color: #ffffff;
 }
-header .menu li a:last-child {
-  margin-right: 0;
-}
-header .menu li .last-link {
+header .nav-list .menu li .last-link {
   margin: 0;
 }
-header .menu li .main-links:last-child {
+header .nav-list .menu li .main-links:last-child {
   margin-right: 0;
 }
-header .menu li:hover .dropdown {
+header .nav-list .menu li:hover .dropdown {
   display: flex;
   justify-content: space-between;
 }
-header .menu li .dropdown {
+header .nav-list .menu li .dropdown {
   display: none;
   position: absolute;
   top: 116%;
@@ -36,11 +33,11 @@ header .menu li .dropdown {
   gap: 24px;
   width: 364px;
 }
-header .menu li .dropdown li {
+header .nav-list .menu li .dropdown li {
   display: block;
   margin-bottom: 16px;
 }
-header .menu li .dropdown li a {
+header .nav-list .menu li .dropdown li a {
   display: block;
   font-family: "Suisse Intl-Medium";
   font-style: normal;
