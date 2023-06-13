@@ -1,8 +1,8 @@
-header .menu li {
+header .nav-list .menu li {
   position: relative;
   display: inline-block;
 }
-header .menu li a {
+header .nav-list .menu li a {
   font-family: "Suisse Intl-Regular";
   font-style: normal;
   font-weight: 400;
@@ -11,20 +11,17 @@ header .menu li a {
   margin-right: 59px;
   color: #ffffff;
 }
-header .menu li a:last-child {
-  margin-right: 0;
-}
-header .menu li .last-link {
+header .nav-list .menu li .last-link {
   margin: 0;
 }
-header .menu li .main-links:last-child {
+header .nav-list .menu li .main-links:last-child {
   margin-right: 0;
 }
-header .menu li:hover .dropdown {
+header .nav-list .menu li:hover .dropdown {
   display: flex;
   justify-content: space-between;
 }
-header .menu li .dropdown {
+header .nav-list .menu li .dropdown {
   display: none;
   position: absolute;
   top: 116%;
@@ -36,11 +33,11 @@ header .menu li .dropdown {
   gap: 24px;
   width: 364px;
 }
-header .menu li .dropdown li {
+header .nav-list .menu li .dropdown li {
   display: block;
   margin-bottom: 16px;
 }
-header .menu li .dropdown li a {
+header .nav-list .menu li .dropdown li a {
   display: block;
   font-family: "Suisse Intl-Medium";
   font-style: normal;
@@ -841,7 +838,7 @@ footer #author-info .author-privacy {
   border-radius: 100px;
   padding: 10px 20px;
 }
-#managers .more-btn span {
+#managers .more-btn button {
   font-family: "Suisse Intl";
   font-style: normal;
   font-weight: 400;
@@ -868,6 +865,66 @@ footer #author-info .author-privacy {
 #managers .employee-card {
   background: #ffffff;
   border-radius: 20px;
+}
+#managers .president-detail-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#managers .president-detail-modal .modal-content {
+  background-color: #fff;
+  margin-left: 20%;
+  padding: 140px 60px;
+  height: 100vh;
+}
+#managers .president-detail-modal .modal-content .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 60px;
+  right: 60px;
+}
+#managers .president-detail-modal .modal-content .close:hover,
+#managers .president-detail-modal .modal-content .close close {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#managers .president-detail-modal .modal-content .president-social span {
+  margin-right: 12px;
+}
+#managers .president-detail-modal .president-more-detail .title {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  color: #13171a;
+}
+#managers .president-detail-modal .president-more-detail .sub-title {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #46525a;
+}
+#managers .president-detail-modal .president-description p {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6d7a84;
 }
 
 body {
