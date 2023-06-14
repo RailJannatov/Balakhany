@@ -936,3 +936,128 @@ footer {
     }
   }
 }
+
+#contact-header {
+  .contact-number,
+  .contact-email {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    color: #22292e;
+  }
+  .support-text {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    color: #6d7a84;
+  }
+}
+.contact-us-title {
+  .project-main-title {
+    width: 524px;
+    position: relative;
+    &::after {
+      content: url("../assets/SVG/Underline.svg");
+      position: absolute;
+      width: 219.07px;
+      height: 14px;
+      right: 0px;
+      top: calc(50% - 14px / 2 - 0.03px);
+    }
+  }
+}
+#contact-form {
+  margin-top: 60px;
+  .find-us {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #9ba5b5;
+  }
+  .find-location {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #46525a;
+  }
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .form-group {
+    position: relative;
+  }
+  .checkbox-style {
+    border: 2px solid #46525a;
+    border-radius: 3px;
+    width: 18px;
+    height: 18px;
+  }
+  .private-rules {
+    .privacy {
+      font-family: "Suisse Intl-Regular";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #46525a;
+      .privacy-underline {
+        text-decoration: underline;
+      }
+    }
+  }
+  input {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #46525a;
+    outline: none;
+    background-color: #eee;
+    &:focus {
+      border-bottom: 2px solid #4caf50;
+      label {
+        color: red;
+        top: -20px;
+        font-size: 12px;
+        color: #4caf50;
+        display: none;
+      }
+    }
+  }
+
+  label {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #46525a;
+  }
+
+  .btn-brand {
+    font-family: "Suisse Intl-Regular";
+    background: #c59b48;
+    border-radius: 100px;
+    padding: 10px 20px;
+    align-items: center;
+    color: #ffffff;
+    width: 152px;
+  }
+}

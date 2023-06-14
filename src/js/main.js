@@ -123,12 +123,29 @@ const modal = document.querySelector(".president-detail-modal");
 const closeModalBtn = document.querySelector(".close");
 const body = document.querySelector("body");
 
-openModalBtn.addEventListener("click", function () {
-  modal.style.display = "block";
-  body.style.background = "rgba(0, 0, 0, 0.5)";
-});
+if (openModalBtn) {
+  openModalBtn.addEventListener("click", function () {
+    modal.style.display = "block";
+    body.style.background = "rgba(0, 0, 0, 0.5)";
+  });
+}
+if (closeModalBtn) {
+  closeModalBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+    body.style.background = "#eee";
+  });
+}
 
-closeModalBtn.addEventListener("click", function () {
-  modal.style.display = "none";
-  body.style.background = "#eee";
-});
+const inputs = document.querySelectorAll(".form-group input");
+if (inputs) {
+  inputs.forEach((input) => {
+    input.addEventListener("focus", () => {
+      input.previousElementSibling.style.display = "none";
+    });
+    input.addEventListener("blur", () => {
+      if (input.value === "") {
+        input.previousElementSibling.style.display = "block";
+      }
+    });
+  });
+}
