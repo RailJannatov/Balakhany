@@ -149,3 +149,32 @@ if (inputs) {
     });
   });
 }
+
+const sidebarLinks = document.querySelectorAll("#sidebar a");
+sidebarLinks.forEach(function (button, index) {
+  button.addEventListener("click", function () {
+    updateActiveButton(index);
+  });
+});
+function updateActiveButton(index) {
+  sidebarLinks.forEach(function (button, i) {
+    if (i === index) {
+      button.classList.add("active");
+    } else {
+      button.classList.remove("active");
+    }
+  });
+}
+if (sidebarLinks) {
+  sidebarLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = event.target.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        event.preventDefault();
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+}

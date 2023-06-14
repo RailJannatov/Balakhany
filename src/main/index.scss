@@ -1061,3 +1061,114 @@ footer {
     width: 152px;
   }
 }
+#sidebar {
+  li {
+    margin-bottom: 12px;
+    a {
+      font-family: "Suisse Intl-Regular";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #46525a;
+    }
+    .active {
+      color: #c59b48;
+    }
+  }
+  .have-question {
+    .question-title {
+      font-family: "Suisse Intl-Medium";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #c59b48;
+    }
+    .often-question {
+      font-family: "Suisse Intl-SemiBold";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 68px;
+      line-height: 72px;
+      color: #13171a;
+    }
+  }
+}
+#accordion-question {
+  .title {
+    font-family: "Suisse Intl-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #13171a;
+    margin-bottom: 20px;
+  }
+  .accordion {
+    .contentBx {
+      h4 {
+        font-family: "Suisse Intl-Mediumn";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #46525a;
+      }
+      .content-description {
+        font-family: "Suisse Intl-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #6d7a84;
+      }
+      .content {
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        overflow-y: auto;
+      }
+      &.active {
+        .content {
+          height: 110px;
+        }
+      }
+      .label {
+        h4 {
+          font-family: "Suisse Intl-Medium";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 28px;
+          color: #46525a;
+        }
+      }
+      .accordion-item {
+        background: #fbfbfb;
+        border: 1px solid #eeeeee;
+        border-radius: 24px;
+        p {
+          font-family: "Suisse Intl-SemiBold";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 52px;
+          color: #c59b48;
+        }
+        .item-content {
+          p {
+            font-family: "Suisse Intl-Regular";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #46525a;
+          }
+        }
+      }
+    }
+  }
+}
