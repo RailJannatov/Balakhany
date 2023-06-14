@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../css/style.css" rel="stylesheet" />
+    <!-- <link href="../src//main.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <title>Management</title>
+    <title>Contact us</title>
     <script src="../src/js/main.js" defer></script>
     <style>
       @font-face {
@@ -147,18 +148,18 @@
       </nav>
     </header>
     <main>
-      <section id="main-projects" class="mb-32">
+      <section id="main-projects" class="contact-us-title">
         <div class="container">
           <div class="wrapper">
             <div class="project-head">
               <div class="page-nav">
                 <span class="page-name">Balakhani</span>
                 <span class="slash">/</span>
-                <span class="current-page">Rəhbərlik</span>
+                <span class="current-page">Bizimlə əlaqə</span>
               </div>
               <div class="page-nav pt-10">
-                <h1 class="project-main-title">Rəhbərlİk</h1>
-                <div class="project-short-info text-center mt-5">
+                <h1 class="project-main-title">BİZİMLƏ ƏLAQƏ</h1>
+                <div class="project-short-info text-center mt-10">
                   Hər bir layihə hər bir müştərinin ehtiyaclarına əsaslanaraq
                   fərdi şəkildə hazırlanır. İstənilən növ, istər kiçik, istərsə
                   də mürəkkəb layihələri öz üzərinə götürməyə hazırıq.
@@ -168,31 +169,107 @@
           </div>
         </div>
       </section>
-      <section id="managers">
+      <section id="contact-header" class="mt-20">
         <div class="container">
-          <div class="wrapper">
-            <div class="president-company p-6 flex">
-              <div class="w-6/12 pr-6">
-                <img src="../assets/image/PresidentCompany.png" />
+          <div class="wrapper flex">
+            <div class="w-4/12">
+              <h5 class="contact-number">028 782 92 12</h5>
+              <p class="contact-email">info@balakhani.az</p>
+            </div>
+            <div class="w-8/12">
+              <p class="support-text">
+                Brend, rəqəmsal və ya hərəkət? Biz sizə hər kəsdən üstün olmağa
+                kömək etməyə hazırıq.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact-form">
+        <div class="container">
+          <div class="wrapper flex pb-16">
+            <div class="w-4/12">
+              <div class="find-us-title mb-20">
+                <p class="find-us mb-3">Bizi tap</p>
+                <p class="find-location">Bakı/Abşeron/Balaxanı qəs.</p>
               </div>
-              <div class="president-detail w-6/12">
-                <div class="detail-title mb-5">
-                  <p class="president-name mb-1">Təhmin Fətiyev</p>
-                  <p class="position">BOC-un prezidenti</p>
+              <div class="follow-us">
+                <p class="find-us mb-3">Bizi izlə</p>
+                <ul>
+                  <li><a href="" class="find-location">Linkedin</a></li>
+                  <li><a href="" class="find-location">Twitter</a></li>
+                  <li><a href="" class="find-location">Instagram</a></li>
+                  <li><a href="" class="find-location">Youtube</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="w-8/12">
+              <form id="myForm">
+                <div class="flex">
+                  <div class="form-group w-3/6 pr-10 mb-16">
+                    <label for="name">Ad*</label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
+                  <div class="form-group w-3/6 mb-16">
+                    <label for="companyName">Şirkət adı*</label>
+                    <input
+                      type="text"
+                      id="companyName"
+                      name="companyName"
+                      required
+                    />
+                  </div>
                 </div>
-                <div class="detail-description">
-                  <p>
-                    1999-cu ildə Bakı Dövlət Universitetinə daxil olmuş və
-                    Beynəlxalq Hüquq ixtisası üzrə bakalavr təhsili almışdır.
-                    Peşəkar karyerasına 2004-cü ildən 2007-ci ilə qədər satış,
-                    sığorta və logistika sahələrində çalışaraq başlamışdır.
-                    2007-2015-ci illərdə "Azərsun Holdinq"də İxrac
-                    departamentinin direktoru vəzifəsində çalışmışdır.
+                <div class="flex">
+                  <div class="form-group w-3/6 pr-10 mb-16">
+                    <label for="emailAddress">Email adress*</label>
+                    <input
+                      type="text"
+                      id="emailAddress"
+                      name="emailAddress"
+                      required
+                    />
+                  </div>
+                  <div class="form-group w-3/6 mb-16">
+                    <label for="contactNumber">Əlaqə nöməsi*</label>
+                    <input
+                      type="text"
+                      id="contactNumber"
+                      name="contactNumber"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="message-wrapper">
+                  <div class="form-group">
+                    <div class="test mb-16">
+                      <label for="emailAddress">Mesaj*</label>
+                      <input
+                        type="text"
+                        id="emailAddress"
+                        name="emailAddress"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="private-rules flex">
+                  <input
+                    type="checkbox"
+                    id="privacy"
+                    name="privacy"
+                    class="checkbox-style"
+                  />
+                  <p for="privacy" class="privacy ml-3 -mt-1">
+                    Mən
+                    <span class="privacy-underline"> məxfilik siyasətini</span>
+                    oxudum və qəbul etdim
                   </p>
                 </div>
-                <div class="more-btn flex items-center justify-between">
-                  <button class="open-modal-btn">Daha ətraflı</button>
+                <button class="btn-brand mt-8" type="submit">
+                  Göndər
                   <svg
+                    class="about-more-icon"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
@@ -201,311 +278,14 @@
                   >
                     <path
                       d="M5 15L15 5M15 5H8.33333M15 5V11.6667"
-                      stroke="#C59B48"
+                      stroke="white"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                   </svg>
-                </div>
-              </div>
-              <div class="president-detail-modal">
-                <div class="modal-content">
-                  <span class="close"
-                    ><svg
-                      width="40"
-                      height="40"
-                      viewBox="0 0 40 40"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M26 14L14 26"
-                        stroke="#CDD4E0"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M14 14L26 26"
-                        stroke="#CDD4E0"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <rect
-                        x="0.5"
-                        y="0.5"
-                        width="39"
-                        height="39"
-                        rx="19.5"
-                        stroke="#CDD4E0"
-                      />
-                    </svg>
-                  </span>
-                  <div class="wrapper-modal-content flex">
-                    <div class="president-image w-6/12 pr-6">
-                      <img
-                        src="../assets/image/Rectangle 21.png"
-                        alt="president image"
-                      />
-                    </div>
-                    <div class="president-more-detail w-6/12">
-                      <div class="president-title mb-6">
-                        <p class="title mb-1">Təhmin Fətiyev</p>
-                        <p class="sub-title">Birinci vitse-prezident</p>
-                      </div>
-                      <div class="president-description mb-10">
-                        <p>
-                          Təhmin Şahlar oğlu Fətiyev 1983-cü il iyun ayının 5-də
-                          Ağdam şəhərində anadan olmuşdur.<br />
-                          1999-cu ildə Bakı Dövlət Universitetinə daxil olmuş və
-                          Beynəlxalq Hüquq ixtisası üzrə bakalavr təhsili
-                          almışdır. Peşəkar karyerasına 2004-cü ildən 2007-ci
-                          ilə qədər satış, sığorta və logistika sahələrində
-                          çalışaraq başlamışdır. 2007-2015-ci illərdə "Azərsun
-                          Holdinq"də İxrac departamentinin direktoru vəzifəsində
-                          çalışmışdır.<br />
-                          2015-ci ilin dekabr ayından 2018-ci ilin 1 iyun
-                          tarixinədək AZPROMO-nun vitse-prezidenti, 2018-ci ilin
-                          1 iyun tarixindən etibarən AZPROMO-nun prezidenti
-                          vəzifələrini icra edib, AZPROMO-nun yenidən təşkili
-                          çərçivəsində isə 2021-ci ilin 8 oktyabr tarixindən
-                          Agentliyin icraçı direktoru vəzifəsini icra edir.
-                          <br />
-                          Ailəlidir, 2 övladı var.
-                        </p>
-                      </div>
-                      <div class="president-social flex">
-                        <span class="linkedin-address">
-                          <svg
-                            width="40"
-                            height="40"
-                            viewBox="0 0 40 40"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <g clip-path="url(#clip0_1167_20076)">
-                              <path
-                                d="M10 11.4325C10 10.6413 10.6575 10 11.4688 10H28.5312C29.3425 10 30 10.6413 30 11.4325V28.5675C30 29.3587 29.3425 30 28.5312 30H11.4688C10.6575 30 10 29.3587 10 28.5675V11.4325ZM16.1788 26.7425V17.7113H13.1775V26.7425H16.1788ZM14.6788 16.4775C15.725 16.4775 16.3762 15.785 16.3762 14.9175C16.3575 14.0312 15.7263 13.3575 14.6988 13.3575C13.6713 13.3575 13 14.0325 13 14.9175C13 15.785 13.6512 16.4775 14.6588 16.4775H14.6788ZM20.8138 26.7425V21.6988C20.8138 21.4288 20.8337 21.1587 20.9137 20.9662C21.13 20.4275 21.6238 19.8687 22.4538 19.8687C23.54 19.8687 23.9738 20.6962 23.9738 21.9113V26.7425H26.975V21.5625C26.975 18.7875 25.495 17.4975 23.52 17.4975C21.9275 17.4975 21.2137 18.3725 20.8138 18.9888V19.02H20.7938C20.8004 19.0096 20.8071 18.9991 20.8138 18.9888V17.7113H17.8137C17.8512 18.5588 17.8137 26.7425 17.8137 26.7425H20.8138Z"
-                                fill="#9BA5B5"
-                              />
-                            </g>
-                            <rect
-                              x="0.5"
-                              y="0.5"
-                              width="39"
-                              height="39"
-                              rx="19.5"
-                              stroke="#9BA5B5"
-                            />
-                            <defs>
-                              <clipPath id="clip0_1167_20076">
-                                <rect
-                                  width="20"
-                                  height="20"
-                                  fill="white"
-                                  transform="translate(10 10)"
-                                />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-                        <span class="twitter-address">
-                          <svg
-                            width="40"
-                            height="40"
-                            viewBox="0 0 40 40"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M16.2825 28.7499C23.83 28.7499 27.9587 22.4961 27.9587 17.0824C27.9587 16.9074 27.9587 16.7299 27.9513 16.5549C28.7551 15.973 29.4488 15.2526 30 14.4274C29.2491 14.7585 28.4535 14.9766 27.6388 15.0749C28.4969 14.5619 29.1397 13.7549 29.4475 12.8036C28.6412 13.2813 27.7588 13.6166 26.8387 13.7949C26.2202 13.1362 25.4018 12.6998 24.5101 12.5533C23.6185 12.4069 22.7034 12.5585 21.9067 12.9848C21.1099 13.4111 20.476 14.0882 20.1031 14.9112C19.7301 15.7343 19.639 16.6573 19.8438 17.5374C18.2122 17.4556 16.616 17.0317 15.1588 16.2933C13.7016 15.5549 12.4159 14.5184 11.385 13.2511C10.8617 14.155 10.702 15.2241 10.9383 16.2415C11.1746 17.2588 11.7893 18.1481 12.6575 18.7286C12.0069 18.7065 11.3707 18.5318 10.8 18.2186V18.2749C10.8011 19.2217 11.1291 20.1392 11.7286 20.8721C12.3281 21.605 13.1622 22.1085 14.09 22.2974C13.7378 22.3944 13.374 22.4428 13.0087 22.4411C12.7512 22.4419 12.4942 22.4181 12.2413 22.3699C12.5035 23.185 13.0141 23.8976 13.7016 24.408C14.389 24.9184 15.2189 25.201 16.075 25.2161C14.6207 26.3584 12.8243 26.9779 10.975 26.9749C10.6492 26.9763 10.3235 26.9575 10 26.9186C11.8769 28.1152 14.0566 28.7506 16.2825 28.7499Z"
-                              fill="#9BA5B5"
-                            />
-                            <rect
-                              x="0.5"
-                              y="0.5"
-                              width="39"
-                              height="39"
-                              rx="19.5"
-                              stroke="#9BA5B5"
-                            />
-                          </svg>
-                        </span>
-                        <span class="facebook-address">
-                          <svg
-                            width="40"
-                            height="40"
-                            viewBox="0 0 40 40"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 20C30 14.48 25.52 10 20 10C14.48 10 10 14.48 10 20C10 24.84 13.44 28.87 18 29.8V23H16V20H18V17.5C18 15.57 19.57 14 21.5 14H24V17H22C21.45 17 21 17.45 21 18V20H24V23H21V29.95C26.05 29.45 30 25.19 30 20Z"
-                              fill="#9BA5B5"
-                            />
-                            <rect
-                              x="0.5"
-                              y="0.5"
-                              width="39"
-                              height="39"
-                              rx="19.5"
-                              stroke="#9BA5B5"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="vitse-presidents pt-6 pb-6 flex flex-wrap">
-              <div class="w-3/12 pr-6">
-                <div class="employee-card p-4">
-                  <div class="image-wrapper">
-                    <img
-                      src="../assets/image/Employee.png"
-                      href="'employee name"
-                    />
-                  </div>
-                  <div class="employee-detail mt-6">
-                    <div class="employee-fullname mb-1">Nuranə Abdullayeva</div>
-                    <div class="employee-position">Birinci vitse-prezident</div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-3/12 pr-6">
-                <div class="employee-card p-4">
-                  <div class="image-wrapper">
-                    <img
-                      src="../assets/image/Employee.png"
-                      href="'employee name"
-                    />
-                  </div>
-                  <div class="employee-detail mt-6">
-                    <div class="employee-fullname mb-1">Nuranə Abdullayeva</div>
-                    <div class="employee-position">Birinci vitse-prezident</div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-3/12 pr-6">
-                <div class="employee-card p-4">
-                  <div class="image-wrapper">
-                    <img
-                      src="../assets/image/Employee.png"
-                      href="'employee name"
-                    />
-                  </div>
-                  <div class="employee-detail mt-6">
-                    <div class="employee-fullname mb-1">Nuranə Abdullayeva</div>
-                    <div class="employee-position">Birinci vitse-prezident</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="head-of-departament pb-6 flex flex-wrap">
-              <div class="w-3/12 pr-6">
-                <div class="employee-card p-4">
-                  <div class="image-wrapper">
-                    <img
-                      src="../assets/image/Employee.png"
-                      href="'employee name"
-                    />
-                  </div>
-                  <div class="employee-detail mt-6">
-                    <div class="employee-fullname mb-1">Nuranə Abdullayeva</div>
-                    <div class="employee-position">Birinci vitse-prezident</div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-3/12 pr-6">
-                <div class="employee-card p-4">
-                  <div class="image-wrapper">
-                    <img
-                      src="../assets/image/Employee.png"
-                      href="'employee name"
-                    />
-                  </div>
-                  <div class="employee-detail mt-6">
-                    <div class="employee-fullname mb-1">Nuranə Abdullayeva</div>
-                    <div class="employee-position">Birinci vitse-prezident</div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-3/12 pr-6">
-                <div class="employee-card p-4">
-                  <div class="image-wrapper">
-                    <img
-                      src="../assets/image/Employee.png"
-                      href="'employee name"
-                    />
-                  </div>
-                  <div class="employee-detail mt-6">
-                    <div class="employee-fullname mb-1">Nuranə Abdullayeva</div>
-                    <div class="employee-position">Birinci vitse-prezident</div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-3/12 pr-6">
-                <div class="employee-card p-4">
-                  <div class="image-wrapper">
-                    <img
-                      src="../assets/image/Employee.png"
-                      href="'employee name"
-                    />
-                  </div>
-                  <div class="employee-detail mt-6">
-                    <div class="employee-fullname mb-1">Nuranə Abdullayeva</div>
-                    <div class="employee-position">Birinci vitse-prezident</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="head-branch flex flex-wrap mb-32">
-              <div class="w-3/12 pr-6">
-                <div class="employee-card p-4">
-                  <div class="image-wrapper">
-                    <img
-                      src="../assets/image/Employee.png"
-                      href="'employee name"
-                    />
-                  </div>
-                  <div class="employee-detail mt-6">
-                    <div class="employee-fullname mb-1">Nuranə Abdullayeva</div>
-                    <div class="employee-position">Birinci vitse-prezident</div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-3/12 pr-6">
-                <div class="employee-card p-4">
-                  <div class="image-wrapper">
-                    <img
-                      src="../assets/image/Employee.png"
-                      href="'employee name"
-                    />
-                  </div>
-                  <div class="employee-detail mt-6">
-                    <div class="employee-fullname mb-1">Nuranə Abdullayeva</div>
-                    <div class="employee-position">Birinci vitse-prezident</div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-3/12 pr-6">
-                <div class="employee-card p-4">
-                  <div class="image-wrapper">
-                    <img
-                      src="../assets/image/Employee.png"
-                      href="'employee name"
-                    />
-                  </div>
-                  <div class="employee-detail mt-6">
-                    <div class="employee-fullname mb-1">Nuranə Abdullayeva</div>
-                    <div class="employee-position">Birinci vitse-prezident</div>
-                  </div>
-                </div>
-              </div>
+                </button>
+              </form>
             </div>
           </div>
         </div>
