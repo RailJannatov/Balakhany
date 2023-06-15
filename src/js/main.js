@@ -76,6 +76,13 @@ svgIcon.forEach((svg) => {
     }
   });
 });
+// const contentAccordion = document.querySelectorAll(".contentBx");
+// contentAccordion.forEach((content) => {
+//   content.addEventListener("click", function () {
+//     const thisClass = this.classList;
+//     thisClass.toggle("active");
+//   });
+// });
 
 let defaultOpen = document.getElementById("defaultOpen");
 if (defaultOpen) {
@@ -125,6 +132,7 @@ const body = document.querySelector("body");
 
 if (openModalBtn) {
   openModalBtn.addEventListener("click", function () {
+    console.log(modal);
     modal.style.display = "block";
     body.style.background = "rgba(0, 0, 0, 0.5)";
   });
@@ -150,14 +158,15 @@ if (inputs) {
   });
 }
 
-const sidebarLinks = document.querySelectorAll("#sidebar a");
-sidebarLinks.forEach(function (button, index) {
+const legacyLinks = document.querySelectorAll(".legacy-links  a");
+
+legacyLinks.forEach(function (button, index) {
   button.addEventListener("click", function () {
     updateActiveButton(index);
   });
 });
 function updateActiveButton(index) {
-  sidebarLinks.forEach(function (button, i) {
+  legacyLinks.forEach(function (button, i) {
     if (i === index) {
       button.classList.add("active");
     } else {
@@ -165,8 +174,8 @@ function updateActiveButton(index) {
     }
   });
 }
-if (sidebarLinks) {
-  sidebarLinks.forEach((link) => {
+if (legacyLinks) {
+  legacyLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
       const targetId = event.target.getAttribute("href");
       const targetSection = document.querySelector(targetId);
@@ -176,5 +185,25 @@ if (sidebarLinks) {
         targetSection.scrollIntoView({ behavior: "smooth" });
       }
     });
+  });
+}
+
+const openModalBtnLegacyAll = document.querySelectorAll(".open-modalBtn");
+const legacyModal = document.querySelector(".legacy-detail-modal");
+const closeModalBtnLegacy = document.querySelector(".close");
+const bodyLegacy = document.querySelector("body");
+
+if (openModalBtnLegacyAll) {
+  openModalBtnLegacyAll.forEach((modalka) => {
+    modalka.addEventListener("click", function (e) {
+      legacyModal.style.display = "block";
+      bodyLegacy.style.background = "rgba(0, 0, 0, 0.5)";
+    });
+  });
+}
+if (closeModalBtnLegacy) {
+  closeModalBtnLegacy.addEventListener("click", function () {
+    legacyModal.style.display = "none";
+    bodyLegacy.style.background = "#eee";
   });
 }

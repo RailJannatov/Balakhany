@@ -1171,4 +1171,226 @@ footer {
       }
     }
   }
+  .legacy-links {
+    li {
+      margin-bottom: 12px;
+      a {
+        font-family: "Suisse Intl-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: #46525a;
+      }
+      .active {
+        color: #c59b48;
+      }
+    }
+  }
+  .legacy-detail-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    .modal-content {
+      background-color: #fff;
+      margin-left: 20%;
+      padding: 140px 60px;
+      height: 100vh;
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        position: absolute;
+        top: 60px;
+        right: 60px;
+        &:hover,
+        close {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+      .president-social {
+        span {
+          margin-right: 12px;
+        }
+      }
+    }
+    .legacy-more-detail {
+      .title {
+        font-family: "Suisse Intl-Medium";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 56px;
+        color: #13171a;
+      }
+      .sub-title {
+        font-family: "Suisse Intl-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #46525a;
+      }
+    }
+    .president-description {
+      p {
+        font-family: "Suisse Intl-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #6d7a84;
+      }
+    }
+    .modal-title {
+      font-family: "Suisse Intl-Medium";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 44px;
+      color: #22292e;
+    }
+    .modal-description {
+      font-family: "Suisse Intl-Regular";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #6d7a84;
+    }
+  }
+}
+#gallery-title {
+  padding-top: 114px;
+  .project-main-title {
+    font-family: "HeadingNow-66Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #22292e;
+    position: relative;
+    &:after {
+      content: url("../assets/SVG/ShortUnderline.svg");
+      position: absolute;
+      width: 219.07px;
+      height: 14px;
+      left: 0;
+      top: calc(50% - 14px / 2 - 0.03px);
+    }
+  }
+  .page-name {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #13171a;
+  }
+  .current-page {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9ba5b5;
+  }
+  .slash {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .project-short-info {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #46525a;
+  }
+}
+#gallery-info {
+  .info-date {
+    font-family: "Suisse Intl";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9ba5b5;
+  }
+  .head-info {
+    font-family: "Suisse Intl";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    color: #22292e;
+  }
+}
+.foto-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80vh;
+  overflow: auto;
+  background-color: white;
+  padding: 60px;
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    &:hover,
+    close {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+#foto-gallery {
+  .card-item {
+    overflow: hidden;
+    position: relative;
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+      .zoom-icon {
+        opacity: 1;
+      }
+    }
+    img {
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .zoom-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+  }
+}
+.modal-block {
+  display: block;
 }
