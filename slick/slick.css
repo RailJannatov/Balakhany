@@ -1,0 +1,39 @@
+thumbnail-slider {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.thumbnail-slider img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.main-slider img {
+  width: 50%;
+  height: 400px;
+}
+.slider-arrow {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slider-prev {
+  left: 10px;
+}
+
+.slider-next {
+  right: 10px;
+}
