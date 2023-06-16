@@ -76,13 +76,13 @@ svgIcon.forEach((svg) => {
     }
   });
 });
-// const contentAccordion = document.querySelectorAll(".contentBx");
-// contentAccordion.forEach((content) => {
-//   content.addEventListener("click", function () {
-//     const thisClass = this.classList;
-//     thisClass.toggle("active");
-//   });
-// });
+const contentAccordion = document.querySelectorAll(".contentBx");
+contentAccordion.forEach((content) => {
+  content.addEventListener("click", function () {
+    const thisClass = this.classList;
+    thisClass.toggle("active");
+  });
+});
 
 let defaultOpen = document.getElementById("defaultOpen");
 if (defaultOpen) {
@@ -110,7 +110,7 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-let paginationNumbers = document.querySelectorAll(".pagination-number");
+var paginationNumbers = document.querySelectorAll(".pagination-number");
 paginationNumbers.forEach(function (button, index) {
   button.addEventListener("click", function () {
     updateActiveButton(index);
@@ -127,12 +127,11 @@ function updateActiveButton(index) {
 }
 const openModalBtn = document.querySelector(".open-modal-btn");
 const modal = document.querySelector(".president-detail-modal");
-const closeModalBtn = document.querySelector(".close");
+const closeModalBtn = document.querySelector(" .president-detail-modal .close");
 const body = document.querySelector("body");
 
 if (openModalBtn) {
   openModalBtn.addEventListener("click", function () {
-    console.log(modal);
     modal.style.display = "block";
     body.style.background = "rgba(0, 0, 0, 0.5)";
   });
@@ -190,7 +189,9 @@ if (legacyLinks) {
 
 const openModalBtnLegacyAll = document.querySelectorAll(".open-modalBtn");
 const legacyModal = document.querySelector(".legacy-detail-modal");
-const closeModalBtnLegacy = document.querySelector(".close");
+const closeModalBtnLegacy = document.querySelector(
+  ".legacy-detail-modal .close"
+);
 const bodyLegacy = document.querySelector("body");
 
 if (openModalBtnLegacyAll) {
@@ -205,5 +206,24 @@ if (closeModalBtnLegacy) {
   closeModalBtnLegacy.addEventListener("click", function () {
     legacyModal.style.display = "none";
     bodyLegacy.style.background = "#eee";
+  });
+}
+
+const openModalNews = document.querySelector(".open-newsModal");
+const newsModal = document.querySelector(".news-detail-modal");
+const closeModalNews = document.querySelector(".news-detail-modal close");
+const bodyMdoal = document.querySelector("body");
+console.log(closeModalNews);
+
+if (openModalNews) {
+  openModalNews.addEventListener("click", function () {
+    newsModal.style.display = "block";
+    bodyMdoal.style.background = "rgba(0, 0, 0, 0.5)";
+  });
+}
+if (closeModalNews) {
+  closeModalNews.addEventListener("click", function () {
+    newsModal.style.display = "none";
+    bodyMdoal.style.background = "#eee";
   });
 }
