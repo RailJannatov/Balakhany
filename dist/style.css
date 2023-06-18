@@ -947,6 +947,22 @@ headers nav .sub-menu {
     margin-bottom: 2.25rem;
   }
 
+  .sm\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .sm\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .sm\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:w-full {
     width: 100%;
   }
@@ -970,6 +986,10 @@ headers nav .sub-menu {
 
   .sm\:text-left {
     text-align: left;
+  }
+
+  .sm\:text-start {
+    text-align: start;
   }
 }
 

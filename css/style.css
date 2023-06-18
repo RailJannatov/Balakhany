@@ -2368,6 +2368,9 @@ footer #author-info .author-privacy {
 }
 
 @media screen and (max-width: 567px) {
+  .hamburger {
+    display: block;
+  }
   footer {
     overflow: hidden;
   }
@@ -2408,6 +2411,103 @@ footer #author-info .author-privacy {
     right: -47.22%;
     bottom: -0.29%;
     display: none;
+  }
+  #managers .president-company {
+    background-color: #ffffff;
+  }
+  #managers .president-name {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  #managers .position {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #managers .detail-description {
+    display: none;
+  }
+  #managers .more-btn {
+    display: none;
+  }
+  #managers .employee-fullname {
+    font-family: "Suisse Intl-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #13171a;
+  }
+  #managers .employee-position {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6d7a84;
+  }
+  #managers .employee-card {
+    background: #ffffff;
+    border-radius: 20px;
+  }
+  #managers .president-detail-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  #managers .president-detail-modal .modal-content {
+    background-color: #fff;
+    margin-left: 20%;
+    padding: 140px 60px;
+    height: 100vh;
+  }
+  #managers .president-detail-modal .modal-content .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+  }
+  #managers .president-detail-modal .modal-content .close:hover,
+  #managers .president-detail-modal .modal-content .close close {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #managers .president-detail-modal .modal-content .president-social span {
+    margin-right: 12px;
+  }
+  #managers .president-detail-modal .president-more-detail .title {
+    font-family: "Suisse Intl-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #13171a;
+  }
+  #managers .president-detail-modal .president-more-detail .sub-title {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #c59b48;
+  }
+  #managers .president-detail-modal .president-description p {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #6d7a84;
   }
 }
 #main-projects {
