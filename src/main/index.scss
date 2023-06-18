@@ -2595,6 +2595,7 @@ footer {
 
 @media screen and (max-width: 567px) {
   footer {
+    overflow: hidden;
     #links {
       .link-title {
         font-size: 16px;

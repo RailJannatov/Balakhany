@@ -2368,6 +2368,9 @@ footer #author-info .author-privacy {
 }
 
 @media screen and (max-width: 567px) {
+  footer {
+    overflow: hidden;
+  }
   footer #links .link-title {
     font-size: 16px;
     line-height: 24px;
