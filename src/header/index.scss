@@ -1,4 +1,8 @@
 header {
+  .logo {
+    display: inline-block;
+    margin-top: -20px;
+  }
   .nav-list {
     .menu {
       li {
@@ -9,12 +13,15 @@ header {
           font-size: 16px;
           line-height: 24px;
           margin-right: 59px;
-          color: #ffffff;
+          color: #13171a;
+          &.nav-background {
+            color: #ffffff;
+          }
         }
         .last-link {
           margin: 0;
         }
-        .main-links {
+        main-links {
           &:last-child {
             margin-right: 0;
           }
@@ -75,6 +82,22 @@ header {
         line-height: 24px;
         color: #13171a;
       }
+    }
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    .nav-list {
+      .menu {
+        display: none;
+      }
+    }
+    .hamburger {
+      display: block;
     }
   }
 }

@@ -1,5 +1,7 @@
 @import "./header/index.scss";
 @import "./main/index.scss";
+@import "./main/projects/index.scss";
+
 body {
   img {
     width: 100%;
@@ -13,7 +15,7 @@ body {
     font-weight: 700;
     font-size: 48px;
     line-height: 56px;
-    text-transform: uppercase;
+    text-transform: upperca;
     color: #22292e;
   }
   .title-large-info {

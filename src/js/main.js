@@ -19,6 +19,24 @@ function updateActiveBullet(index) {
     }
   });
 }
+var careerTabs = document.querySelectorAll("#career-applies button");
+if (careerTabs) {
+  careerTabs.forEach(function (tab, index) {
+    tab.addEventListener("click", function () {
+      updateActiveCareeTab(index);
+    });
+  });
+}
+
+function updateActiveCareeTab(index) {
+  careerTabs.forEach(function (bullet, i) {
+    if (i === index) {
+      bullet.classList.add("career-tab-active");
+    } else {
+      bullet.classList.remove("career-tab-active");
+    }
+  });
+}
 
 //
 const svgIcon = document.querySelectorAll(".svg-icon");
@@ -211,7 +229,7 @@ if (closeModalBtnLegacy) {
 
 const openModalNews = document.querySelector(".open-newsModal");
 const newsModal = document.querySelector(".news-detail-modal");
-const closeModalNews = document.querySelector(".news-detail-modal close");
+const closeModalNews = document.querySelector(".news-detail-modal .close");
 const bodyMdoal = document.querySelector("body");
 console.log(closeModalNews);
 
@@ -225,5 +243,32 @@ if (closeModalNews) {
   closeModalNews.addEventListener("click", function () {
     newsModal.style.display = "none";
     bodyMdoal.style.background = "#eee";
+  });
+}
+
+const openModalProject = document.querySelectorAll(
+  "#social-project-content .open-newsModal"
+);
+const newsModalProject = document.querySelector(
+  "#social-project-content .news-detail-modal"
+);
+const closeModalProject = document.querySelector(
+  "#social-project-content .news-detail-modal .close"
+);
+const bodyModalProject = document.querySelector("body");
+
+if (openModalProject) {
+  openModalProject.forEach((modalka) => {
+    modalka.addEventListener("click", function (e) {
+      console.log(e.target);
+      newsModalProject.style.display = "block";
+      bodyLegacy.style.background = "rgba(0, 0, 0, 0.5)";
+    });
+  });
+}
+if (closeModalProject) {
+  closeModalProject.addEventListener("click", function () {
+    newsModalProject.style.display = "none";
+    bodyLegacy.style.background = "#eee";
   });
 }
