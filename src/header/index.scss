@@ -84,4 +84,20 @@ header {
       }
     }
   }
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    .nav-list {
+      .menu {
+        display: none;
+      }
+    }
+    .hamburger {
+      display: block;
+    }
+  }
 }

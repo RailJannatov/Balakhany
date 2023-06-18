@@ -245,3 +245,30 @@ if (closeModalNews) {
     bodyMdoal.style.background = "#eee";
   });
 }
+
+const openModalProject = document.querySelectorAll(
+  "#social-project-content .open-newsModal"
+);
+const newsModalProject = document.querySelector(
+  "#social-project-content .news-detail-modal"
+);
+const closeModalProject = document.querySelector(
+  "#social-project-content .news-detail-modal .close"
+);
+const bodyModalProject = document.querySelector("body");
+
+if (openModalProject) {
+  openModalProject.forEach((modalka) => {
+    modalka.addEventListener("click", function (e) {
+      console.log(e.target);
+      newsModalProject.style.display = "block";
+      bodyLegacy.style.background = "rgba(0, 0, 0, 0.5)";
+    });
+  });
+}
+if (closeModalProject) {
+  closeModalProject.addEventListener("click", function () {
+    newsModalProject.style.display = "none";
+    bodyLegacy.style.background = "#eee";
+  });
+}

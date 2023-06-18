@@ -64,7 +64,18 @@ header .project li a {
   line-height: 24px;
   color: #13171a;
 }
+header .hamburger {
+  display: none;
+}
 
+@media screen and (max-width: 480px) {
+  header .nav-list .menu {
+    display: none;
+  }
+  header .hamburger {
+    display: block;
+  }
+}
 main .title-dot {
   display: inline-block;
   margin-top: 6px;
@@ -469,6 +480,11 @@ footer #header .select-language {
 footer #header .header-title {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+footer #links .wrapper-footer-link {
+  display: flex;
 }
 footer #links .link-title {
   font-family: "Suisse Intl-Regular";
@@ -526,137 +542,6 @@ footer #author-info .author-privacy {
   font-size: 14px;
   line-height: 20px;
   color: #6d7a84;
-}
-
-#main-projects {
-  padding-top: 114px;
-}
-#main-projects .project-main-title {
-  font-family: "HeadingNow-66Bold";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 80px;
-  text-transform: uppercase;
-  color: #22292e;
-}
-#main-projects .page-name {
-  font-family: "Suisse Intl-Regular";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #13171a;
-}
-#main-projects .current-page {
-  font-family: "Suisse Intl-Regular";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #9ba5b5;
-}
-#main-projects .slash {
-  margin-left: 12px;
-  margin-right: 12px;
-}
-#main-projects .project-short-info {
-  font-family: "Suisse Intl-Regular";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  color: #46525a;
-}
-#main-projects .tab {
-  overflow: hidden;
-}
-#main-projects .tab button {
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  background: #ffffff;
-  border-radius: 100px;
-  font-family: "Suisse Intl-Regular";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 10px 20px;
-  color: #6d7a84;
-}
-#main-projects .tab button:hover {
-  background: #c59b48;
-  color: #ffffff;
-}
-#main-projects .tab button.active {
-  background-color: #c59b48;
-  color: #ffffff;
-}
-#main-projects .project-card img {
-  width: 738px;
-}
-#main-projects .project-card .card-info-title {
-  font-family: "Suisse Intl-Medium";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  color: #13171a;
-}
-#main-projects .project-card .card-info-subtitle {
-  font-family: "Suisse Intl-Regular";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #9ba5b5;
-}
-#main-projects .image-wrapper {
-  position: relative;
-}
-#main-projects .image-wrapper .img-date {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
-  border-radius: 100px;
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  color: white;
-  padding: 6px 5px;
-  font-family: "Suisse Intl-Medium";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 6px 16px;
-}
-#main-projects .tabcontent {
-  display: none;
-}
-#main-projects .pagination-number,
-#main-projects .pagination-dots {
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  text-align: center;
-  background: #ffffff;
-  border-radius: 100px;
-  margin-left: 8px;
-  font-family: "Suisse Intl-Regular";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  color: #6d7a84;
-}
-#main-projects .pagination-number.active,
-#main-projects .pagination-dots.active {
-  background-color: #eee1c8;
-  color: #c59b48;
 }
 
 #detail-head {
@@ -2142,10 +2027,539 @@ footer #author-info .author-privacy {
   color: #6d7a84;
 }
 
+#main-social-projects {
+  padding-top: 114px;
+}
+#main-social-projects .project-main-title {
+  font-family: "HeadingNow-66Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
+  text-transform: uppercase;
+  position: relative;
+}
+#main-social-projects .project-main-title::after {
+  content: url("../assets/SVG/Underline.svg");
+  position: absolute;
+  width: 219.07px;
+  top: calc(50% - 7px - 0.03px);
+  left: 0;
+}
+#main-social-projects .page-name {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #13171a;
+}
+#main-social-projects .current-page {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9ba5b5;
+}
+#main-social-projects .slash {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#main-social-projects .project-short-info {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #46525a;
+}
+
+#social-project-content {
+  padding-top: 80px;
+}
+#social-project-content .card-date p {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9ba5b5;
+}
+#social-project-content .card-description h5 {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #13171a;
+}
+#social-project-content .card-description p {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #46525a;
+}
+#social-project-content .pagination-number,
+#social-project-content .pagination-dots {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 100px;
+  margin-left: 8px;
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #6d7a84;
+}
+#social-project-content .pagination-number.active,
+#social-project-content .pagination-dots.active {
+  background-color: #eee1c8;
+  color: #c59b48;
+}
+#social-project-content .news-detail-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#social-project-content .news-detail-modal .social-project-title {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #22292e;
+}
+#social-project-content .news-detail-modal .modal-content {
+  background-color: #fff;
+  margin-left: 20%;
+  padding: 140px 60px;
+}
+#social-project-content .news-detail-modal .modal-content .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 60px;
+  right: 60px;
+}
+#social-project-content .news-detail-modal .modal-content .close:hover,
+#social-project-content .news-detail-modal .modal-content .close close {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#social-project-content .news-detail-modal .modal-content .president-social span {
+  margin-right: 12px;
+}
+#social-project-content .news-detail-modal .modal-content .image-subtitle {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #22292e;
+}
+#social-project-content .news-detail-modal .modal-content .image-subtitle + p {
+  font-family: "Suisse Intl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  /* Utility/400 */
+  color: #6d7a84;
+}
+#social-project-content .news-detail-modal .president-more-detail .title {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  color: #13171a;
+}
+#social-project-content .news-detail-modal .president-more-detail .sub-title {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #46525a;
+}
+#social-project-content .news-detail-modal .president-description p {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6d7a84;
+}
+#social-project-content .news-detail-modal .news-title h2 {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9ba5b5;
+}
+#social-project-content .news-detail-modal .news-title p {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  color: #22292e;
+}
+#social-project-content .news-detail-modal .news-description p {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #46525a;
+}
+#social-project-content .news-detail-modal .news-social-adress span {
+  margin-right: 20px;
+}
+#social-project-content .news-detail-modal .news-image {
+  margin-top: 60px;
+}
+#social-project-content .news-detail-modal .oil-images .image-wrapper {
+  position: relative;
+}
+#social-project-content .news-detail-modal .oil-images .location {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+  padding: 10px 16px;
+}
+#social-project-content .news-detail-modal .oil-images .location .location-name {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+#social-project-content .news-detail-modal .oil-images .date {
+  position: absolute;
+  top: 32px;
+  left: 162px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+  padding: 10px 16px;
+}
+#social-project-content .news-detail-modal .oil-images .date-time {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+#social-project-content .news-detail-modal .export-procedure h5 {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #46525a;
+}
+#social-project-content .news-detail-modal .export-list {
+  list-style: disc;
+}
+#social-project-content .news-detail-modal .export-list li {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6d7a84;
+}
+#social-project-content .news-detail-modal .notes {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6d7a84;
+}
+#social-project-content .news-detail-modal .notes .email-addres {
+  color: #218aeb;
+}
+#social-project-content .news-detail-modal .footer-image .wrapper-image {
+  position: relative;
+}
+#social-project-content .news-detail-modal .footer-image .wrapper-image .location {
+  position: absolute;
+  top: 27px;
+  left: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+  padding: 10px 16px;
+}
+#social-project-content .news-detail-modal .footer-image .wrapper-image .location .location-name {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+#social-project-content .news-detail-modal .footer-image .wrapper-image .date {
+  position: absolute;
+  top: 27px;
+  left: 169px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+  padding: 10px 16px;
+}
+#social-project-content .news-detail-modal .footer-image .wrapper-image .date-time {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+#social-project-content .news-detail-modal .footer-image .wrapper-image .image-text {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
 .modal-block {
   display: block;
 }
 
+@media screen and (max-width: 567px) {
+  footer #links .link-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer #links li a {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  footer #links .wrapper-footer-link {
+    display: block;
+  }
+  footer #header .header-title {
+    display: block;
+  }
+  footer #address-info .info-title {
+    margin-bottom: 8px;
+  }
+  footer .first-ellipse {
+    top: 39px;
+    left: 107px;
+    right: -34.17%;
+    bottom: 87.56%;
+    display: none;
+  }
+  footer .second-ellipse {
+    top: 439px;
+    left: -172px;
+    right: 43.33%;
+    bottom: 55.44%;
+    display: none;
+  }
+  footer .third-ellipse {
+    top: 1461px;
+    left: 154px;
+    right: -47.22%;
+    bottom: -0.29%;
+    display: none;
+  }
+}
+#main-projects {
+  padding-top: 114px;
+}
+#main-projects .project-main-title {
+  font-family: "HeadingNow-66Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #22292e;
+}
+#main-projects .page-name {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #13171a;
+}
+#main-projects .current-page {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9ba5b5;
+}
+#main-projects .slash {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#main-projects .project-short-info {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #46525a;
+}
+#main-projects .tab {
+  overflow: hidden;
+}
+#main-projects .tab button {
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  background: #ffffff;
+  border-radius: 100px;
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 20px;
+  color: #6d7a84;
+}
+#main-projects .tab button:hover {
+  background: #c59b48;
+  color: #ffffff;
+}
+#main-projects .tab button.active {
+  background-color: #c59b48;
+  color: #ffffff;
+}
+#main-projects .project-card img {
+  width: 738px;
+}
+#main-projects .project-card .card-info-title {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #13171a;
+}
+#main-projects .project-card .card-info-subtitle {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9ba5b5;
+}
+#main-projects .image-wrapper {
+  position: relative;
+}
+#main-projects .image-wrapper .img-date {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  color: white;
+  padding: 6px 5px;
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 16px;
+}
+#main-projects .tabcontent {
+  display: none;
+}
+#main-projects .pagination-number,
+#main-projects .pagination-dots {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 100px;
+  margin-left: 8px;
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #6d7a84;
+}
+#main-projects .pagination-number.active,
+#main-projects .pagination-dots.active {
+  background-color: #eee1c8;
+  color: #c59b48;
+}
+
+@media screen and (max-width: 480px) {
+  #main-projects .project-main-title {
+    font-size: 40px;
+    line-height: 40px;
+    color: #13171a;
+  }
+  #main-projects .project-card .card-info-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  #main-projects .project-card .card-info-subtitle-style {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #main-projects .image-wrapper .img-date {
+    top: 12px;
+    left: 12px;
+  }
+  .projects-short-info {
+    text-align: unset;
+  }
+}
 body {
   background: #eee;
   margin: 0;
@@ -2160,7 +2574,7 @@ body .title-head-style {
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
-  text-transform: uppercase;
+  text-transform: upperca;
   color: #22292e;
 }
 body .title-large-info {
