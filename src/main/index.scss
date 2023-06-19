@@ -2692,10 +2692,15 @@ footer {
       max-height: 100vh;
       overflow: auto;
       background-color: rgba(0, 0, 0, 0.5);
+      background-color: white;
+
       .modal-content {
+        .wrapper-modal-content {
+          display: block;
+        }
         background-color: #fff;
-        margin-left: 20%;
-        padding: 140px 60px;
+        margin: 0;
+        padding: 103px 16px;
         height: 100vh;
         .close {
           color: #aaa;
@@ -2705,7 +2710,7 @@ footer {
           cursor: pointer;
           position: absolute;
           top: 60px;
-          right: 60px;
+          right: 40px;
           &:hover,
           close {
             color: black;
@@ -2721,29 +2726,19 @@ footer {
       }
       .president-more-detail {
         .title {
-          font-family: "Suisse Intl-Medium";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 48px;
-          line-height: 56px;
-          color: #13171a;
-        }
-        .sub-title {
-          font-family: "Suisse Intl-Regular";
-          font-style: normal;
-          font-weight: 400;
           font-size: 24px;
           line-height: 36px;
-          color: #c59b48;
+        }
+        .sub-title {
+          font-size: 20px;
+          line-height: 28px;
+          color: #46525a;
         }
       }
       .president-description {
         p {
-          font-family: "Suisse Intl-Regular";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 28px;
+          font-size: 16px;
+          line-height: 24px;
           color: #6d7a84;
         }
       }

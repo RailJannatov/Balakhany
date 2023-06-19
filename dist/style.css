@@ -963,12 +963,32 @@ headers nav .sub-menu {
     margin-bottom: 1rem;
   }
 
+  .sm\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .sm\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .sm\:mb-1 {
+    margin-bottom: 0.25rem;
+  }
+
+  .sm\:mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
   .sm\:block {
     display: block;
   }
 
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:w-3\/12 {
+    width: 25%;
   }
 
   .sm\:flex-none {
@@ -986,6 +1006,10 @@ headers nav .sub-menu {
 
   .sm\:pr-0 {
     padding-right: 0px;
+  }
+
+  .sm\:pt-7 {
+    padding-top: 1.75rem;
   }
 
   .sm\:text-left {
