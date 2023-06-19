@@ -36,12 +36,15 @@
     font-size: 18px;
     line-height: 28px;
     color: #46525a;
+    margin-left: 172px;
+    width: 70%;
+    display: flex;
+    margin-right: auto;
   }
   .tab {
     overflow: hidden;
     button {
       cursor: pointer;
-      padding: 14px 16px;
       transition: 0.3s;
       background: #ffffff;
       border-radius: 100px;
@@ -52,6 +55,10 @@
       line-height: 20px;
       padding: 10px 20px;
       color: #6d7a84;
+      margin-right: 12px;
+      width: 95px;
+      height: 40px;
+      margin-bottom: 15px;
       &:hover {
         background: #c59b48;
         color: #ffffff;
@@ -129,6 +136,19 @@
   }
 }
 
+footer {
+  .address-info-wrapper {
+    display: flex;
+  }
+  .left-side {
+    display: flex;
+  }
+  .author-info {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #main-projects {
     .project-main-title {
@@ -152,8 +172,11 @@
         left: 12px;
       }
     }
-  }
-  .projects-short-info {
-    text-align: unset;
+    .project-short-info {
+      text-align: unset;
+      margin: 0;
+      margin-top: 20px;
+      width: unset;
+    }
   }
 }
