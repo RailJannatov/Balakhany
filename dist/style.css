@@ -959,6 +959,10 @@ headers nav .sub-menu {
     margin-bottom: 1.25rem;
   }
 
+  .sm\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1025,8 +1029,16 @@ headers nav .sub-menu {
 }
 
 @media (min-width: 1280px) {
+  .\32xl\:flex {
+    display: flex;
+  }
+
   .\32xl\:w-3\/12 {
     width: 25%;
+  }
+
+  .\32xl\:justify-between {
+    justify-content: space-between;
   }
 
   .\32xl\:py-20 {

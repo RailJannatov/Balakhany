@@ -37,13 +37,16 @@
   font-size: 18px;
   line-height: 28px;
   color: #46525a;
+  margin-left: 172px;
+  width: 70%;
+  display: flex;
+  margin-right: auto;
 }
 #main-projects .tab {
   overflow: hidden;
 }
 #main-projects .tab button {
   cursor: pointer;
-  padding: 14px 16px;
   transition: 0.3s;
   background: #ffffff;
   border-radius: 100px;
@@ -54,6 +57,10 @@
   line-height: 20px;
   padding: 10px 20px;
   color: #6d7a84;
+  margin-right: 12px;
+  width: 95px;
+  height: 40px;
+  margin-bottom: 15px;
 }
 #main-projects .tab button:hover {
   background: #c59b48;
@@ -129,6 +136,17 @@
   color: #c59b48;
 }
 
+footer .address-info-wrapper {
+  display: flex;
+}
+footer .left-side {
+  display: flex;
+}
+footer .author-info {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 480px) {
   #main-projects .project-main-title {
     font-size: 40px;
@@ -147,7 +165,10 @@
     top: 12px;
     left: 12px;
   }
-  .projects-short-info {
+  #main-projects .project-short-info {
     text-align: unset;
+    margin: 0;
+    margin-top: 20px;
+    width: unset;
   }
 }/*# sourceMappingURL=index.css.map */
