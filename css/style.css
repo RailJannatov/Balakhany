@@ -1375,6 +1375,14 @@ footer #author-info .author-privacy {
 #news-content {
   padding-top: 100px;
 }
+#news-content .image-about {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6d7a84;
+}
 #news-content .card-date p {
   font-family: "Suisse Intl-Regular";
   font-style: normal;
@@ -2139,6 +2147,14 @@ footer #author-info .author-privacy {
   overflow: scroll;
   background-color: rgba(0, 0, 0, 0.5);
 }
+#social-project-content .news-detail-modal .image-about {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6d7a84;
+}
 #social-project-content .news-detail-modal .social-project-title {
   font-family: "Suisse Intl-Medium";
   font-style: normal;
@@ -2697,6 +2713,50 @@ footer #author-info .author-privacy {
   #gallery-info .head-info {
     font-size: 24px;
     line-height: 36px;
+  }
+  #news-title .project-main-title {
+    font-size: 40px;
+    line-height: 40px;
+    color: #13171a;
+  }
+  #news-content .news-detail-modal .oil-images .date,
+  #news-content .news-detail-modal .oil-images .location {
+    top: 12px;
+  }
+  #news-content .news-detail-modal .wrapper-modal-content .footer-image .location,
+  #news-content .news-detail-modal .wrapper-modal-content .footer-image .date {
+    top: 16px;
+  }
+  #news-content .news-detail-modal .oil-image-subtitle {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9ba5b5;
+  }
+  #news-content .news-detail-modal .modal-content {
+    margin: 0;
+    padding: 40px 16px;
+  }
+  #news-content .news-detail-modal .news-title p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  #news-content .news-detail-modal .news-description p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  #news-content .news-detail-modal .news-image {
+    margin-top: 40px;
+  }
+  #news-content .news-detail-modal .image-about {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #6d7a84;
   }
 }
 #main-projects {

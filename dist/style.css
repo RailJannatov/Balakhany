@@ -1015,6 +1015,14 @@ headers nav .sub-menu {
     margin-top: 2.5rem;
   }
 
+  .sm\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .sm\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .sm\:block {
     display: block;
   }
