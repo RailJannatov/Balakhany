@@ -919,6 +919,14 @@ footer {
       top: calc(50% - 14px / 2 - 0.03px);
     }
   }
+  .project-short-info {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #46525a;
+  }
 }
 #contact-form {
   margin-top: 60px;
@@ -1416,6 +1424,14 @@ footer {
 }
 #news-content {
   padding-top: 100px;
+  .image-about {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #6d7a84;
+  }
   .card-date {
     p {
       font-family: "Suisse Intl-Regular";
@@ -2224,6 +2240,14 @@ footer {
     height: 100%;
     overflow: scroll;
     background-color: rgba(0, 0, 0, 0.5);
+    .image-about {
+      font-family: "Suisse Intl-Regular";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #6d7a84;
+    }
     .social-project-title {
       font-family: "Suisse Intl-Medium";
       font-style: normal;
@@ -2572,6 +2596,11 @@ footer {
 }
 
 @media screen and (max-width: 567px) {
+  #main-projects {
+    &.contact-us-title {
+      padding-top: 52px;
+    }
+  }
   nav {
     .hamburger {
       display: block;
@@ -2836,6 +2865,110 @@ footer {
     .head-info {
       font-size: 24px;
       line-height: 36px;
+    }
+  }
+  #news-title {
+    .project-main-title {
+      font-size: 40px;
+      line-height: 40px;
+      color: #13171a;
+    }
+  }
+  #news-content {
+    .news-detail-modal {
+      .oil-images {
+        .date,
+        .location {
+          top: 12px;
+        }
+      }
+      .wrapper-modal-content {
+        .footer-image {
+          .location,
+          .date {
+            top: 16px;
+          }
+        }
+      }
+      .oil-image-subtitle {
+        font-family: "Suisse Intl-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #9ba5b5;
+      }
+      .modal-content {
+        margin: 0;
+        padding: 40px 16px;
+      }
+      .news-title {
+        p {
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+      .news-description {
+        p {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+      .news-image {
+        margin-top: 40px;
+      }
+      .image-about {
+        font-family: "Suisse Intl-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #6d7a84;
+      }
+    }
+  }
+  .contact-us-title {
+    .project-main-title {
+      width: 391px;
+      position: relative;
+      &::after {
+        content: url("../assets/SVG/Vector 61.svg");
+        position: absolute;
+        width: 219.07px;
+        height: 14px;
+        right: 0px;
+        top: 50%;
+      }
+    }
+  }
+  #contact-header {
+    .contact-number,
+    .contact-email {
+      font-size: 32px;
+      line-height: 44px;
+    }
+    .support-text {
+      font-size: 32px;
+      line-height: 44px;
+    }
+    .find-us {
+      font-family: "Suisse Intl-Regular";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #9ba5b5;
+    }
+    .find-location {
+      font-family: "Suisse Intl-Regular";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #46525a;
+    }
+    .respo-support-text {
+      margin-bottom: 60px;
     }
   }
 }
