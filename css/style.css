@@ -2412,6 +2412,55 @@ footer #author-info .author-privacy {
   line-height: 16px;
 }
 
+#video-gallery-wrapper video {
+  width: 100%;
+  border-radius: 20px;
+}
+#video-gallery-wrapper .card-date {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9ba5b5;
+}
+#video-gallery-wrapper .card-description h5 {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #13171a;
+}
+#video-gallery-wrapper .card-description p {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #46525a;
+}
+#video-gallery-wrapper .img-container {
+  position: relative;
+}
+#video-gallery-wrapper .img-container .img-date {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+  bottom: 24px;
+  right: 24px;
+  color: white;
+  padding: 6px 16px;
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .modal-block {
   display: block;
 }
