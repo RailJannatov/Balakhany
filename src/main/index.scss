@@ -1279,12 +1279,20 @@ footer {
     color: #9ba5b5;
   }
   .head-info {
-    font-family: "Suisse Intl";
+    font-family: "Suisse Intl-Medium";
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
     color: #22292e;
+  }
+  .head-date {
+    font-family: "Suisse Intl";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9ba5b5;
   }
 }
 .foto-modal {
@@ -2512,8 +2520,10 @@ footer {
 }
 
 @media screen and (max-width: 567px) {
-  .hamburger {
-    display: block;
+  nav {
+    .hamburger {
+      display: block;
+    }
   }
   footer {
     overflow: hidden;
@@ -2760,6 +2770,20 @@ footer {
         left: 0px;
         top: calc(50% - (-2.66px) + 0.34px);
       }
+    }
+  }
+  #gallery-info {
+    .head-date {
+      font-family: "Suisse Intl";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #9ba5b5;
+    }
+    .head-info {
+      font-size: 24px;
+      line-height: 36px;
     }
   }
 }

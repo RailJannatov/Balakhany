@@ -71,9 +71,6 @@ header .hamburger {
   header .nav-list .menu {
     display: none;
   }
-  header .hamburger {
-    display: block;
-  }
 }
 main .title-dot {
   display: inline-block;
@@ -1244,12 +1241,20 @@ footer #author-info .author-privacy {
   color: #9ba5b5;
 }
 #gallery-info .head-info {
-  font-family: "Suisse Intl";
+  font-family: "Suisse Intl-Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
   color: #22292e;
+}
+#gallery-info .head-date {
+  font-family: "Suisse Intl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9ba5b5;
 }
 
 .foto-modal {
@@ -2411,7 +2416,7 @@ footer #author-info .author-privacy {
 }
 
 @media screen and (max-width: 567px) {
-  .hamburger {
+  nav .hamburger {
     display: block;
   }
   footer {
@@ -2630,6 +2635,18 @@ footer #author-info .author-privacy {
     content: url("../assets/SVG/Frame 633.svg");
     left: 0px;
     top: calc(50% + 2.66px + 0.34px);
+  }
+  #gallery-info .head-date {
+    font-family: "Suisse Intl";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9ba5b5;
+  }
+  #gallery-info .head-info {
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 #main-projects {
