@@ -2496,6 +2496,10 @@ footer #author-info .author-privacy {
   #main-projects.faq-wrapper {
     padding-top: 52px;
   }
+  #main-projects.legislation-wrapper {
+    padding-top: 52px;
+    margin-bottom: 20px;
+  }
   nav .hamburger {
     display: block;
   }
@@ -2822,6 +2826,9 @@ footer #author-info .author-privacy {
   #accordion-question {
     padding-bottom: 80px;
   }
+  #accordion-question .wrapper-accordion {
+    margin-bottom: 12px;
+  }
   #accordion-question .accordion .contentBx .label h4 {
     font-size: 16px;
     line-height: 24px;
@@ -2833,9 +2840,13 @@ footer #author-info .author-privacy {
   #accordion-question .title {
     font-size: 24px;
     line-height: 36px;
+    margin-bottom: 12px;
   }
   #accordion-question .wrapper-accordion:last-child {
     margin-bottom: 0;
+  }
+  #accordion-question .legacy-links li:last-child {
+    margin-bottom: 60px;
   }
 }
 #main-projects {
@@ -3019,6 +3030,14 @@ body {
 }
 body img {
   width: 100%;
+}
+body #main-projects .project-short-info {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #46525a;
 }
 body .title-head-style {
   font-family: "HeadingNow-66Bold";
