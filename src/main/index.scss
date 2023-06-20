@@ -647,19 +647,22 @@ footer {
 //     }
 //   }
 // }
+#project-detail-header {
+  background: url("../assets/image/Rectangle 4 (2).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 #detail-head {
-  height: 864px;
-  .cover-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 768px;
-    img {
-      width: -webkit-fill-available;
-    }
-  }
+  background: url("../assets/image/Rectangle 4 (2).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  padding: 80px 60px;
+  height: 768px;
+  display: flex;
+  align-items: end;
   .head-text {
     font-family: "HeadingNow-66Bold";
     font-style: normal;
@@ -668,8 +671,6 @@ footer {
     line-height: 72px;
     text-transform: uppercase;
     color: #ffffff;
-    position: absolute;
-    bottom: 0;
   }
 }
 #general-info {
@@ -712,8 +713,8 @@ footer {
       gap: 8px;
       width: 116px;
       height: 40px;
-      background: rgba(255, 255, 255, 0.2);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(6px);
       border-radius: 100px;
     }
@@ -797,8 +798,8 @@ footer {
         gap: 8px;
         width: 116px;
         height: 40px;
-        background: rgba(255, 255, 255, 0.2);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(6px);
         border-radius: 100px;
       }
@@ -854,8 +855,8 @@ footer {
   .image-wrapper {
     position: relative;
     .img-date {
-      background: rgba(255, 255, 255, 0.2);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(6px);
       border-radius: 100px;
       position: absolute;
@@ -2612,6 +2613,7 @@ footer {
       }
       .wrapper-footer-link {
         display: block;
+        padding-bottom: 48px;
       }
     }
     #header {
@@ -2622,6 +2624,22 @@ footer {
     #address-info {
       .info-title {
         margin-bottom: 8px;
+      }
+      .address-info-wrapper {
+        display: block;
+        .left-side {
+          display: block;
+        }
+      }
+      .social-links {
+        justify-content: unset;
+      }
+      .info-value-social {
+        margin-right: 24px;
+        margin-left: 0;
+      }
+      .mobile-info {
+        margin-bottom: 60px;
       }
     }
     .first-ellipse {
@@ -2744,28 +2762,74 @@ footer {
       }
     }
   }
-  footer {
-    #address-info {
-      .address-info-wrapper {
+  #project-detail-header {
+    background: url("../assets/image/Rectangle 143 (1).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #detail-head {
+    background: url("../assets/image/Rectangle 143 (1).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 60px 16px;
+    height: 768px;
+    display: flex;
+    align-items: end;
+    .head-text {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+  #oil {
+    .oil-plant-text {
+      display: none;
+    }
+    .img-respo {
+      font-family: "Suisse Intl-Regular";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #9ba5b5;
+    }
+    .img-subtitle {
+      font-family: "Suisse Intl-Regular";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #9ba5b5;
+    }
+  }
+  #oil-consumer-info {
+    .consumer-title {
+      font-size: 32px;
+      line-height: 44px;
+    }
+    .consumer-image-wrapper {
+      .text-in-mobile {
         display: block;
-        .left-side {
-          display: block;
-        }
-      }
-      .social-links {
-        justify-content: unset;
-      }
-      .info-value-social {
-        margin-right: 24px;
-        margin-left: 0;
-      }
-      .mobile-info {
-        margin-bottom: 60px;
+        font-family: "Suisse Intl-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #9ba5b5;
       }
     }
-    #links {
-      .wrapper-footer-link {
-        padding-bottom: 48px;
+  }
+  #connect-projects {
+    .card-info {
+      .card-title {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .card-info-subtitle-style {
+        font-size: 14px;
+        line-height: 20px;
       }
     }
   }

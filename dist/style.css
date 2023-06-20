@@ -711,6 +711,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -979,8 +983,20 @@ headers nav .sub-menu {
     margin-bottom: 0.75rem;
   }
 
+  .sm\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .sm\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .sm\:block {
     display: block;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:w-full {
@@ -1010,6 +1026,10 @@ headers nav .sub-menu {
 
   .sm\:pt-7 {
     padding-top: 1.75rem;
+  }
+
+  .sm\:pb-20 {
+    padding-bottom: 5rem;
   }
 
   .sm\:text-left {
