@@ -1092,6 +1092,10 @@ headers nav .sub-menu {
     padding-bottom: 1.75rem;
   }
 
+  .sm\:pt-12 {
+    padding-top: 3rem;
+  }
+
   .sm\:text-left {
     text-align: left;
   }
@@ -1133,6 +1137,10 @@ headers nav .sub-menu {
 }
 
 @media (min-width: 1280px) {
+  .\32xl\:mb-32 {
+    margin-bottom: 8rem;
+  }
+
   .\32xl\:flex {
     display: flex;
   }

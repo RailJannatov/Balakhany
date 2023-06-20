@@ -2493,6 +2493,9 @@ footer #author-info .author-privacy {
   #main-projects.contact-us-title {
     padding-top: 52px;
   }
+  #main-projects.faq-wrapper {
+    padding-top: 52px;
+  }
   nav .hamburger {
     display: block;
   }
@@ -2808,6 +2811,31 @@ footer #author-info .author-privacy {
   }
   #contact-header .respo-support-text {
     margin-bottom: 60px;
+  }
+  #sidebar li:last-child {
+    margin-bottom: 40px;
+  }
+  #sidebar .have-question .often-question {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  #accordion-question {
+    padding-bottom: 80px;
+  }
+  #accordion-question .accordion .contentBx .label h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #accordion-question .accordion .contentBx .content-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #accordion-question .title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  #accordion-question .wrapper-accordion:last-child {
+    margin-bottom: 0;
   }
 }
 #main-projects {
