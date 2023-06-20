@@ -2601,6 +2601,11 @@ footer {
       padding-top: 52px;
     }
   }
+  #main-projects {
+    &.faq-wrapper {
+      padding-top: 52px;
+    }
+  }
   nav {
     .hamburger {
       display: block;
@@ -2969,6 +2974,45 @@ footer {
     }
     .respo-support-text {
       margin-bottom: 60px;
+    }
+  }
+  #sidebar {
+    li {
+      &:last-child {
+        margin-bottom: 40px;
+      }
+    }
+    .have-question {
+      .often-question {
+        font-size: 32px;
+        line-height: 44px;
+      }
+    }
+  }
+  #accordion-question {
+    padding-bottom: 80px;
+    .accordion {
+      .contentBx {
+        .label {
+          h4 {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+        .content-description {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+    .title {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .wrapper-accordion {
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
