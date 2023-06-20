@@ -1039,6 +1039,10 @@ headers nav .sub-menu {
     flex-direction: column;
   }
 
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+
   .sm\:p-0 {
     padding: 0px;
   }
