@@ -119,4 +119,25 @@ body {
   .full-image {
     width: -webkit-fill-available;
   }
+  .pagination-number,
+  .pagination-dots {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 100px;
+    margin-left: 8px;
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #6d7a84;
+    &.active {
+      background-color: #eee1c8;
+      color: #c59b48;
+    }
+  }
 }

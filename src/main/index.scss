@@ -517,136 +517,6 @@ footer {
     }
   }
 }
-// #main-projects {
-//   padding-top: 114px;
-//   .project-main-title {
-//     font-family: "HeadingNow-66Bold";
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 72px;
-//     line-height: 80px;
-//     text-transform: uppercase;
-//     color: #22292e;
-//   }
-//   .page-name {
-//     font-family: "Suisse Intl-Regular";
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 20px;
-//     color: #13171a;
-//   }
-//   .current-page {
-//     font-family: "Suisse Intl-Regular";
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 20px;
-//     color: #9ba5b5;
-//   }
-//   .slash {
-//     margin-left: 12px;
-//     margin-right: 12px;
-//   }
-//   .project-short-info {
-//     font-family: "Suisse Intl-Regular";
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 18px;
-//     line-height: 28px;
-//     color: #46525a;
-//   }
-//   .tab {
-//     overflow: hidden;
-//     button {
-//       cursor: pointer;
-//       padding: 14px 16px;
-//       transition: 0.3s;
-//       background: #ffffff;
-//       border-radius: 100px;
-//       font-family: "Suisse Intl-Regular";
-//       font-style: normal;
-//       font-weight: 400;
-//       font-size: 14px;
-//       line-height: 20px;
-//       padding: 10px 20px;
-//       color: #6d7a84;
-//       &:hover {
-//         background: #c59b48;
-//         color: #ffffff;
-//       }
-//       &.active {
-//         background-color: #c59b48;
-//         color: #ffffff;
-//       }
-//     }
-//   }
-//   .project-card {
-//     img {
-//       width: 738px;
-//     }
-//     .card-info-title {
-//       font-family: "Suisse Intl-Medium";
-//       font-style: normal;
-//       font-weight: 500;
-//       font-size: 24px;
-//       line-height: 36px;
-//       color: #13171a;
-//     }
-//     .card-info-subtitle {
-//       font-family: "Suisse Intl-Regular";
-//       font-style: normal;
-//       font-weight: 400;
-//       font-size: 16px;
-//       line-height: 24px;
-//       color: #9ba5b5;
-//     }
-//   }
-//   .image-wrapper {
-//     position: relative;
-//     .img-date {
-//       background: rgba(255, 255, 255, 0.2);
-//       border: 1px solid rgba(255, 255, 255, 0.1);
-//       backdrop-filter: blur(6px);
-//       border-radius: 100px;
-//       position: absolute;
-//       top: 24px;
-//       left: 24px;
-//       color: white;
-//       padding: 6px 5px;
-//       font-family: "Suisse Intl-Medium";
-//       font-style: normal;
-//       font-weight: 500;
-//       font-size: 14px;
-//       line-height: 20px;
-//       padding: 6px 16px;
-//     }
-//   }
-//   .tabcontent {
-//     display: none;
-//   }
-//   .pagination-number,
-//   .pagination-dots {
-//     width: 40px;
-//     height: 40px;
-//     padding: 10px;
-//     text-align: center;
-//     background: #ffffff;
-//     border-radius: 100px;
-//     margin-left: 8px;
-//     font-family: "Suisse Intl-Regular";
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 20px;
-//     text-align: center;
-//     color: #6d7a84;
-//     &.active {
-//       background-color: #eee1c8;
-//       color: #c59b48;
-//     }
-//   }
-// }
 #project-detail-header {
   background: url("../assets/image/Rectangle 4 (2).png");
   background-repeat: no-repeat;
@@ -2590,6 +2460,53 @@ footer {
     }
   }
 }
+#foto-gallery-wrapper {
+  .card-date {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9ba5b5;
+  }
+  .card-description {
+    h5 {
+      font-family: "Suisse Intl-Medium";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      color: #13171a;
+    }
+    p {
+      font-family: "Suisse Intl-Regular";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #46525a;
+    }
+  }
+  .img-container {
+    position: relative;
+    .img-date {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(6px);
+      border-radius: 100px;
+      bottom: 24px;
+      right: 24px;
+      color: white;
+      padding: 6px 16px;
+      font-family: "Suisse Intl-Medium";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
 .modal-block {
   display: block;
 }
@@ -2830,6 +2747,18 @@ footer {
       .card-info-subtitle-style {
         font-size: 14px;
         line-height: 20px;
+      }
+    }
+  }
+  #gallery-title {
+    .project-main-title {
+      font-size: 40px;
+      line-height: 40px;
+      color: #13171a;
+      &::after {
+        content: url("../assets/SVG/Frame 633.svg");
+        left: 0px;
+        top: calc(50% - (-2.66px) + 0.34px);
       }
     }
   }
