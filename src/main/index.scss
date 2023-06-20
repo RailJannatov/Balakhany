@@ -3013,6 +3013,17 @@ footer {
           line-height: 20px;
         }
       }
+      .legacy-detail-modal {
+        .modal-content {
+          margin-left: 0;
+          height: unset;
+          padding: 140px 16px;
+          .close {
+            top: 100px;
+            right: 16px;
+          }
+        }
+      }
     }
     .title {
       font-size: 24px;
