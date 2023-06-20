@@ -907,6 +907,14 @@ footer #author-info .author-privacy {
   right: 0px;
   top: calc(50% - 7px - 0.03px);
 }
+.contact-us-title .project-short-info {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #46525a;
+}
 
 #contact-form {
   margin-top: 60px;
@@ -2482,6 +2490,9 @@ footer #author-info .author-privacy {
 }
 
 @media screen and (max-width: 567px) {
+  #main-projects.contact-us-title {
+    padding-top: 52px;
+  }
   nav .hamburger {
     display: block;
   }
@@ -2757,6 +2768,46 @@ footer #author-info .author-privacy {
     font-size: 18px;
     line-height: 28px;
     color: #6d7a84;
+  }
+  .contact-us-title .project-main-title {
+    width: 391px;
+    position: relative;
+  }
+  .contact-us-title .project-main-title::after {
+    content: url("../assets/SVG/Vector 61.svg");
+    position: absolute;
+    width: 219.07px;
+    height: 14px;
+    right: 0px;
+    top: 50%;
+  }
+  #contact-header .contact-number,
+  #contact-header .contact-email {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  #contact-header .support-text {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  #contact-header .find-us {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #9ba5b5;
+  }
+  #contact-header .find-location {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #46525a;
+  }
+  #contact-header .respo-support-text {
+    margin-bottom: 60px;
   }
 }
 #main-projects {
