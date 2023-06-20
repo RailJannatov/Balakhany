@@ -707,6 +707,14 @@ video {
   margin-top: 2.25rem;
 }
 
+.mb-28 {
+  margin-bottom: 7rem;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -991,6 +999,10 @@ headers nav .sub-menu {
     margin-top: 0.75rem;
   }
 
+  .sm\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1030,6 +1042,14 @@ headers nav .sub-menu {
 
   .sm\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .sm\:pl-0 {
+    padding-left: 0px;
+  }
+
+  .sm\:pb-7 {
+    padding-bottom: 1.75rem;
   }
 
   .sm\:text-left {
