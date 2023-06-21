@@ -249,12 +249,14 @@ if (closeModalNews) {
 const openModalProject = document.querySelectorAll(
   "#social-project-content .open-newsModal"
 );
+console.log(openModalProject);
 const newsModalProject = document.querySelector(
   "#social-project-content .news-detail-modal"
 );
 const closeModalProject = document.querySelector(
   "#social-project-content .news-detail-modal .close"
 );
+console.log(closeModalProject);
 const bodyModalProject = document.querySelector("body");
 
 if (openModalProject) {

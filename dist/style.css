@@ -919,6 +919,10 @@ video {
   padding-top: 1.5rem;
 }
 
+.pr-0 {
+  padding-right: 0px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1027,6 +1031,10 @@ headers nav .sub-menu {
     margin-bottom: 1.5rem;
   }
 
+  .sm\:mt-24 {
+    margin-top: 6rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1094,6 +1102,10 @@ headers nav .sub-menu {
 
   .sm\:pt-12 {
     padding-top: 3rem;
+  }
+
+  .sm\:pl-3 {
+    padding-left: 0.75rem;
   }
 
   .sm\:text-left {
