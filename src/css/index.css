@@ -1579,6 +1579,24 @@ footer #author-info .author-privacy {
 #who-we-header {
   padding-top: 114px;
 }
+#who-we-header .page-name {
+  color: #13171a;
+  font-size: 14px;
+  font-family: "Suisse Intl-Regular";
+  line-height: 20px;
+}
+#who-we-header .current-page {
+  color: #9ba5b5;
+  font-size: 14px;
+  font-family: "Suisse Intl-Regular";
+  line-height: 20px;
+}
+#who-we-header .page-name-career {
+  color: #9ba5b5;
+  font-size: 14px;
+  font-family: "Suisse Intl-Regular";
+  line-height: 20px;
+}
 #who-we-header .who-we-title {
   font-family: "HeadingNow-66Bold";
   font-style: normal;
@@ -1594,7 +1612,7 @@ footer #author-info .author-privacy {
   position: absolute;
   width: 219.07px;
   height: 14px;
-  right: 0px;
+  right: 42px;
   top: calc(50% - 7px - 0.03px);
 }
 #who-we-header .title-description {
@@ -1627,6 +1645,8 @@ footer #author-info .author-privacy {
   font-size: 18px;
   line-height: 28px;
   color: #6d7a84;
+  -moz-column-count: 2;
+       column-count: 2;
 }
 
 #values .values-title {
@@ -1657,18 +1677,19 @@ footer #author-info .author-privacy {
   height: 100vh;
   overflow: hidden;
   position: sticky;
+  background-color: #ffffff;
 }
 #values .parallax-container:nth-child(1) {
-  top: 0;
+  top: 1px;
 }
 #values .parallax-container:nth-child(2) {
-  top: 15vh;
+  top: 10vh;
 }
 #values .parallax-container:nth-child(3) {
-  top: 20vh;
+  top: 21vh;
 }
 #values .parallax-container:nth-child(4) {
-  top: 25vh;
+  top: 32vh;
 }
 #values .parallax-section {
   height: 100%;
@@ -1748,7 +1769,7 @@ footer #author-info .author-privacy {
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  margin-top: 68px;
+  color: #46525a;
 }
 #key-principles .section-item h5 {
   font-family: "Suisse Intl-Regular";
@@ -1813,6 +1834,7 @@ footer #author-info .author-privacy {
   line-height: 28px;
   color: #6d7a84;
   width: 534px;
+  border-bottom: 1px solid #eeedf2;
 }
 #history-slider .date-title {
   font-family: "Suisse Intl";
@@ -1822,6 +1844,17 @@ footer #author-info .author-privacy {
   line-height: 48px;
   letter-spacing: 0.02em;
   color: #46525a;
+}
+#history-slider .date-next-title {
+  font-size: 48px;
+  font-family: "Suisse Intl-Medium";
+  font-weight: 500;
+  line-height: 56px;
+  color: #eeedf2;
+}
+#history-slider .underline-date-next {
+  width: 200px;
+  border-bottom: 1px solid #eeedf2;
 }
 
 #career-header {
@@ -2883,5 +2916,71 @@ footer #author-info .author-privacy {
     color: #c59b48;
     display: flex;
     align-items: center;
+  }
+  #who-we-header .who-we-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  #who-we-header .who-we-title::after {
+    content: url("../assets/SVG/Vector 61 (3).svg");
+    position: absolute;
+    width: 219.07px;
+    height: 14px;
+    right: 66px;
+    top: 17px;
+  }
+  #who-we-header .current-page {
+    font-family: "Suisse Intl-Regular";
+    color: #9ba5b5;
+  }
+  #who-us .description {
+    -moz-column-count: unset;
+         column-count: unset;
+  }
+  #values .values-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  #values .head-info {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #values .description-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #values .description-number {
+    font-size: 120px;
+    line-height: 120px;
+    text-align: center;
+  }
+  #key-principles {
+    overflow: hidden;
+  }
+  #key-principles .head-principles p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  #key-principles .section-item h5 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  #history-slider .history-title {
+    margin-bottom: 60px;
+  }
+  #history-slider .history-title p {
+    width: 200px;
+  }
+  #history-slider .year-description {
+    border-bottom: none;
+    width: 320px;
+  }
+  #history-slider .swiper-button-prev {
+    top: 96%;
+    left: 15%;
+  }
+  #history-slider .swiper-button-next {
+    top: 96%;
+    right: 40px;
   }
 }/*# sourceMappingURL=index.css.map */

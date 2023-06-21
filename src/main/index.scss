@@ -1711,6 +1711,24 @@ footer {
 }
 #who-we-header {
   padding-top: 114px;
+  .page-name {
+    color: #13171a;
+    font-size: 14px;
+    font-family: "Suisse Intl-Regular";
+    line-height: 20px;
+  }
+  .current-page {
+    color: #9ba5b5;
+    font-size: 14px;
+    font-family: "Suisse Intl-Regular";
+    line-height: 20px;
+  }
+  .page-name-career {
+    color: #9ba5b5;
+    font-size: 14px;
+    font-family: "Suisse Intl-Regular";
+    line-height: 20px;
+  }
   .who-we-title {
     font-family: "HeadingNow-66Bold";
     font-style: normal;
@@ -1725,7 +1743,7 @@ footer {
       position: absolute;
       width: 219.07px;
       height: 14px;
-      right: 0px;
+      right: 42px;
       top: calc(50% - 14px / 2 - 0.03px);
     }
   }
@@ -1760,6 +1778,7 @@ footer {
     font-size: 18px;
     line-height: 28px;
     color: #6d7a84;
+    column-count: 2;
   }
 }
 #values {
@@ -1791,18 +1810,19 @@ footer {
     height: 100vh;
     overflow: hidden;
     position: sticky;
+    background-color: #ffffff;
 
     &:nth-child(1) {
-      top: 0;
+      top: 1px;
     }
     &:nth-child(2) {
-      top: 15vh;
+      top: 10vh;
     }
     &:nth-child(3) {
-      top: 20vh;
+      top: 21vh;
     }
     &:nth-child(4) {
-      top: 25vh;
+      top: 32vh;
     }
   }
   .parallax-section {
@@ -1886,7 +1906,7 @@ footer {
       font-weight: 400;
       font-size: 24px;
       line-height: 36px;
-      margin-top: 68px;
+      color: #46525a;
     }
   }
   .section-item {
@@ -1967,6 +1987,7 @@ footer {
     line-height: 28px;
     color: #6d7a84;
     width: 534px;
+    border-bottom: 1px solid #eeedf2;
   }
   .date-title {
     font-family: "Suisse Intl";
@@ -1976,6 +1997,17 @@ footer {
     line-height: 48px;
     letter-spacing: 0.02em;
     color: #46525a;
+  }
+  .date-next-title {
+    font-size: 48px;
+    font-family: "Suisse Intl-Medium";
+    font-weight: 500;
+    line-height: 56px;
+    color: #eeedf2;
+  }
+  .underline-date-next {
+    width: 200px;
+    border-bottom: 1px solid #eeedf2;
   }
 }
 #career-header {
@@ -3164,6 +3196,83 @@ footer {
         display: flex;
         align-items: center;
       }
+    }
+  }
+  #who-we-header {
+    .who-we-title {
+      font-size: 40px;
+      line-height: 40px;
+      &::after {
+        content: url("../assets/SVG/Vector 61 (3).svg");
+        position: absolute;
+        width: 219.07px;
+        height: 14px;
+        right: 66px;
+        top: 17px;
+      }
+    }
+    .current-page {
+      font-family: "Suisse Intl-Regular";
+      color: #9ba5b5;
+    }
+  }
+  #who-us {
+    .description {
+      column-count: unset;
+    }
+  }
+  #values {
+    .values-title {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    .head-info {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .description-text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .description-number {
+      font-size: 120px;
+      line-height: 120px;
+      text-align: center;
+    }
+  }
+  #key-principles {
+    overflow: hidden;
+    .head-principles {
+      p {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    .section-item {
+      h5 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+  }
+  #history-slider {
+    .history-title {
+      margin-bottom: 60px;
+      p {
+        width: 200px;
+      }
+    }
+    .year-description {
+      border-bottom: none;
+      width: 320px;
+    }
+    .swiper-button-prev {
+      top: 96%;
+      left: 15%;
+    }
+    .swiper-button-next {
+      top: 96%;
+      right: 40px;
     }
   }
 }
