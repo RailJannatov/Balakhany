@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 400vh; /* Adjust the height as per your requirement */
+      }
+
+      .container {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .section {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .section h2 {
+        font-size: 3rem;
+        color: white;
+      }
+
+      .section p {
+        font-size: 1.5rem;
+        color: white;
+      }
+
+      .section1 {
+        background-color: red;
+      }
+
+      .section2 {
+        background-color: blue;
+      }
+
+      .section3 {
+        background-color: green;
+      }
+
+      .section4 {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section section1">
+        <h2>Section 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="section section2">
+        <h2>Section 2</h2>
+        <p>
+          Nullam nec mauris ullamcorper, faucibus nunc at, condimentum purus.
+        </p>
+      </div>
+
+      <div class="section section3">
+        <h2>Section 3</h2>
+        <p>
+          Vestibulum congue ligula a augue consectetur, in congue lacus
+          tristique.
+        </p>
+      </div>
+
+      <div class="section section4">
+        <h2>Section 4</h2>
+        <p>
+          Phasellus volutpat elit sit amet purus consectetur, id gravida dui
+          viverra.
+        </p>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("scroll", function () {
+        var sections = document.querySelectorAll(".section");
+
+        sections.forEach(function (section) {
+          var rect = section.getBoundingClientRect();
+          var windowHeight = window.innerHeight;
+          var sectionHeight = section.offsetHeight;
+          var offset = rect.top - windowHeight + sectionHeight;
+          var opacity = Math.max(0, Math.min(1, 1 - offset / sectionHeight));
+          section.style.opacity = opacity.toFixed(2);
+        });
+      });
+    </script>
+  </body>
+</html>
