@@ -2917,6 +2917,47 @@ footer #author-info .author-privacy {
     line-height: 20px;
     color: #9ba5b5;
   }
+  #career-header {
+    padding-top: 52px;
+  }
+  #career-header .project-main-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  #career-info {
+    padding-top: 20px;
+  }
+  #career-info .main-about-us {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  #career-applies .tech-apply-info .tech-employee {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #career-applies .tech-apply-info .tech-position {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #career-applies .tech-apply-info .tech-date {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  #career-applies .tech-support {
+    padding-top: 48px;
+  }
+  #career-applies .tech-apply-tech-apply-btn-sm span {
+    border: 1px solid #c59b48;
+    border-radius: 100px;
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #c59b48;
+    display: flex;
+    align-items: center;
+  }
 }
 #main-projects {
   padding-top: 114px;

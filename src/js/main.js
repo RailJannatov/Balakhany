@@ -231,7 +231,6 @@ const openModalNews = document.querySelector(".open-newsModal");
 const newsModal = document.querySelector(".news-detail-modal");
 const closeModalNews = document.querySelector(".news-detail-modal .close");
 const bodyMdoal = document.querySelector("body");
-console.log(closeModalNews);
 
 if (openModalNews) {
   openModalNews.addEventListener("click", function () {
@@ -249,20 +248,17 @@ if (closeModalNews) {
 const openModalProject = document.querySelectorAll(
   "#social-project-content .open-newsModal"
 );
-console.log(openModalProject);
 const newsModalProject = document.querySelector(
   "#social-project-content .news-detail-modal"
 );
 const closeModalProject = document.querySelector(
   "#social-project-content .news-detail-modal .close"
 );
-console.log(closeModalProject);
 const bodyModalProject = document.querySelector("body");
 
 if (openModalProject) {
   openModalProject.forEach((modalka) => {
     modalka.addEventListener("click", function (e) {
-      console.log(e.target);
       newsModalProject.style.display = "block";
       bodyLegacy.style.background = "rgba(0, 0, 0, 0.5)";
     });

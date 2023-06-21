@@ -3119,4 +3119,51 @@ footer {
       }
     }
   }
+  #career-header {
+    padding-top: 52px;
+    .project-main-title {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+  #career-info {
+    padding-top: 20px;
+    .main-about-us {
+      font-size: 32px;
+      line-height: 44px;
+    }
+  }
+  #career-applies {
+    .tech-apply-info {
+      .tech-employee {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .tech-position {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .tech-date {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+    .tech-support {
+      padding-top: 48px;
+    }
+    .tech-apply-tech-apply-btn-sm {
+      span {
+        border: 1px solid #c59b48;
+        border-radius: 100px;
+        font-family: "Suisse Intl-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #c59b48;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
 }
