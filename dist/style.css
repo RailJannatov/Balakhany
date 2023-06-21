@@ -1035,6 +1035,14 @@ headers nav .sub-menu {
     margin-top: 6rem;
   }
 
+  .sm\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .sm\:mr-1 {
+    margin-right: 0.25rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1106,6 +1114,14 @@ headers nav .sub-menu {
 
   .sm\:pl-3 {
     padding-left: 0.75rem;
+  }
+
+  .sm\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .sm\:pb-5 {
+    padding-bottom: 1.25rem;
   }
 
   .sm\:text-left {
