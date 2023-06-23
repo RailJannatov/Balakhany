@@ -145,7 +145,7 @@ function updateActiveButton(index) {
 }
 const openModalBtn = document.querySelector(".open-modal-btn");
 const modal = document.querySelector(".president-detail-modal");
-const closeModalBtn = document.querySelector(" .president-detail-modal .close");
+const closeModalBtn = document.querySelector(".president-detail-modal .close");
 const body = document.querySelector("body");
 
 if (openModalBtn) {
@@ -270,3 +270,76 @@ if (closeModalProject) {
     bodyLegacy.style.background = "#eee";
   });
 }
+
+const header = document.querySelector("header");
+
+const main = document.querySelector("main");
+
+const hamburgerIcon = document.querySelector(".hamburger");
+
+const closeHamburgerDropdown = document.querySelector(
+  ".close-hamburger-dropdown"
+);
+const svgIconBtn = document.querySelector("#closee .close-svg-icon");
+if (hamburgerIcon) {
+  hamburgerIcon.addEventListener("click", function () {
+    header.style.display = "none";
+    main.style.display = "none";
+  });
+}
+if (svgIconBtn) {
+  svgIconBtn.addEventListener("click", function () {
+    const headerElement = document.querySelector("header");
+    console.log(headerElement);
+
+    const mainElement = document.querySelector("main");
+    headerElement.style.display = "block";
+    mainElement.style.display = "block";
+    window.scrollTo(0, 0);
+  });
+}
+
+// Function to check if the user has scrolled to the bottom of the page
+function isScrollAtBottom() {
+  var section = document.querySelector("#about-us .main-about-us");
+  return section.getBoundingClientRect().bottom <= window.innerHeight;
+}
+
+// Function to add dynamically generated text to the section
+function addTextToSection() {
+  var section = document.querySelector(
+    "#about-us .main-about-us p .changeable-text"
+  );
+
+  // section.textContent = "This is dynamically added text.";
+  var words = [
+    "yanvar",
+    "2012-ci",
+    "ildə",
+    "«Balaxanıneft»",
+    "NQÇİ-nin",
+    "bazasında",
+    "yaradılıb.",
+  ];
+  var currentWordIndex = 0;
+  var currentWord = words[currentWordIndex];
+
+  var interval = setInterval(function () {
+    section.textContent += currentWord + " ";
+    currentWordIndex++;
+    console.log("1", currentWordIndex);
+    if (currentWordIndex >= words.length) {
+      clearInterval(interval);
+    } else {
+      currentWord = words[currentWordIndex];
+    }
+  }, 250);
+}
+var textAdded = false;
+// Event listener to trigger adding text when scrolling
+window.addEventListener("scroll", function () {
+  if (isScrollAtBottom() && !textAdded) {
+    addTextToSection();
+    textAdded = true;
+  }
+});

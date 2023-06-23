@@ -1,49 +1,46 @@
 header .logo {
   margin-top: -8px;
 }
-header .nav-list .menu li {
+header .nav-list.main-page .menu .nav-link .main-links {
+  color: #ffffff;
+}
+header .nav-list.main-page .menu .nav-link .main-links.media-m {
+  margin-right: 59px;
+}
+header .nav-list .menu .nav-link {
   position: relative;
   display: inline-block;
+  padding-bottom: 20px;
 }
-header .nav-list .menu li a {
+header .nav-list .menu .nav-link .main-links {
   font-family: "Suisse Intl-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-right: 59px;
+  margin-right: 60px;
   color: #13171a;
+  display: block;
 }
-header .nav-list .menu li a.nav-background {
-  color: #ffffff;
-}
-header .nav-list .menu li .last-link {
-  margin: 0;
-}
-header .nav-list .menu li main-links:last-child {
-  margin-right: 0;
-}
-header .nav-list .menu li:hover .dropdown {
-  display: flex;
-  justify-content: space-between;
-}
-header .nav-list .menu li .dropdown {
-  display: none;
+header .nav-list .menu .nav-link .dropdown {
   position: absolute;
-  top: 116%;
-  left: 0;
-  background: #ffffff;
-  border-radius: 24px;
-  z-index: 1;
   padding: 24px;
-  gap: 24px;
-  width: 364px;
+  left: 0;
+  display: none;
+  list-style-type: none;
+  max-width: 364px;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #fff;
+  top: 40px;
+  z-index: 1000;
+  border-radius: 24px;
 }
-header .nav-list .menu li .dropdown li {
+header .nav-list .menu .nav-link .dropdown li {
   display: block;
   margin-bottom: 16px;
 }
-header .nav-list .menu li .dropdown li a {
+header .nav-list .menu .nav-link .dropdown li a {
   display: block;
   font-family: "Suisse Intl-Medium";
   font-style: normal;
@@ -51,6 +48,34 @@ header .nav-list .menu li .dropdown li a {
   font-size: 14px;
   line-height: 20px;
   color: #46525a;
+  position: relative;
+  padding-left: 20px;
+  transition: linear 0.3s;
+}
+header .nav-list .menu .nav-link .dropdown li a::after {
+  content: url("../assets/SVG/Right-Pagination.svg");
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-40%);
+  transition: linear 0.3s;
+  opacity: 0;
+  color: #c59b48;
+}
+header .nav-list .menu .nav-link .dropdown li a:hover {
+  padding-left: 30px;
+  color: #c59b48;
+}
+header .nav-list .menu .nav-link .dropdown li a:hover::after {
+  opacity: 1;
+  left: 4px;
+  color: #c59b48;
+}
+header .nav-list .menu .nav-link .media-drop + .dropdown {
+  left: -110%;
+}
+header .nav-list .menu .nav-link:hover .dropdown {
+  display: block;
 }
 header .project-logo {
   margin-top: -19px;
@@ -280,7 +305,6 @@ main #cover-black-oil .black-oil-info p {
   line-height: 32px;
   text-align: center;
   color: #ffffff;
-  width: 760px;
 }
 main #cover-black-oil .black-oil-title {
   font-family: "HeadingNow-66Bold";
@@ -2562,9 +2586,6 @@ footer #author-info .author-privacy {
     display: block;
     padding-bottom: 48px;
   }
-  footer #header .header-title {
-    display: block;
-  }
   footer #address-info .info-title {
     margin-bottom: 8px;
   }
@@ -3057,6 +3078,89 @@ footer #author-info .author-privacy {
     top: 96%;
     right: 40px;
   }
+  main #oil-slider .slider-text-style {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  main #oil-slider .swiper .swiper-pagination.pagination-list {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    transform: translateY(-50%);
+    display: flex;
+    row-gap: 10px;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+  main #oil-slider .swiper .slider-text-style {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  main #about-us .main-about-us {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  main #company-activity .title-main {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  main #company-activity .accordion h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  main #company-activity .accordion .wrapper-accordion .label h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  main #company-activity .accordion .wrapper-accordion .content-activity-subtitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  main #cover-black-oil .black-oil-title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  main #cover-black-oil .black-oil-title + p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  main #statics .statics-result {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  main #statics .static-card .card-info .info-title {
+    font-size: 16px;
+  }
+  main #statics .static-card .card-info .oil-capacity {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  main #statics .static-card .svg-icon svg {
+    width: 84px;
+    height: 84px;
+  }
+  main #statics .card-item {
+    width: 304px;
+  }
+  #hidden-slider .customer-card {
+    width: 304px;
+  }
+  #hidden-slider .text-slider {
+    font-family: "Suisse Intl-Regular";
+  }
+  #hidden-slider .customer-info .customer-fullname-hidden {
+    font-family: "Suisse Intl-Medium";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #22292e;
+  }
+  #hidden-slider .customer-info .customer-position-hidden {
+    font-family: "Suisse Intl-Regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: #9ba5b5;
+  }
 }
 #main-projects {
   padding-top: 114px;
@@ -3254,7 +3358,7 @@ body .title-head-style {
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
-  text-transform: upperca;
+  text-transform: uppercase;
   color: #22292e;
 }
 body .title-large-info {
@@ -3375,4 +3479,15 @@ body .pagination-number.active,
 body .pagination-dots.active {
   background-color: #eee1c8;
   color: #c59b48;
+}
+
+@media screen and (max-width: 567px) {
+  body .title-head-style {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  body .title-large-info {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }/*# sourceMappingURL=style.css.map */

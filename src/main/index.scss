@@ -227,7 +227,6 @@ main {
         line-height: 32px;
         text-align: center;
         color: #ffffff;
-        width: 760px;
       }
     }
     .black-oil-title {
@@ -2678,11 +2677,6 @@ footer {
         padding-bottom: 48px;
       }
     }
-    #header {
-      .header-title {
-        display: block;
-      }
-    }
     #address-info {
       .info-title {
         margin-bottom: 8px;
@@ -3273,6 +3267,121 @@ footer {
     .swiper-button-next {
       top: 96%;
       right: 40px;
+    }
+  }
+  main {
+    #oil-slider {
+      .slider-text-style {
+        font-size: 40px;
+        line-height: 40px;
+      }
+      .swiper {
+        .swiper-pagination {
+          &.pagination-list {
+            position: absolute;
+            right: 10%;
+            top: 20%;
+            transform: translateY(-50%);
+            display: flex;
+            row-gap: 10px;
+            align-items: flex-end;
+            flex-direction: row;
+          }
+        }
+        .slider-text-style {
+          font-size: 40px;
+          line-height: 40px;
+        }
+      }
+    }
+    #about-us {
+      .main-about-us {
+        font-size: 32px;
+        line-height: 44px;
+      }
+    }
+    #company-activity {
+      .title-main {
+        font-size: 32px;
+        line-height: 32px;
+      }
+      .accordion {
+        h4 {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        .wrapper-accordion {
+          .label {
+            h4 {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+          .content-activity-subtitle {
+            font-size: 20px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+    #cover-black-oil {
+      .black-oil-title {
+        font-size: 32px;
+        line-height: 32px;
+        & + p {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+    #statics {
+      .statics-result {
+        font-size: 32px;
+        line-height: 32px;
+      }
+      .static-card {
+        .card-info {
+          .info-title {
+            font-size: 16px;
+          }
+          .oil-capacity {
+            font-size: 48px;
+            line-height: 56px;
+          }
+        }
+        .svg-icon {
+          svg {
+            width: 84px;
+            height: 84px;
+          }
+        }
+      }
+      .card-item {
+        width: 304px;
+      }
+    }
+  }
+  #hidden-slider {
+    .customer-card {
+      width: 304px;
+    }
+    .text-slider {
+      font-family: "Suisse Intl-Regular";
+    }
+    .customer-info {
+      .customer-fullname-hidden {
+        font-family: "Suisse Intl-Medium";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #22292e;
+      }
+      .customer-position-hidden {
+        font-family: "Suisse Intl-Regular";
+        font-size: 14px;
+        line-height: 20px;
+        color: #9ba5b5;
+      }
     }
   }
 }

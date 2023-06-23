@@ -206,7 +206,6 @@ main #cover-black-oil .black-oil-info p {
   line-height: 32px;
   text-align: center;
   color: #ffffff;
-  width: 760px;
 }
 main #cover-black-oil .black-oil-title {
   font-family: "HeadingNow-66Bold";
@@ -2488,9 +2487,6 @@ footer #author-info .author-privacy {
     display: block;
     padding-bottom: 48px;
   }
-  footer #header .header-title {
-    display: block;
-  }
   footer #address-info .info-title {
     margin-bottom: 8px;
   }
@@ -2982,5 +2978,88 @@ footer #author-info .author-privacy {
   #history-slider .swiper-button-next {
     top: 96%;
     right: 40px;
+  }
+  main #oil-slider .slider-text-style {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  main #oil-slider .swiper .swiper-pagination.pagination-list {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    transform: translateY(-50%);
+    display: flex;
+    row-gap: 10px;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+  main #oil-slider .swiper .slider-text-style {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  main #about-us .main-about-us {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  main #company-activity .title-main {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  main #company-activity .accordion h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  main #company-activity .accordion .wrapper-accordion .label h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  main #company-activity .accordion .wrapper-accordion .content-activity-subtitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  main #cover-black-oil .black-oil-title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  main #cover-black-oil .black-oil-title + p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  main #statics .statics-result {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  main #statics .static-card .card-info .info-title {
+    font-size: 16px;
+  }
+  main #statics .static-card .card-info .oil-capacity {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  main #statics .static-card .svg-icon svg {
+    width: 84px;
+    height: 84px;
+  }
+  main #statics .card-item {
+    width: 304px;
+  }
+  #hidden-slider .customer-card {
+    width: 304px;
+  }
+  #hidden-slider .text-slider {
+    font-family: "Suisse Intl-Regular";
+  }
+  #hidden-slider .customer-info .customer-fullname-hidden {
+    font-family: "Suisse Intl-Medium";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #22292e;
+  }
+  #hidden-slider .customer-info .customer-position-hidden {
+    font-family: "Suisse Intl-Regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: #9ba5b5;
   }
 }/*# sourceMappingURL=index.css.map */
