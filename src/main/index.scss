@@ -152,6 +152,9 @@ main {
   }
   #company-activity {
     background: #f4f7fa;
+    &.activy-detail {
+      background: none;
+    }
     .activity-main-title {
       margin-bottom: 60px;
     }
@@ -196,6 +199,13 @@ main {
             font-size: 48px;
             line-height: 52px;
             color: #c59b48;
+          }
+          .accordion-item-header {
+            color: #c59b48;
+            font-size: 32px;
+            font-family: "Suisse Intl-SemiBold";
+            font-weight: 600;
+            line-height: 44px;
           }
           .item-content {
             p {
@@ -339,6 +349,7 @@ main {
       width: 48px;
       height: 48px;
     }
+
     .customer-info {
       .customer-fullname {
         font-family: "Suisse Intl-Medium";
@@ -471,6 +482,10 @@ footer {
         font-size: 32px;
         line-height: 44px;
         color: #ffffff;
+        &:hover {
+          opacity: 0.75;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -769,7 +784,7 @@ footer {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #6d7a84;
+    color: #c59b48;
   }
   .detail-description {
     margin-bottom: 60px;
@@ -1423,6 +1438,54 @@ footer {
 }
 #news-content {
   padding-top: 100px;
+  .image-wrapper {
+    position: relative;
+    .location {
+      position: absolute;
+      top: 32px;
+      left: 32px;
+      border-radius: 100px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(6px);
+      padding: 10px 16px;
+      color: #fff;
+    }
+    .date {
+      position: absolute;
+      top: 32px;
+      left: 177px;
+      border-radius: 100px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(6px);
+      padding: 10px 16px;
+      color: #fff;
+    }
+    .image-text {
+      color: #fff;
+      font-size: 14px;
+      font-family: "Suisse Intl-Medium";
+      line-height: 20px;
+      position: absolute;
+      bottom: 32px;
+      left: 32px;
+    }
+  }
+
+  .activity-info {
+    font-size: 48px;
+    font-family: "Suisse Intl-Medium";
+    font-weight: 500;
+    line-height: 56px;
+    .info-style {
+      color: rgba(0, 0, 0, 0.1);
+      transition: color 0.3s ease;
+      &.highlight {
+        color: rgba(19, 23, 26, 1);
+      }
+    }
+  }
   .image-about {
     font-family: "Suisse Intl-Regular";
     font-style: normal;
@@ -2622,6 +2685,21 @@ footer {
     }
   }
 }
+#activity-title {
+  h2 {
+    color: #22292e;
+    font-size: 32px;
+    font-family: "Suisse Intl-Medium";
+    font-weight: 500;
+    line-height: 44px;
+  }
+  .info-description {
+    color: #6d7a84;
+    font-size: 18px;
+    font-family: "Suisse Intl-Regular";
+    line-height: 28px;
+  }
+}
 .modal-block {
   display: block;
 }
@@ -2901,6 +2979,9 @@ footer {
       .card-info-subtitle-style {
         font-size: 14px;
         line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
     }
   }
@@ -2938,6 +3019,40 @@ footer {
     }
   }
   #news-content {
+    padding-top: 48px;
+    .first-row {
+      .location {
+        position: absolute;
+        top: 32px;
+        left: 32px;
+        background: rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6px);
+        border-radius: 100px;
+        padding: 10px 16px;
+        .location-name {
+          font-family: "Suisse Intl-Medium";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .activity-info {
+      color: #13171a;
+
+      /* H6/32/Medium */
+      font-size: 32px;
+      font-family: "Suisse Intl-Medium";
+      font-weight: 500;
+      line-height: 44px;
+      .info-style {
+        color: rgba(0, 0, 0, 0.1);
+      }
+    }
     .news-detail-modal {
       .oil-images {
         .date,
@@ -3382,6 +3497,13 @@ footer {
         line-height: 20px;
         color: #9ba5b5;
       }
+    }
+  }
+
+  #activity-title {
+    h2 {
+      font-size: 18px;
+      line-height: 28px;
     }
   }
 }

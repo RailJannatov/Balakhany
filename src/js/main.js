@@ -302,7 +302,9 @@ if (svgIconBtn) {
 // Function to check if the user has scrolled to the bottom of the page
 function isScrollAtBottom() {
   var section = document.querySelector("#about-us .main-about-us");
-  return section.getBoundingClientRect().bottom <= window.innerHeight;
+  return (
+    section && section.getBoundingClientRect().bottom <= window.innerHeight
+  );
 }
 
 // Function to add dynamically generated text to the section

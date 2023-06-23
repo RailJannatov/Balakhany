@@ -7,10 +7,19 @@ header {
       .menu {
         .nav-link {
           .main-links {
-            color: #ffffff;
+            color: #13171a;
             &.media-m {
               margin-right: 59px;
             }
+          }
+        }
+      }
+    }
+    &.main-color {
+      .menu {
+        .nav-link {
+          .main-links {
+            color: #fff;
           }
         }
       }
@@ -36,8 +45,7 @@ header {
           left: 0;
           display: none;
           list-style-type: none;
-          max-width: 364px;
-          width: max-content;
+          width: 364px;
           background-color: #fff;
           top: 40px;
           z-index: 1000;
@@ -69,6 +77,7 @@ header {
               &:hover {
                 padding-left: 30px;
                 color: #c59b48;
+                opacity: 0.75;
                 &::after {
                   opacity: 1;
                   left: 4px;
@@ -79,44 +88,17 @@ header {
           }
         }
         .media-drop + .dropdown {
-          left: -110%;
+          left: -300%;
         }
 
         &:hover {
+          .main-links {
+            opacity: 0.75;
+          }
           .dropdown {
             display: block;
           }
-          // .career-dropdown {
-          //   display: flex;
-          //   justify-content: space-between;
-          // }
         }
-
-        // .career-dropdown {
-        //   display: none;
-        //   position: absolute;
-        //   top: 35px;
-        //   right: 54px;
-        //   background: #ffffff;
-        //   border-radius: 24px;
-        //   z-index: 1;
-        //   padding: 24px;
-        //   gap: 24px;
-        //   width: 364px;
-        //   li {
-        //     display: block;
-        //     margin-bottom: 16px;
-        //     a {
-        //       display: block;
-        //       font-family: "Suisse Intl-Medium";
-        //       font-style: normal;
-        //       font-weight: 500;
-        //       font-size: 14px;
-        //       line-height: 20px;
-        //       color: #46525a;
-        //     }
-        //   }
-        // }
       }
     }
   }
