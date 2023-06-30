@@ -476,14 +476,15 @@
     <!-- main end -->
     <!-- footer start -->
     <footer>
-       <div class="first-ellipse"></div>
+      <div class="first-ellipse"></div>
       <div class="second-ellipse"></div>
-      <div class="third-ellipse"></div> -->
-       <section id="header">
+      <div class="third-ellipse"></div>
+      -->
+      <section id="header">
         <div class="container">
-          <div class="wrapper header-title">
+          <div class="wrapper header-title items-start">
             <h4 class="footer-title sm:mb-10">Balakhani</h4>
-            <div class="flex">
+            <div class="flex items-center language-wrapper">
               <button>
                 <svg
                   width="25"
@@ -503,6 +504,75 @@
               </button>
               <span class="select-language ml-3">AZ</span>
             </div>
+
+            <span id="closee" class="close-hamburger-dropdown hidden z-40">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="close-svg-icon sm:block"
+              >
+                <g filter="url(#filter0_b_2301_5057)">
+                  <rect
+                    width="48"
+                    height="48"
+                    rx="12"
+                    fill="white"
+                    fill-opacity="0.2"
+                  />
+                  <path
+                    d="M30 18L18 30"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18 18L30 30"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="47"
+                    height="47"
+                    rx="11.5"
+                    stroke="white"
+                    stroke-opacity="0.1"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_b_2301_5057"
+                    x="-4"
+                    y="-4"
+                    width="56"
+                    height="56"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                    <feComposite
+                      in2="SourceAlpha"
+                      operator="in"
+                      result="effect1_backgroundBlur_2301_5057"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_backgroundBlur_2301_5057"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </span>
           </div>
         </div>
         <div class="rectangle">
@@ -516,7 +586,7 @@
             <rect width="1720" height="2" fill="white" fill-opacity="0.1" />
           </svg>
         </div>
-      </section> 
+      </section>
       <section id="links" class="2xl:py-20 sm:py-10">
         <div class="container">
           <div class="wrapper wrapper-footer-link sm:flex-none pb-20">
@@ -547,7 +617,7 @@
                 <li><a href="">Sosial layihələr</a></li>
               </ul>
             </div>
-            <div class="another link-list 2xl:w-3/12 ">
+            <div class="another link-list 2xl:w-3/12 sm:pb-16">
               <p class="link-title">Digər</p>
               <ul>
                 <li><a href="./FAQ.html">FAQ</a></li>
@@ -570,8 +640,8 @@
       </section>
       <section id="address-info">
         <div class="container">
-          <div class="address-info-wrapper ">
-            <div class="left-side w-6/12  sm:mb-9">
+          <div class="address-info-wrapper md:flex sm:flex-none">
+            <div class="left-side w-6/12 md:flex sm:flex-none sm:mb-9">
               <div class="mobile-info w-2/6 sm:w-full sm:mb-9">
                 <p class="info-title">Telefon</p>
                 <p class="info-value">+994 (50) 478 34 34</p>
@@ -611,8 +681,10 @@
       </section>
       <section id="author-info" class="py-10">
         <div class="container">
-          <div class="author-text 2xl:flex 2xl:justify-between lg:flex md:flex md:justify-between sm:flex-none">
-            <p class="author-privacy sm:mb-4">Məxfilik Bildirişi</p>
+          <div
+            class="author-text 2xl:flex 2xl:justify-between lg:flex md:flex md:justify-between sm:flex-none"
+          >
+            <p class="author-privacy">Məxfilik Bildirişi</p>
             <p class="author-privacy">Müəllif hüquqları qorunur © 2023</p>
           </div>
         </div>

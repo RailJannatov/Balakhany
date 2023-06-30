@@ -285,12 +285,21 @@ if (hamburgerIcon) {
   hamburgerIcon.addEventListener("click", function () {
     header.style.display = "none";
     main.style.display = "none";
+    closeHamburgerDropdown.style.display = "block";
+    const footerTitle = document.querySelector(".footer-title");
+    const languageWrapper = document.querySelector(".language-wrapper");
+    languageWrapper.classList.add("mt-6");
+    let newElement = document.createElement("div");
+    newElement.appendChild(footerTitle).appendChild(languageWrapper);
+    closeHamburgerDropdown.parentNode.insertBefore(
+      newElement,
+      closeHamburgerDropdown
+    );
   });
 }
 if (svgIconBtn) {
   svgIconBtn.addEventListener("click", function () {
     const headerElement = document.querySelector("header");
-    console.log(headerElement);
 
     const mainElement = document.querySelector("main");
     headerElement.style.display = "block";
@@ -299,49 +308,19 @@ if (svgIconBtn) {
   });
 }
 
-// Function to check if the user has scrolled to the bottom of the page
-function isScrollAtBottom() {
-  var section = document.querySelector("#about-us .main-about-us");
-  return (
-    section && section.getBoundingClientRect().bottom <= window.innerHeight
-  );
-}
-
-// Function to add dynamically generated text to the section
-function addTextToSection() {
-  var section = document.querySelector(
-    "#about-us .main-about-us p .changeable-text"
-  );
-
-  // section.textContent = "This is dynamically added text.";
-  var words = [
-    "yanvar",
-    "2012-ci",
-    "ildə",
-    "«Balaxanıneft»",
-    "NQÇİ-nin",
-    "bazasında",
-    "yaradılıb.",
-  ];
-  var currentWordIndex = 0;
-  var currentWord = words[currentWordIndex];
-
-  var interval = setInterval(function () {
-    section.textContent += currentWord + " ";
-    currentWordIndex++;
-    console.log("1", currentWordIndex);
-    if (currentWordIndex >= words.length) {
-      clearInterval(interval);
-    } else {
-      currentWord = words[currentWordIndex];
-    }
-  }, 250);
-}
-var textAdded = false;
-// Event listener to trigger adding text when scrolling
 window.addEventListener("scroll", function () {
-  if (isScrollAtBottom() && !textAdded) {
-    addTextToSection();
-    textAdded = true;
+  var textElement = document.querySelector(".scrolling-text");
+  var changeableText = document.querySelector(".changeable-text");
+  var scrollText = textElement || changeableText;
+  var position = scrollText && scrollText.getBoundingClientRect().top;
+
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    textElement && textElement.classList.add("fade");
+    changeableText && changeableText.classList.add("fade");
+  } else {
+    textElement && textElement.classList.remove("fade");
+    changeableText && changeableText.classList.remove("fade");
   }
 });

@@ -250,7 +250,9 @@
           <div class="wrapper">
             <div class="president-company p-6 flex sm:block">
               <div class="w-6/12 pr-6 sm:pr-0 sm:w-full">
-                <img src="../assets/image/PresidentCompany.png" />
+                <div class="image-wrapper rounded-3xl">
+                  <img src="../assets/image/PresidentCompany.png" />
+                </div>
               </div>
               <div class="president-detail sm:w-full w-6/12">
                 <div class="detail-title mb-5">
@@ -290,8 +292,8 @@
               </div>
               <div class="president-detail-modal">
                 <div class="modal-content">
-                  <span class="close"
-                    ><svg
+                  <span class="close">
+                    <svg
                       width="40"
                       height="40"
                       viewBox="0 0 40 40"
@@ -319,6 +321,69 @@
                         height="39"
                         rx="19.5"
                         stroke="#CDD4E0"
+                      />
+                    </svg>
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      class="close-hover"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M26 14L14 26"
+                        stroke="#9BA5B5"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M14 14L26 26"
+                        stroke="#9BA5B5"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="39"
+                        height="39"
+                        rx="19.5"
+                        stroke="#9BA5B5"
+                      />
+                    </svg>
+                  </span>
+                  <span class="close-hover"
+                    ><svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M26 14L14 26"
+                        stroke="#9BA5B5"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M14 14L26 26"
+                        stroke="#9BA5B5"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="39"
+                        height="39"
+                        rx="19.5"
+                        stroke="#9BA5B5"
                       />
                     </svg>
                   </span>
@@ -614,12 +679,11 @@
       <div class="first-ellipse"></div>
       <div class="second-ellipse"></div>
       <div class="third-ellipse"></div>
-      -->
       <section id="header">
         <div class="container">
-          <div class="wrapper header-title">
+          <div class="wrapper header-title items-start">
             <h4 class="footer-title sm:mb-10">Balakhani</h4>
-            <div class="flex">
+            <div class="flex items-center language-wrapper">
               <button>
                 <svg
                   width="25"
@@ -639,6 +703,75 @@
               </button>
               <span class="select-language ml-3">AZ</span>
             </div>
+
+            <span id="closee" class="close-hamburger-dropdown hidden z-40">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="close-svg-icon sm:block"
+              >
+                <g filter="url(#filter0_b_2301_5057)">
+                  <rect
+                    width="48"
+                    height="48"
+                    rx="12"
+                    fill="white"
+                    fill-opacity="0.2"
+                  />
+                  <path
+                    d="M30 18L18 30"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18 18L30 30"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="47"
+                    height="47"
+                    rx="11.5"
+                    stroke="white"
+                    stroke-opacity="0.1"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_b_2301_5057"
+                    x="-4"
+                    y="-4"
+                    width="56"
+                    height="56"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                    <feComposite
+                      in2="SourceAlpha"
+                      operator="in"
+                      result="effect1_backgroundBlur_2301_5057"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_backgroundBlur_2301_5057"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </span>
           </div>
         </div>
         <div class="rectangle">

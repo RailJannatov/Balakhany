@@ -104,6 +104,7 @@ body {
   }
   .swiper-wrapper {
     padding-top: 220px;
+    border-radius: 24px;
   }
 
   .swiper-slide img {
@@ -155,6 +156,10 @@ body {
     &.active {
       background-color: #eee1c8;
       color: #c59b48;
+    }
+    &:hover {
+      color: #eee1c8;
+      background-color: #c59b48;
     }
   }
 }
