@@ -72,6 +72,9 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #9ba5b5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .card-button {
     border: 1px solid #c59b48;
@@ -83,6 +86,10 @@ body {
     font-size: 14px;
     line-height: 20px;
     padding: 6px 20px;
+    &:hover {
+      color: #fff;
+      background-color: #c59b48;
+    }
   }
   .swiper {
     width: 100%;
@@ -97,6 +104,7 @@ body {
   }
   .swiper-wrapper {
     padding-top: 220px;
+    border-radius: 24px;
   }
 
   .swiper-slide img {
@@ -149,7 +157,17 @@ body {
       background-color: #eee1c8;
       color: #c59b48;
     }
+    &:hover {
+      color: #eee1c8;
+      background-color: #c59b48;
+    }
   }
+}
+.swiper-slider-active {
+  border-radius: 1000px;
+  border: 1px solid var(--alpha-white-30, rgba(255, 255, 255, 0.3));
+  background: var(--alpha-white-20, rgba(255, 255, 255, 0.2));
+  backdrop-filter: blur(2px);
 }
 @media screen and (max-width: 567px) {
   body {
@@ -160,6 +178,14 @@ body {
     .title-large-info {
       font-size: 18px;
       line-height: 28px;
+    }
+    .card-info-title-style {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .card-info-subtitle-style {
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 }

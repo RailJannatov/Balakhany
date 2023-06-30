@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XƏBƏRLƏR</title>
     <link href="../css/style.css" rel="stylesheet" />
-    <!-- <link href="../src//main.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <title>Contact us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="../src/js/main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
+
     <style>
       @font-face {
         font-family: "HeadingNow-66Bold";
@@ -225,18 +233,18 @@
       </nav>
     </header>
     <main>
-      <section id="main-projects" class="contact-us-title">
+      <section id="news-title">
         <div class="container">
           <div class="wrapper">
             <div class="project-head">
               <div class="page-nav">
                 <span class="page-name">Balakhani</span>
                 <span class="slash">/</span>
-                <span class="current-page">Bizimlə əlaqə</span>
+                <span class="current-page">Fəaliyyət</span>
               </div>
               <div class="page-nav pt-10 sm:pt-7">
-                <h1 class="project-main-title">BİZİMLƏ ƏLAQƏ</h1>
-                <div class="project-short-info text-center mt-10">
+                <h1 class="project-main-title">FəALİYYƏT</h1>
+                <div class="project-short-info text-center sm:text-left mt-10 sm:mt-5">
                   Hər bir layihə hər bir müştərinin ehtiyaclarına əsaslanaraq
                   fərdi şəkildə hazırlanır. İstənilən növ, istər kiçik, istərsə
                   də mürəkkəb layihələri öz üzərinə götürməyə hazırıq.
@@ -246,143 +254,81 @@
           </div>
         </div>
       </section>
-      <section id="contact-header" class="mt-20 sm:mt-10">
+      <section id="news-content">
         <div class="container">
-          <div class="wrapper flex sm:block">
-            <div class="w-4/12 sm:w-full">
-              <h5 class="contact-number">028 782 92 12</h5>
-              <p class="contact-email sm:mb-6">info@balakhani.az</p>
-            </div>
-            <div class="hidden sm:w-full sm:flex respo-support-text">
-              <div class="find-us-title mb-20 w-6/12">
-                <p class="find-us mb-3">Bizi tap</p>
-                <p class="find-location">Bakı/Abşeron/</p>
-                <p class="find-location">Balaxanı qəs.</p>
-              </div>
-              <div class="follow-us w-6/12">
-                <p class="find-us mb-3">Bizi izlə</p>
-                <ul>
-                  <li><a href="" class="find-location">Linkedin</a></li>
-                  <li><a href="" class="find-location">Twitter</a></li>
-                  <li><a href="" class="find-location">Instagram</a></li>
-                  <li><a href="" class="find-location">Youtube</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="w-8/12 sm:w-full">
-              <p class="support-text">
-                Hər bir layihə hər bir müştərinin ehtiyaclarına əsaslanaraq
-                fərdi şəkildə hazırlanır.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="contact-form">
-        <div class="container">
-          <div class="wrapper flex pb-16">
-            <div class="w-4/12 sm:hidden">
-              <div class="find-us-title mb-20">
-                <p class="find-us mb-3">Bizi tap</p>
-                <p class="find-location">Bakı/Abşeron/Balaxanı qəs.</p>
-              </div>
-              <div class="follow-us">
-                <p class="find-us mb-3">Bizi izlə</p>
-                <ul>
-                  <li><a href="" class="find-location">Linkedin</a></li>
-                  <li><a href="" class="find-location">Twitter</a></li>
-                  <li><a href="" class="find-location">Instagram</a></li>
-                  <li><a href="" class="find-location">Youtube</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="w-8/12 sm:w-full">
-              <form id="myForm">
-                <div class="flex sm:block">
-                  <div class="form-group w-3/6 sm:w-full pr-10 sm:pr-0 mb-16">
-                    <label for="name">Ad*</label>
-                    <input type="text" id="name" name="name" required />
-                  </div>
-                  <div class="form-group w-3/6 sm:w-full mb-16">
-                    <label for="companyName">Şirkət adı*</label>
-                    <input
-                      type="text"
-                      id="companyName"
-                      name="companyName"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="flex sm:block">
-                  <div class="form-group w-3/6 sm:w-full pr-10 sm:pr-0 mb-16">
-                    <label for="emailAddress">Email adress*</label>
-                    <input
-                      type="text"
-                      id="emailAddress"
-                      name="emailAddress"
-                      required
-                    />
-                  </div>
-                  <div class="form-group w-3/6 sm:w-full mb-16">
-                    <label for="contactNumber">Əlaqə nöməsi*</label>
-                    <input
-                      type="tel"
-                      id="contactNumber"
-                      name="contactNumber"
-                      required
-                      oninput="handlePhoneInput(this)"
-                    />
-                  </div>
-                </div>
-                <div class="message-wrapper">
-                  <div class="form-group">
-                    <div class="test mb-16">
-                      <label for="emailAddress">Mesaj*</label>
-                      <input
-                        type="text"
-                        id="emailAddress"
-                        name="emailAddress"
-                        required
+          <div class="wrapper">
+            <div class="first-row mb-6 flex sm:block">
+              <div class="w-6/12 pr-3 sm:w-full sm:pr-0 sm:mb-5">
+                <div class="project-card card-style p-6">
+                    <div class="image-wrapper">
+                      <img
+                        src="../assets/image/project-card.jpg"
+                        class="img-fluid"
+                        alt="project item image"
                       />
                     </div>
+                    <div class="card-info">
+                      <p class="card-info-title-style mt-4 sm:text-base">
+                        Dərinlik nasosları vasitəsilə neftçıxarma
+                      </p>
+                      <p class="card-info-subtitle-style mt-2 mb-4">
+                        Balaxanı və Abşeron bölgələrində neft hasilatı almaq və
+                        ixrac etmək
+                      </p>
+                      <button class="card-button">Daha ətraflı</button>
+                    </div>
                   </div>
-                </div>
-                <div class="private-rules flex">
-                  <input
-                    type="checkbox"
-                    id="privacy"
-                    name="privacy"
-                    class="checkbox-style"
-                  />
-                  <p for="privacy" class="privacy ml-3 -mt-1">
-                    Mən
-                    <span class="privacy-underline"> məxfilik siyasətini</span>
-                    oxudum və qəbul etdim
-                  </p>
-                </div>
-                <button class="btn-brand mt-8" type="submit">
-                  Göndər
-                  <svg
-                    class="about-more-icon"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5 15L15 5M15 5H8.33333M15 5V11.6667"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </form>
+              </div>
+              <div class="w-6/12 pl-3 sm:w-full sm:pl-0">
+                <div class="project-card card-style p-6">
+                    <div class="image-wrapper">
+                      <img
+                        src="../assets/image/project-card.jpg"
+                        class="img-fluid"
+                        alt="project item image"
+                      />
+                    </div>
+                    <div class="card-info">
+                      <p class="card-info-title-style mt-4">
+                        Balaxanı-Abşeron Neft Sahəsİ
+                      </p>
+                      <p class="card-info-subtitle-style mt-2 mb-4">
+                        Balaxanı və Abşeron bölgələrində neft hasilatı almaq və
+                        ixrac etmək
+                      </p>
+                      <button class="card-button">Daha ətraflı</button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="second-row mb-32 flex sm:block">
+              <div class="w-6/12 pr-3 sm:w-full sm:pr-0 sm:mb-5">
+                <div class="project-card card-style p-6">
+                    <div class="image-wrapper">
+                      <img
+                        src="../assets/image/project-card.jpg"
+                        class="img-fluid"
+                        alt="project item image"
+                      />
+                    </div>
+                    <div class="card-info">
+                      <p class="card-info-title-style mt-4">
+                        Balaxanı-Abşeron Neft Sahəsİ
+                      </p>
+                      <p class="card-info-subtitle-style mt-2 mb-4">
+                        Balaxanı və Abşeron bölgələrində neft hasilatı almaq və
+                        ixrac etmək
+                      </p>
+                      <button class="card-button">Daha ətraflı</button>
+                    </div>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
+      
+        </div>
+
       </section>
     </main>
     <footer>
@@ -600,14 +546,5 @@
         </div>
       </section>
     </footer>
-    <script>
-      function handlePhoneInput(input) {
-        const countryCode = "+994"; // Set your desired initial country code here
-
-        if (!input.value.startsWith(countryCode)) {
-          input.value = countryCode + input.value.slice(countryCode.length);
-        }
-      }
-    </script>
   </body>
 </html>

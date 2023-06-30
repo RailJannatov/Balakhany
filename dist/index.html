@@ -46,6 +46,13 @@
         font-family: "Suisse Intl-SemiBold";
         src: url("../assets/font/SuisseIntl-SemiBold.otf");
       }
+      .changeable-text {
+        opacity: 0.4;
+        transition: opacity 2s ease;
+        &.fade {
+          opacity: 1;
+        }
+      }
     </style>
   </head>
 
@@ -104,13 +111,13 @@
           </a>
         </div>
         <div
-          class="nav-list nav-background w-9/12 flex place-content-end main-page"
+          class="nav-list nav-background w-9/12 flex place-content-end main-page main-color"
         >
           <ul class="menu">
             <li class="nav-link">
               <a href="#" class="main-links">Haqqımızda</a>
               <div class="dropdown">
-                <div class="flex">
+                <div class="flex justify-between">
                   <ul class="mr-6">
                     <li class="list-title">
                       <a href="#" class="dropdown-anchor">Balakhani tarixi</a>
@@ -496,7 +503,10 @@
               <p>
                 «Balakhanı Operating Company LTD» Şirkətinin Azərbaycan
                 Respublikasındakı filialı 01
-                <span class="changeable-text"></span>
+                <span class="changeable-text"
+                  >yanvar 2012-ci ildə «Balaxanıneft» NQÇİ-nin bazasında
+                  yaradılıb.</span
+                >
               </p>
             </div>
             <div
@@ -2028,40 +2038,40 @@
       <div class="first-ellipse"></div>
       <div class="second-ellipse"></div>
       <div class="third-ellipse"></div>
+      -->
       <section id="header">
         <div class="container">
-          <div class="wrapper header-title flex">
-            <div>
-              <h4 class="footer-title sm:mb-10">Balakhani</h4>
-              <div class="flex">
-                <button>
-                  <svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 25 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12.5 2C15.0013 4.73835 16.4228 8.29203 16.5 12C16.4228 15.708 15.0013 19.2616 12.5 22M12.5 2C9.99872 4.73835 8.57725 8.29203 8.5 12C8.57725 15.708 9.99872 19.2616 12.5 22M12.5 2C6.97715 2 2.5 6.47715 2.5 12C2.5 17.5228 6.97715 22 12.5 22M12.5 2C18.0228 2 22.5 6.47715 22.5 12C22.5 17.5228 18.0228 22 12.5 22M3.00002 9H22M3 15H22"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-                <span class="select-language ml-3">AZ</span>
-              </div>
+          <div class="wrapper header-title items-start">
+            <h4 class="footer-title sm:mb-10">Balakhani</h4>
+            <div class="flex items-center language-wrapper">
+              <button>
+                <svg
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 2C15.0013 4.73835 16.4228 8.29203 16.5 12C16.4228 15.708 15.0013 19.2616 12.5 22M12.5 2C9.99872 4.73835 8.57725 8.29203 8.5 12C8.57725 15.708 9.99872 19.2616 12.5 22M12.5 2C6.97715 2 2.5 6.47715 2.5 12C2.5 17.5228 6.97715 22 12.5 22M12.5 2C18.0228 2 22.5 6.47715 22.5 12C22.5 17.5228 18.0228 22 12.5 22M3.00002 9H22M3 15H22"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <span class="select-language ml-3">AZ</span>
             </div>
-            <span id="closee" class="close-hamburger-dropdown flex z-40">
+
+            <span id="closee" class="close-hamburger-dropdown hidden z-40">
               <svg
                 width="48"
                 height="48"
                 viewBox="0 0 48 48"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="close-svg-icon hidden sm:block"
+                class="close-svg-icon sm:block"
               >
                 <g filter="url(#filter0_b_2301_5057)">
                   <rect
