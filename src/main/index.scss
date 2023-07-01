@@ -14,8 +14,8 @@ main {
     color: #22292e;
   }
   #oil-slider {
-    height: 85vh;
-
+    height: 81vh;
+    background-color: #0000007a;
     video {
       position: absolute;
       top: 0;
@@ -62,7 +62,7 @@ main {
           .pagination-list-item {
             display: flex;
             justify-content: flex-end;
-            font-family: "Suisse Intl";
+            font-family: "Suisse Intl-Light";
             font-style: normal;
             font-weight: 300;
             font-size: 20px;
@@ -77,13 +77,24 @@ main {
             align-items: center;
             padding: 8px 20px;
             width: fit-content;
-            transition: width 1s ease;
+            transition: width 2s ease;
             overflow: hidden;
             cursor: pointer;
 
             &.swiper-pagination-bullet-active {
               width: 100%;
-
+              border-radius: 1000px;
+              border: 1px solid rgba(255, 255, 255, 0.3);
+              backdrop-filter: blur(2px);
+              background: linear-gradient(
+                  to right,
+                  rgba(255, 255, 255, 0.2) 10%,
+                  rgba(255, 255, 255, 0.2) 60%,
+                  transparent 0
+                )
+                right;
+              background-size: 200%;
+              background-position: right;
               .pagination-list-item-title {
                 font-family: "Suisse Intl-Light";
                 font-style: normal;
@@ -93,6 +104,12 @@ main {
                 color: #ffffff;
                 width: 100%;
                 opacity: 1;
+              }
+              animation: makeItfadeIn 3s forwards;
+            }
+            @keyframes makeItfadeIn {
+              100% {
+                background-position: left;
               }
             }
 
@@ -124,6 +141,15 @@ main {
     padding: 10px 20px;
     align-items: center;
     color: #ffffff;
+    &:hover {
+      color: #9e7c3a;
+      background: #c59b48;
+      svg {
+        path {
+          stroke: #9e7c3a;
+        }
+      }
+    }
   }
   .about-more-icon {
     display: inline;
@@ -832,12 +858,15 @@ footer {
     }
     &:hover {
       background-color: #c59b48;
+      transition: background-color 0.5s ease;
       button {
         color: #fff;
+        transition: color 0.5s ease;
       }
       svg {
         path {
           stroke: #fff;
+          transition: stroke 0.5s ease;
         }
       }
     }
@@ -963,8 +992,6 @@ footer {
         font-size: 18px;
         line-height: 28px;
         color: #6d7a84;
-      }
-      .linkedin-address {
       }
     }
   }
@@ -1474,9 +1501,35 @@ footer {
     transition: opacity 0.3s;
   }
   .card-item {
+    position: relative;
     &:hover {
       .play-icon {
         opacity: 1;
+      }
+      .video-time-range {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s, opacity 1s linear;
+      }
+    }
+    .video-time-range {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 6px 16px;
+      border-radius: 100px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      gap: 8px;
+      visibility: hidden;
+      opacity: 0;
+      span {
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        font-family: "Suisse Intl-Medium";
       }
     }
   }
@@ -1598,13 +1651,18 @@ footer {
       line-height: 28px;
       color: #13171a;
     }
-    p {
+    .ellipsis {
       font-family: "Suisse Intl-Regular";
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
       color: #46525a;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* Number of lines to display */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
   .pagination-number,
@@ -2763,13 +2821,13 @@ footer {
       border-radius: 100px;
       bottom: 24px;
       right: 24px;
-      color: white;
+      color: #fff;
       padding: 6px 16px;
       font-family: "Suisse Intl-Medium";
       font-style: normal;
       font-weight: 500;
-      font-size: 12px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 20px;
     }
   }
   .play-icon {
@@ -3614,6 +3672,7 @@ footer {
             width: 84px;
             height: 84px;
           }
+          cursor: pointer;
         }
       }
       .card-item {
@@ -3649,6 +3708,13 @@ footer {
     h2 {
       font-size: 18px;
       line-height: 28px;
+    }
+  }
+  #video-gallery {
+    .card-item {
+      .video-time-range {
+        display: block;
+      }
     }
   }
 }
