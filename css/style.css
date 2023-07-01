@@ -1,3 +1,6 @@
+header.main-header {
+  background-color: rgba(0, 0, 0, 0.4784313725);
+}
 header .logo {
   margin-top: -8px;
 }
@@ -117,7 +120,8 @@ main .title-main {
   color: #22292e;
 }
 main #oil-slider {
-  height: 85vh;
+  height: 81vh;
+  background-color: rgba(0, 0, 0, 0.4784313725);
 }
 main #oil-slider video {
   position: absolute;
@@ -165,7 +169,7 @@ main #oil-slider .swiper .swiper-pagination.pagination-list {
 main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-item {
   display: flex;
   justify-content: flex-end;
-  font-family: "Suisse Intl";
+  font-family: "Suisse Intl-Light";
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -181,12 +185,20 @@ main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-ite
   padding: 8px 20px;
   width: -moz-fit-content;
   width: fit-content;
-  transition: width 1s ease;
+  transition: width 2s ease;
   overflow: hidden;
   cursor: pointer;
 }
 main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-item.swiper-pagination-bullet-active {
   width: 100%;
+  border-radius: 1000px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 10%, rgba(255, 255, 255, 0.2) 60%, transparent 0) right;
+  background-size: 200%;
+  background-position: right;
+  animation: makeItfadeIn 3s forwards;
 }
 main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-item.swiper-pagination-bullet-active .pagination-list-item-title {
   font-family: "Suisse Intl-Light";
@@ -197,6 +209,11 @@ main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-ite
   color: #ffffff;
   width: 100%;
   opacity: 1;
+}
+@keyframes makeItfadeIn {
+  100% {
+    background-position: left;
+  }
 }
 main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-item .pagination-list-item-title {
   width: 0;
@@ -219,6 +236,13 @@ main .btn-brand {
   padding: 10px 20px;
   align-items: center;
   color: #ffffff;
+}
+main .btn-brand:hover {
+  color: #9e7c3a;
+  background: #c59b48;
+}
+main .btn-brand:hover svg path {
+  stroke: #9e7c3a;
 }
 main .about-more-icon {
   display: inline;
@@ -859,12 +883,15 @@ footer #author-info .author-privacy {
 }
 #managers .more-btn:hover {
   background-color: #c59b48;
+  transition: background-color 0.5s ease;
 }
 #managers .more-btn:hover button {
   color: #fff;
+  transition: color 0.5s ease;
 }
 #managers .more-btn:hover svg path {
   stroke: #fff;
+  transition: stroke 0.5s ease;
 }
 #managers .employee-fullname {
   font-family: "Suisse Intl-Medium";
@@ -975,6 +1002,7 @@ footer #author-info .author-privacy {
   line-height: 28px;
   color: #6d7a84;
 }
+
 #contact-header .contact-number,
 #contact-header .contact-email {
   font-family: "Suisse Intl-Regular";
@@ -1448,8 +1476,36 @@ footer #author-info .author-privacy {
   opacity: 0;
   transition: opacity 0.3s;
 }
+#video-gallery .card-item {
+  position: relative;
+}
 #video-gallery .card-item:hover .play-icon {
   opacity: 1;
+}
+#video-gallery .card-item:hover .video-time-range {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 1s linear;
+}
+#video-gallery .card-item .video-time-range {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 6px 16px;
+  border-radius: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  gap: 8px;
+  visibility: hidden;
+  opacity: 0;
+}
+#video-gallery .card-item .video-time-range span {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: "Suisse Intl-Medium";
 }
 
 #news-title {
@@ -1569,13 +1625,18 @@ footer #author-info .author-privacy {
   line-height: 28px;
   color: #13171a;
 }
-#news-content .card-description p {
+#news-content .card-description .ellipsis {
   font-family: "Suisse Intl-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #46525a;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #news-content .pagination-number,
 #news-content .pagination-dots {
@@ -2670,13 +2731,13 @@ footer #author-info .author-privacy {
   border-radius: 100px;
   bottom: 24px;
   right: 24px;
-  color: white;
+  color: #fff;
   padding: 6px 16px;
   font-family: "Suisse Intl-Medium";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 20px;
 }
 #video-gallery-wrapper .play-icon {
   position: absolute;
@@ -3367,6 +3428,9 @@ footer #author-info .author-privacy {
     font-size: 48px;
     line-height: 56px;
   }
+  main #statics .static-card .svg-icon {
+    cursor: pointer;
+  }
   main #statics .static-card .svg-icon svg {
     width: 84px;
     height: 84px;
@@ -3396,6 +3460,9 @@ footer #author-info .author-privacy {
   #activity-title h2 {
     font-size: 18px;
     line-height: 28px;
+  }
+  #video-gallery .card-item .video-time-range {
+    display: block;
   }
 }
 #main-projects {
@@ -3656,6 +3723,7 @@ body .card-button {
 body .card-button:hover {
   color: #fff;
   background-color: #c59b48;
+  transition: color 0.5s, background-color 0.5s ease;
 }
 body .swiper {
   width: 100%;
@@ -3736,6 +3804,10 @@ body .pagination-dots:hover {
   background: var(--alpha-white-20, rgba(255, 255, 255, 0.2));
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
+}
+
+.svg-icon {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 567px) {
