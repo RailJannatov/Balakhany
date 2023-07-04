@@ -1130,6 +1130,9 @@ footer #author-info .author-privacy {
   margin: 0 auto;
   padding: 20px;
 }
+#contact-form .follow-us li:hover {
+  opacity: 0.75;
+}
 #contact-form .form-group {
   position: relative;
 }
@@ -1235,6 +1238,13 @@ footer #author-info .author-privacy {
   color: #13171a;
   margin-bottom: 20px;
 }
+#accordion-question .wrapper-accordion:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+#accordion-question .accordion .svg-icon svg {
+  width: 40px;
+  height: 40px;
+}
 #accordion-question .accordion .contentBx h4 {
   font-family: "Suisse Intl-Mediumn";
   font-style: normal;
@@ -1267,9 +1277,6 @@ footer #author-info .author-privacy {
   font-size: 20px;
   line-height: 28px;
   color: #46525a;
-}
-#accordion-question .accordion .contentBx .label:hover {
-  opacity: 0.75;
 }
 #accordion-question .accordion .contentBx .accordion-item {
   background: #fbfbfb;
@@ -1540,14 +1547,13 @@ footer #author-info .author-privacy {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s;
 }
 #video-gallery .card-item {
   position: relative;
 }
-#video-gallery .card-item:hover .play-icon {
-  opacity: 1;
+#video-gallery .card-item:hover .play-icon svg path {
+  fill: white;
+  transition: fill 1s ease-in-out;
 }
 #video-gallery .card-item:hover .video-time-range {
   visibility: visible;
@@ -1564,7 +1570,6 @@ footer #author-info .author-privacy {
   border: 1px solid rgba(0, 0, 0, 0.1);
   gap: 8px;
   visibility: hidden;
-  opacity: 0;
 }
 #video-gallery .card-item .video-time-range span {
   color: #fff;
@@ -1615,10 +1620,24 @@ footer #author-info .author-privacy {
   line-height: 28px;
   color: #46525a;
   width: 760px;
+  margin-right: auto;
+  margin-left: 178px;
 }
 
 #news-content {
   padding-top: 100px;
+}
+#news-content .card:hover .card-content .card-description .ellipsis {
+  color: #c59b48;
+}
+#news-content .img-container {
+  overflow: hidden;
+  border-radius: 20px;
+}
+#news-content .img-container:hover img {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+  border-radius: 20px;
 }
 #news-content .image-wrapper {
   position: relative;
@@ -1730,7 +1749,8 @@ footer #author-info .author-privacy {
 }
 #news-content .pagination-number:hover,
 #news-content .pagination-dots:hover {
-  color: #c59b48;
+  color: #fff;
+  background-color: #c59b48;
 }
 #news-content .news-detail-modal {
   display: none;
@@ -1746,7 +1766,7 @@ footer #author-info .author-privacy {
 #news-content .news-detail-modal .modal-content {
   background-color: #fff;
   margin-left: 20%;
-  padding: 140px 60px;
+  padding: 60px;
 }
 #news-content .news-detail-modal .modal-content .close {
   color: #aaa;
@@ -1758,11 +1778,11 @@ footer #author-info .author-privacy {
   top: 60px;
   right: 60px;
 }
-#news-content .news-detail-modal .modal-content .close:hover,
-#news-content .news-detail-modal .modal-content .close close {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+#news-content .news-detail-modal .modal-content .close:hover svg path {
+  stroke: #9ba5b5;
+}
+#news-content .news-detail-modal .modal-content .close:hover svg rect {
+  stroke: #9ba5b5;
 }
 #news-content .news-detail-modal .modal-content .president-social span {
   margin-right: 12px;
@@ -1807,6 +1827,50 @@ footer #author-info .author-privacy {
   line-height: 56px;
   color: #22292e;
 }
+#news-content .news-detail-modal .oil-images img {
+  height: 340px;
+}
+#news-content .news-detail-modal .oil-images .right-oil-image {
+  position: relative;
+}
+#news-content .news-detail-modal .oil-images .right-oil-image .location {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+  padding: 10px 16px;
+}
+#news-content .news-detail-modal .oil-images .right-oil-image .location .location-name {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+#news-content .news-detail-modal .oil-images .right-oil-image .date {
+  position: absolute;
+  top: 24px;
+  left: 162px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+  padding: 10px 16px;
+}
+#news-content .news-detail-modal .oil-images .right-oil-image .date-time {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
 #news-content .news-detail-modal .news-description p {
   font-family: "Suisse Intl-Regular";
   font-style: normal;
@@ -1815,11 +1879,61 @@ footer #author-info .author-privacy {
   line-height: 36px;
   color: #46525a;
 }
-#news-content .news-detail-modal .news-social-adress span {
+#news-content .news-detail-modal .news-social-adress a {
   margin-right: 20px;
+  cursor: pointer;
+}
+#news-content .news-detail-modal .news-social-adress a:hover svg path {
+  stroke: #6d7a84;
+  fill: #6d7a84;
+}
+#news-content .news-detail-modal .news-social-adress a:hover svg rect {
+  stroke: #6d7a84;
 }
 #news-content .news-detail-modal .news-image {
   margin-top: 60px;
+  position: relative;
+}
+#news-content .news-detail-modal .news-image img {
+  height: 440px;
+}
+#news-content .news-detail-modal .news-image .location {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+  padding: 10px 16px;
+}
+#news-content .news-detail-modal .news-image .location .location-name {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+#news-content .news-detail-modal .news-image .date {
+  position: absolute;
+  top: 32px;
+  left: 162px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 100px;
+  padding: 10px 16px;
+}
+#news-content .news-detail-modal .news-image .date-time {
+  font-family: "Suisse Intl-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
 }
 #news-content .news-detail-modal .oil-images .image-wrapper {
   position: relative;
@@ -1895,10 +2009,13 @@ footer #author-info .author-privacy {
 #news-content .news-detail-modal .footer-image .wrapper-image {
   position: relative;
 }
+#news-content .news-detail-modal .footer-image .wrapper-image img {
+  height: 520px;
+}
 #news-content .news-detail-modal .footer-image .wrapper-image .location {
   position: absolute;
-  top: 27px;
-  left: 25px;
+  top: 32px;
+  left: 32px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(6px);
@@ -1916,7 +2033,7 @@ footer #author-info .author-privacy {
 }
 #news-content .news-detail-modal .footer-image .wrapper-image .date {
   position: absolute;
-  top: 27px;
+  top: 32px;
   left: 169px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1932,6 +2049,7 @@ footer #author-info .author-privacy {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
+  margin-left: 10px;
 }
 #news-content .news-detail-modal .footer-image .wrapper-image .image-text {
   position: absolute;
@@ -2856,7 +2974,7 @@ footer #author-info .author-privacy {
     line-height: 40px;
   }
   #main-projects.faq-wrapper {
-    padding-top: 52px;
+    padding-top: 40px;
   }
   #main-projects.contact-us-title {
     padding-top: 52px;
@@ -3208,7 +3326,7 @@ footer #author-info .author-privacy {
   #gallery-title .project-short-info {
     width: 328px;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   #gallery-info .head-date {
     font-family: "Suisse Intl";
@@ -3222,13 +3340,28 @@ footer #author-info .author-privacy {
     font-size: 24px;
     line-height: 36px;
   }
+  #news-title {
+    padding-top: 40px;
+  }
   #news-title .project-main-title {
     font-size: 40px;
     line-height: 40px;
     color: #13171a;
   }
+  #news-title .project-short-info {
+    width: 328px;
+    margin-left: 0;
+  }
   #news-content {
-    padding-top: 48px;
+    padding-top: 40px;
+  }
+  #news-content .card-description h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #news-content .card-description .ellipsis {
+    font-size: 14px;
+    line-height: 20px;
   }
   #news-content .first-row .location {
     position: absolute;
@@ -3260,13 +3393,39 @@ footer #author-info .author-privacy {
   #news-content .activity-info .info-style {
     color: rgba(0, 0, 0, 0.1);
   }
+  #news-content .news-detail-modal .modal-content .close {
+    right: 20px;
+  }
+  #news-content .news-detail-modal .modal-content .notes {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #news-content .news-detail-modal .export-procedure li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 14px;
+  }
+  #news-content .news-detail-modal .export-procedure h5 {
+    font-size: 18px;
+    line-height: 28px;
+  }
   #news-content .news-detail-modal .oil-images .date,
   #news-content .news-detail-modal .oil-images .location {
     top: 12px;
   }
-  #news-content .news-detail-modal .wrapper-modal-content .footer-image .location,
+  #news-content .news-detail-modal .oil-images img {
+    height: 192px;
+  }
+  #news-content .news-detail-modal .wrapper-modal-content .footer-image .location {
+    top: 16px;
+    left: 16px;
+  }
+  #news-content .news-detail-modal .wrapper-modal-content .footer-image img {
+    height: 192px;
+  }
   #news-content .news-detail-modal .wrapper-modal-content .footer-image .date {
     top: 16px;
+    left: 167px;
   }
   #news-content .news-detail-modal .oil-image-subtitle {
     font-family: "Suisse Intl-Regular";
@@ -3291,6 +3450,16 @@ footer #author-info .author-privacy {
   #news-content .news-detail-modal .news-image {
     margin-top: 40px;
   }
+  #news-content .news-detail-modal .news-image img {
+    height: 192px;
+  }
+  #news-content .news-detail-modal .news-image .location {
+    top: 16px;
+    left: 16px;
+  }
+  #news-content .news-detail-modal .news-image .date {
+    top: 16px;
+  }
   #news-content .news-detail-modal .image-about {
     font-family: "Suisse Intl-Regular";
     font-style: normal;
@@ -3300,27 +3469,27 @@ footer #author-info .author-privacy {
     color: #6d7a84;
   }
   .contact-us-title .project-main-title {
-    width: 391px;
+    width: unset;
     position: relative;
   }
   .contact-us-title .project-main-title::after {
-    content: url("../assets/SVG/Vector 61(1).svg");
+    content: url("../assets/SVG/Vector 61 (1).svg");
     position: absolute;
-    width: 219.07px;
+    width: unset;
     height: 14px;
-    right: 0px;
+    right: 30px;
     top: 50%;
   }
-  #main-social-projects #contact-header .contact-number,
-  #main-social-projects #contact-header .contact-email {
+  #contact-header .contact-number,
+  #contact-header .contact-email {
     font-size: 32px;
     line-height: 44px;
   }
-  #main-social-projects #contact-header .support-text {
+  #contact-header .support-text {
     font-size: 32px;
     line-height: 44px;
   }
-  #main-social-projects #contact-header .find-us {
+  #contact-header .find-us {
     font-family: "Suisse Intl-Regular";
     font-style: normal;
     font-weight: 400;
@@ -3328,7 +3497,7 @@ footer #author-info .author-privacy {
     line-height: 28px;
     color: #9ba5b5;
   }
-  #main-social-projects #contact-header .find-location {
+  #contact-header .find-location {
     font-family: "Suisse Intl-Regular";
     font-style: normal;
     font-weight: 400;
@@ -3336,7 +3505,7 @@ footer #author-info .author-privacy {
     line-height: 28px;
     color: #46525a;
   }
-  #main-social-projects #contact-header .respo-support-text {
+  #contact-header .respo-support-text {
     margin-bottom: 60px;
   }
   #sidebar li:last-child {
@@ -3351,6 +3520,16 @@ footer #author-info .author-privacy {
   }
   #accordion-question .accordion .wrapper-accordion {
     margin-bottom: 12px;
+  }
+  #accordion-question .accordion .wrapper-accordion .svg-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+  #accordion-question .accordion .contentBx.active {
+    height: unset;
+  }
+  #accordion-question .accordion .contentBx.active .content {
+    height: unset;
   }
   #accordion-question .accordion .contentBx .label:hover {
     opacity: 0.75;
