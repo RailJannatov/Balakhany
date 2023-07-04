@@ -14,6 +14,7 @@ body {
       font-size: 18px;
       line-height: 28px;
       color: #46525a;
+      width: 760px;
     }
   }
   background: #eee;
@@ -90,7 +91,26 @@ body {
       color: #fff;
       background-color: #c59b48;
       transition: color 0.5s, background-color 0.5s ease;
+      svg {
+        path {
+          stroke: #fff;
+          transition: stroke 0.5s ease;
+        }
+      }
     }
+  }
+  .ellipsis {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #46525a;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines to display */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .swiper {
     width: 100%;
@@ -175,6 +195,11 @@ body {
 }
 @media screen and (max-width: 567px) {
   body {
+    #main-projects {
+      .project-short-info {
+        width: 328px;
+      }
+    }
     .title-head-style {
       font-size: 32px;
       line-height: 32px;

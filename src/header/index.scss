@@ -9,6 +9,7 @@ header {
     &.main-page {
       .menu {
         .nav-link {
+          cursor: pointer;
           .main-links {
             color: #13171a;
             &.media-m {
