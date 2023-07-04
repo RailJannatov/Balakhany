@@ -42,8 +42,9 @@ function updateActiveCareeTab(index) {
 const svgIcon = document.querySelectorAll(".svg-icon");
 svgIcon.forEach((svg) => {
   svg.addEventListener("click", function () {
-    const contentBx = this.previousElementSibling.classList;
+    var contentBx = this.previousElementSibling.classList;
     contentBx.toggle("active");
+
     if (contentBx.contains("active")) {
       this.innerHTML = "";
       this.innerHTML = `
@@ -52,6 +53,7 @@ svgIcon.forEach((svg) => {
       <path d="M18 34L34 18M34 18H23.3333M34 18V28.6667" stroke="#C59B48" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       <rect x="0.5" y="0.5" width="51" height="51" rx="25.5" stroke="#C59B48" stroke-opacity="0.12"/>
       </svg>`;
+      this.previousElementSibling.children[1].style.marginTop = "40px";
     } else {
       this.innerHTML = `<svg
       width="52"
@@ -91,6 +93,7 @@ svgIcon.forEach((svg) => {
         stroke-opacity="0.12"
       />
     </svg>`;
+      this.previousElementSibling.children[1].style.marginTop = "0px";
     }
   });
 });
@@ -99,6 +102,11 @@ contentAccordion.forEach((content) => {
   content.addEventListener("click", function () {
     const thisClass = this.classList;
     thisClass.toggle("active");
+    if (!Array.from(thisClass).includes("active")) {
+      this.children[1].style.marginTop = "0px";
+    } else {
+      this.children[1].style.marginTop = "40px";
+    }
   });
 });
 
@@ -308,19 +316,19 @@ if (svgIconBtn) {
   });
 }
 
-window.addEventListener("scroll", function () {
-  var textElement = document.querySelector(".scrolling-text");
-  var changeableText = document.querySelector(".changeable-text");
-  var scrollText = textElement || changeableText;
-  var position = scrollText && scrollText.getBoundingClientRect().top;
+// window.addEventListener("scroll", function () {
+//   var textElement = document.querySelector(".scrolling-text");
+//   var changeableText = document.querySelector(".changeable-text");
+//   var scrollText = textElement || changeableText;
+//   var position = scrollText && scrollText.getBoundingClientRect().top;
 
-  var windowHeight = window.innerHeight;
+//   var windowHeight = window.innerHeight;
 
-  if (position < windowHeight) {
-    textElement && textElement.classList.add("fade");
-    changeableText && changeableText.classList.add("fade");
-  } else {
-    textElement && textElement.classList.remove("fade");
-    changeableText && changeableText.classList.remove("fade");
-  }
-});
+//   if (position < windowHeight) {
+//     textElement && textElement.classList.add("fade");
+//     changeableText && changeableText.classList.add("fade");
+//   } else {
+//     textElement && textElement.classList.remove("fade");
+//     changeableText && changeableText.classList.remove("fade");
+//   }
+// });

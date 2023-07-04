@@ -163,6 +163,27 @@ main {
       font-size: 68px;
       line-height: 72px;
     }
+    .card-button {
+      display: flex;
+      padding: 10px 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+      line-height: 24px;
+      svg {
+        path {
+          stroke: #c59b48;
+        }
+      }
+      &:hover {
+        svg {
+          path {
+            stroke: #fff;
+          }
+        }
+      }
+    }
     .short-about-us {
       p {
         font-family: "Suisse Intl-Regular";
@@ -183,6 +204,16 @@ main {
       margin-bottom: 60px;
     }
     .accordion {
+      .wrapper-accordion {
+        position: relative;
+        &:hover {
+          background-color: rgb(255, 255, 255, 0.75);
+        }
+        .svg-icon {
+          position: absolute;
+          right: 40px;
+        }
+      }
       .contentBx {
         h4 {
           font-family: "Suisse Intl-Regular";
@@ -220,7 +251,7 @@ main {
             font-family: "Suisse Intl-SemiBold";
             font-style: normal;
             font-weight: 600;
-            font-size: 48px;
+            font-size: 32px;
             line-height: 52px;
             color: #c59b48;
           }
@@ -261,6 +292,7 @@ main {
         line-height: 32px;
         text-align: center;
         color: #ffffff;
+        width: 872px;
       }
     }
     .black-oil-title {
@@ -311,13 +343,17 @@ main {
     }
   }
   #projects {
-    // .project-card-wrapper {
-    //   // img {
-    //   //   width: 738px;
-    //   // }
-    // }
+    .project-card {
+      &:hover {
+        .card-info-subtitle-style {
+          color: #c59b48;
+        }
+      }
+    }
     .image-wrapper {
       position: relative;
+      overflow: hidden;
+      border-radius: 20px;
       .img-date {
         position: absolute;
         background: rgba(0, 0, 0, 0.2);
@@ -333,6 +369,13 @@ main {
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
+        z-index: 2;
+      }
+      &:hover {
+        img {
+          transform: scale(1.1);
+          transition: transform 0.5s ease;
+        }
       }
     }
   }
@@ -340,6 +383,9 @@ main {
     #customer-slider {
       background-color: white;
       position: relative;
+    }
+    .swiper {
+      border-radius: 24px;
     }
     .swiper-slide {
       display: flex;
@@ -410,32 +456,25 @@ main {
       color: #22292e;
     }
   }
-  #partnors {
-    .wrapper {
-      padding-top: 100px;
-    }
-  }
 }
 
 footer {
   background-color: #0e0e0e;
   position: relative;
+  overflow: hidden;
   .rectangle {
     background: rgba(255, 255, 255, 0.1);
+    height: 2px;
+    width: 100%;
   }
   .first-ellipse {
     height: 189.14634704589844px;
     width: 376px;
     left: -105px;
-    top: 0px;
-    border-radius: 0px;
-    background-color: #003152;
+    border-radius: 200px;
+    background: #003152;
     filter: blur(200px);
     position: absolute;
-    left: -7.29%;
-    right: 81.18%;
-    top: 0%;
-    bottom: 80.97%;
   }
   .second-ellipse {
     height: 378.2926940917969px;
@@ -489,6 +528,12 @@ footer {
     .wrapper-footer-link {
       display: flex;
     }
+    // .link-list {
+    //   margin-bottom: 60px;
+    //   &:last-child {
+    //     margin-bottom: 0px;
+    //   }
+    // }
     .link-title {
       font-family: "Suisse Intl-Regular";
       font-style: normal;
@@ -500,6 +545,10 @@ footer {
     }
     li {
       margin-bottom: 16px;
+      position: relative;
+      &:last-child {
+        margin-bottom: 0;
+      }
       a {
         font-family: "Suisse Intl-Regular";
         font-style: normal;
@@ -515,6 +564,7 @@ footer {
     }
   }
   #address-info {
+    padding-top: 60px;
     .info-title {
       font-family: "Suisse Intl-Regular";
       font-style: normal;
@@ -531,6 +581,7 @@ footer {
       font-size: 16px;
       line-height: 24px;
       color: #ffffff;
+      position: relative;
     }
     .info-value-social {
       font-family: "Suisse Intl-Regular";
@@ -610,8 +661,8 @@ footer {
     .img-loc,
     .img-date {
       position: absolute;
-      top: 24px;
-      left: 24px;
+      top: 32px;
+      left: 32px;
       color: white;
       font-family: "Suisse Intl-Medium";
       font-style: normal;
@@ -626,13 +677,15 @@ footer {
       border: 1px solid rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(6px);
       border-radius: 100px;
+      margin-right: 12px;
     }
     .img-date {
-      left: 151px;
+      left: 163px;
       width: 127px;
     }
     img {
       width: -webkit-fill-available;
+      height: 520px;
     }
     .oil-plant-text {
       position: absolute;
@@ -683,20 +736,17 @@ footer {
     font-size: 48px;
     line-height: 52px;
     color: #13171a;
-    .scrolling-text {
-      opacity: 0.4;
-      transition: opacity 2s ease;
-      &.fade {
-        opacity: 1;
-      }
-    }
   }
 
   .consumer-image-wrapper {
     .large-image {
       img {
         width: -webkit-fill-available;
+        height: 480px;
       }
+    }
+    .full-image {
+      height: 400px;
     }
     .oil-plant-image {
       position: relative;
@@ -726,6 +776,7 @@ footer {
       }
       img {
         width: -webkit-fill-available;
+        height: 400px;
       }
       .oil-plant-text {
         position: absolute;
@@ -766,11 +817,27 @@ footer {
   }
 }
 #connect-projects {
+  .project-card {
+    &:hover {
+      .card-info-subtitle-style {
+        color: #c59b48;
+      }
+    }
+  }
   img {
     width: -webkit-fill-available;
   }
   .image-wrapper {
     position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    &:hover {
+      img {
+        transform: scale(1.1);
+        transition: transform 1s ease-in-out;
+      }
+    }
+
     .img-date {
       background: rgba(0, 0, 0, 0.2);
       border: 1px solid rgba(0, 0, 0, 0.1);
@@ -786,6 +853,7 @@ footer {
       font-weight: 500;
       font-size: 14px;
       line-height: 20px;
+      z-index: 2;
     }
   }
   .card-info {
@@ -807,6 +875,7 @@ footer {
       overflow: hidden;
       img {
         transition: transform 0.3s ease;
+        height: 340px;
       }
       &:hover {
         img {
@@ -832,7 +901,7 @@ footer {
     color: #c59b48;
   }
   .detail-description {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     p {
       font-family: "Suisse Intl-Regular";
       font-style: normal;
@@ -848,6 +917,7 @@ footer {
     border: 1px solid #c59b48;
     border-radius: 100px;
     padding: 10px 20px;
+    margin-bottom: -20px;
     button {
       font-family: "Suisse Intl";
       font-style: normal;
@@ -920,6 +990,11 @@ footer {
       margin-left: 20%;
       padding: 140px 60px;
       height: 100vh;
+      .president-image {
+        img {
+          height: 600px;
+        }
+      }
       .close {
         color: #aaa;
         float: right;
@@ -954,6 +1029,7 @@ footer {
         }
         span[class*="-address"] {
           &:hover {
+            cursor: pointer;
             svg {
               path {
                 fill: #6d7a84;
@@ -1036,6 +1112,7 @@ footer {
     font-size: 18px;
     line-height: 28px;
     color: #46525a;
+    width: 760px;
   }
 }
 #contact-form {
@@ -1401,6 +1478,9 @@ footer {
     font-size: 18px;
     line-height: 28px;
     color: #46525a;
+    width: 760px;
+    margin-right: auto;
+    margin-left: 178px;
   }
 }
 #gallery-info {
@@ -1572,6 +1652,7 @@ footer {
     font-size: 18px;
     line-height: 28px;
     color: #46525a;
+    width: 760px;
   }
 }
 #news-content {
@@ -2260,6 +2341,7 @@ footer {
     font-size: 18px;
     line-height: 28px;
     color: #46525a;
+    width: 760px;
   }
 }
 #career-info {
@@ -2364,6 +2446,11 @@ footer {
       &:hover {
         opacity: 0.75;
       }
+      svg {
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
     .link-title {
       font-family: "Suisse Intl-Regular";
@@ -2428,6 +2515,7 @@ footer {
     font-size: 18px;
     line-height: 28px;
     color: #46525a;
+    width: 760px;
   }
 }
 #social-project-content {
@@ -2725,6 +2813,15 @@ footer {
   }
 }
 #foto-gallery-wrapper {
+  .card {
+    &:hover {
+      .card-description {
+        p {
+          color: #c59b48;
+        }
+      }
+    }
+  }
   .card-date {
     font-family: "Suisse Intl-Regular";
     font-style: normal;
@@ -2835,14 +2932,16 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s;
   }
   .wrapper {
     .card {
       &:hover {
         .play-icon {
-          opacity: 1;
+          svg {
+            path {
+              fill: white;
+            }
+          }
         }
         .card-description {
           p {
@@ -2907,7 +3006,18 @@ footer {
   }
   footer {
     overflow: hidden;
+    #header {
+      .header-title {
+        padding-bottom: 40px;
+      }
+    }
     #links {
+      .link-list {
+        margin-top: 60px;
+        &:first-child {
+          margin-top: 0px;
+        }
+      }
       .link-title {
         font-size: 16px;
         line-height: 24px;
@@ -2924,6 +3034,10 @@ footer {
       }
     }
     #address-info {
+      padding-top: 48px;
+      .rectangle {
+        margin-top: 48px;
+      }
       .info-title {
         margin-bottom: 8px;
       }
@@ -2941,7 +3055,7 @@ footer {
         margin-left: 0;
       }
       .mobile-info {
-        margin-bottom: 60px;
+        margin-bottom: 32px;
       }
     }
     .first-ellipse {
@@ -2971,12 +3085,23 @@ footer {
         overflow: hidden;
         img {
           transition: transform 0.3s ease;
+          height: 280px;
         }
         &:hover {
           img {
             transform: scale(1.1);
           }
         }
+      }
+    }
+    .vitse-presidents {
+      img {
+        height: 280px;
+      }
+    }
+    .head-of-departament {
+      img {
+        height: 280px;
       }
     }
     .president-name {
@@ -2997,7 +3122,7 @@ footer {
       font-family: "Suisse Intl-Medium";
       font-style: normal;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 20px;
       line-height: 24px;
       color: #13171a;
     }
@@ -3030,6 +3155,11 @@ footer {
         .wrapper-modal-content {
           display: block;
         }
+        .president-image {
+          img {
+            height: 440px;
+          }
+        }
         background-color: #fff;
         margin: 0;
         padding: 103px 16px;
@@ -3041,8 +3171,8 @@ footer {
           font-weight: bold;
           cursor: pointer;
           position: absolute;
-          top: 60px;
-          right: 40px;
+          top: 44px;
+          right: 17px;
           &:hover {
             visibility: hidden;
             .close-hover {
@@ -3075,7 +3205,7 @@ footer {
         .sub-title {
           font-size: 20px;
           line-height: 28px;
-          color: #46525a;
+          color: #c59b48;
         }
       }
       .president-description {
@@ -3114,8 +3244,9 @@ footer {
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
-    padding: 60px 16px;
-    height: 768px;
+    padding: 0;
+    padding-bottom: 60px;
+    height: 640px;
     display: flex;
     align-items: end;
     .head-text {
@@ -3123,7 +3254,20 @@ footer {
       line-height: 56px;
     }
   }
+  #general-info {
+    .info-title {
+      h2 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+  }
   #oil {
+    .oil-plant-image {
+      img {
+        height: 192px;
+      }
+    }
     .oil-plant-text {
       display: none;
     }
@@ -3144,7 +3288,13 @@ footer {
       color: #9ba5b5;
     }
   }
-  #oil-consumer-info {
+  #oil-consumer {
+    .info-title {
+      h2 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
     .consumer-title {
       font-size: 32px;
       line-height: 44px;
@@ -3168,6 +3318,50 @@ footer {
         color: #9ba5b5;
       }
     }
+    .info-description {
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  #oil-consumer-info {
+    .consumer-title {
+      font-size: 32px;
+      line-height: 44px;
+      margin-top: 60px;
+    }
+    .consumer-image-wrapper {
+      .oil-plant-image,
+      .large-image {
+        img {
+          height: 192px;
+        }
+      }
+      .full-image {
+        height: 192px;
+      }
+      .oil-plant-image {
+        .img-loc {
+          top: 16px;
+          left: 16px;
+        }
+        .img-date {
+          top: 16px;
+          left: 144px;
+        }
+      }
+    }
+    .consumer-images-list {
+      .text-in-mobile {
+        color: #9ba5b5;
+        font-size: 14px;
+        font-family: "Suisse Intl-Regular";
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    }
   }
   #connect-projects {
     .card-info {
@@ -3183,8 +3377,15 @@ footer {
         white-space: nowrap;
       }
     }
+    .image-wrapper {
+      .img-date {
+        top: 12px;
+        left: 12px;
+      }
+    }
   }
   #gallery-title {
+    padding-top: 40px;
     .project-main-title {
       font-size: 40px;
       line-height: 40px;
@@ -3194,6 +3395,11 @@ footer {
         left: 0px;
         top: calc(50% - (-2.66px) + 0.34px);
       }
+    }
+    .project-short-info {
+      width: 328px;
+      margin: 0;
+      margin-top: 20px;
     }
   }
   #gallery-info {
@@ -3589,33 +3795,118 @@ footer {
   }
   main {
     #oil-slider {
+      height: 81vh;
+      background-color: #0000007a;
+      video {
+        object-fit: fill;
+      }
       .slider-text-style {
         font-size: 40px;
         line-height: 40px;
       }
+
       .swiper {
+        border-radius: 24px;
+        .slider-text-substyle {
+          font-size: 16px;
+          width: unset;
+        }
         .swiper-pagination {
           &.pagination-list {
             position: absolute;
-            right: 10%;
+            right: -13px;
             top: 20%;
             transform: translateY(-50%);
             display: flex;
-            row-gap: 10px;
             align-items: flex-end;
             flex-direction: row;
+
+            .pagination-list-item {
+              display: flex;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: white;
+              min-width: 25px;
+              height: 48px;
+              border: 1px solid white;
+              opacity: 1;
+              background-color: transparent;
+              border-radius: 40px;
+              align-items: center;
+              padding: 8px 20px;
+              width: 100px;
+              transition: width 2s ease;
+              cursor: pointer;
+
+              &.swiper-pagination-bullet-active {
+                width: fit-content;
+                border-radius: 1000px;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                backdrop-filter: blur(2px);
+                background: linear-gradient(
+                    to right,
+                    rgba(255, 255, 255, 0.2) 10%,
+                    rgba(255, 255, 255, 0.2) 60%,
+                    transparent 0
+                  )
+                  right;
+                background-size: 200%;
+                background-position: right;
+                .pagination-list-item-title {
+                  font-family: "Suisse Intl-Regular";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: #ffffff;
+                  width: 100%;
+                  opacity: 1;
+                }
+                animation: makeItfadeIn 3s forwards;
+              }
+              @keyframes makeItfadeIn {
+                100% {
+                  background-position: left;
+                }
+              }
+
+              .pagination-list-item-title {
+                width: 0;
+                opacity: 0;
+                white-space: pre;
+                transition: 1s ease;
+              }
+
+              &:not(.swiper-pagination-bullet-active) {
+                justify-content: center;
+                width: 48px;
+
+                &:hover {
+                  background-color: white;
+                  color: black;
+                }
+              }
+            }
           }
-        }
-        .slider-text-style {
-          font-size: 40px;
-          line-height: 40px;
         }
       }
     }
+
     #about-us {
       .main-about-us {
         font-size: 32px;
         line-height: 44px;
+      }
+      #changeable-text {
+        opacity: 0.3;
+        transition: opacity 1s ease-in-out;
+      }
+      .short-about-us {
+        p {
+          font-size: 20px;
+          line-height: 28px;
+        }
       }
     }
     #company-activity {
@@ -3623,21 +3914,63 @@ footer {
         font-size: 32px;
         line-height: 32px;
       }
-      .accordion {
-        h4 {
-          font-size: 14px;
-          line-height: 20px;
-        }
-        .wrapper-accordion {
-          .label {
-            h4 {
-              font-size: 14px;
-              line-height: 20px;
-            }
+      .activity-main-title {
+        margin-bottom: 40px;
+      }
+      .wrapper {
+        .accordion {
+          h4 {
+            font-size: 14px;
+            line-height: 20px;
           }
-          .content-activity-subtitle {
-            font-size: 20px;
-            line-height: 28px;
+          .wrapper-accordion {
+            position: relative;
+            .contentBx {
+              .content {
+                p {
+                  font-size: 24px;
+                  line-height: 36px;
+                }
+                .item-content {
+                  p {
+                    font-size: 16px;
+                    line-height: 24px;
+                  }
+                }
+              }
+
+              .label {
+                h4 {
+                  font-size: 14px;
+                  line-height: 20px;
+                }
+              }
+              .content-activity-subtitle {
+                font-size: 20px;
+                line-height: 28px;
+              }
+
+              .content {
+                height: 0;
+                overflow: hidden;
+                transition: 0.5s;
+                overflow-y: auto;
+              }
+              &.active {
+                .content {
+                  height: unset;
+                }
+              }
+            }
+            .svg-icon {
+              position: absolute;
+              right: 16px;
+              top: 16px;
+              svg {
+                width: 40px;
+                height: 40px;
+              }
+            }
           }
         }
       }
@@ -3649,6 +3982,7 @@ footer {
         & + p {
           font-size: 14px;
           line-height: 20px;
+          width: 328px;
         }
       }
     }
@@ -3683,6 +4017,10 @@ footer {
   #hidden-slider {
     .customer-card {
       width: 304px;
+      height: 312px;
+      .wrapper-customer-feedback {
+        border-bottom: 1px solid #eeedf2;
+      }
     }
     .text-slider {
       font-family: "Suisse Intl-Regular";

@@ -47,8 +47,8 @@
         src: url("../assets/font/SuisseIntl-SemiBold.otf");
       }
       .changeable-text {
-        opacity: 0.4;
-        transition: opacity 2s ease;
+        opacity: 0.1;
+        transition: opacity 1s ease-in-out;
         &.fade {
           opacity: 1;
         }
@@ -119,7 +119,7 @@
                 <a href="#" class="main-links">Haqqımızda</a>
                 <div class="dropdown">
                   <div class="flex justify-between">
-                    <ul class="mr-6">
+                    <ul class="mr-6 w-6/12">
                       <li class="list-title">
                         <a href="#" class="dropdown-anchor">Balakhani tarixi</a>
                       </li>
@@ -128,7 +128,7 @@
                         <a href="#" class="dropdown-anchor">Qanunvericilik</a>
                       </li>
                     </ul>
-                    <ul>
+                    <ul class="w-6/12">
                       <li><a href="#">Struktur</a></li>
                       <li><a href="#">Rəhbərlik</a></li>
                     </ul>
@@ -150,11 +150,11 @@
                 <a href="#" class="main-links media-m media-drop">Media </a>
                 <div class="dropdown">
                   <div class="flex">
-                    <ul class="mr-6">
+                    <ul class="mr-6 w-6/12">
                       <li><a href="#">Foto qalereya</a></li>
                       <li><a href="#">Video qalereya</a></li>
                     </ul>
-                    <ul>
+                    <ul class="w-6/12">
                       <li><a href="#">Xəbərlər</a></li>
                       <li><a href="#">Sosial layihələr</a></li>
                     </ul>
@@ -486,8 +486,8 @@
       </section>
       <section id="about-us">
         <div class="container">
-          <div class="wrapper pt-32">
-            <div class="about-us-title my-7 flex">
+          <div class="wrapper pt-32 sm:pt-20">
+            <div class="about-us-title mb-7 flex">
               <span class="title-dot">
                 <svg
                   width="8"
@@ -505,7 +505,7 @@
               <p>
                 «Balakhanı Operating Company LTD» Şirkətinin Azərbaycan
                 Respublikasındakı filialı 01
-                <span class="changeable-text"
+                <span id="changeable-text"
                   >yanvar 2012-ci ildə «Balaxanıneft» NQÇİ-nin bazasında
                   yaradılıb.</span
                 >
@@ -523,7 +523,7 @@
               </div>
             </div>
             <div class="w-6/12 flex ml-auto sm:w-full sm:ml-0">
-              <button class="btn-brand">
+              <button class="card-button">
                 Daha ətraflı
                 <svg
                   class="about-more-icon"
@@ -546,9 +546,9 @@
           </div>
         </div>
       </section>
-      <section id="company-activity" class="pb-32">
+      <section id="company-activity" class="pb-32 sm:pb-20">
         <div class="container">
-          <div class="wrapper pt-32">
+          <div class="wrapper pt-32 sm:pt-20">
             <div class="activity-info flex">
               <span class="title-dot">
                 <svg
@@ -580,17 +580,17 @@
             </div>
             <div class="accordion">
               <div
-                class="wrapper-accordion p-10 mb-6 bg-white flex justify-between rounded-3xl"
+                class="wrapper-accordion p-10 sm:p-4 mb-6 bg-white flex justify-between rounded-3xl"
               >
                 <div class="contentBx">
                   <div class="label">
                     <h4>Example text</h4>
                     <p class="content-activity-subtitle">Example Fəaliyyət</p>
                   </div>
-                  <div class="content flex mt-10 flex-wrap sm:block">
-                    <div class="w-4/12 pr-10 sm:w-full sm:pr-0">
+                  <div class="content flex flex-wrap sm:block">
+                    <div class="w-4/12 pr-6 sm:w-full sm:pr-0">
                       <div class="accordion-item p-6 sm:mb-4">
-                        <div class="">
+                        <div>
                           <p>2x</p>
                         </div>
                         <div class="item-content">
@@ -603,7 +603,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="w-4/12 pr-10 sm:w-full sm:pr-0">
+                    <div class="w-4/12 pr-6 sm:w-full sm:pr-0">
                       <div class="accordion-item p-6 sm:mb-4">
                         <div class="item-title">
                           <p>2x</p>
@@ -677,15 +677,15 @@
                 </div>
               </div>
               <div
-                class="wrapper-accordion p-10 mb-6 bg-white flex justify-between rounded-3xl"
+                class="wrapper-accordion p-10 sm:p-4 mb-6 bg-white flex justify-between rounded-3xl"
               >
                 <div class="contentBx">
                   <div class="label">
                     <h4>Example text</h4>
                     <p class="content-activity-subtitle">Example Fəaliyyət</p>
                   </div>
-                  <div class="content flex mt-10 flex-wrap sm:block">
-                    <div class="w-4/12 pr-10 sm:w-full sm:pr-0">
+                  <div class="content flex flex-wrap sm:block">
+                    <div class="w-4/12 pr-6 sm:w-full sm:pr-0">
                       <div class="accordion-item sm:mb-4 p-6">
                         <div class="item-title">
                           <p>2x</p>
@@ -700,7 +700,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="w-4/12 pr-10 sm:w-full sm:pr-0">
+                    <div class="w-4/12 pr-6 sm:w-full sm:pr-0">
                       <div class="accordion-item sm:mb-4 p-6">
                         <div class="item-title">
                           <p>2x</p>
@@ -715,7 +715,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="w-4/12 sm:w-full sm:pr-0">
+                    <div class="w-4/12 pr-6 sm:w-full sm:pr-0">
                       <div class="accordion-item sm:mb-4 p-6">
                         <div class="item-title">
                           <p>2x</p>
@@ -774,14 +774,14 @@
                 </div>
               </div>
               <div
-                class="wrapper-accordion p-10 bg-white flex justify-between rounded-3xl"
+                class="wrapper-accordion p-10 sm:p-4 bg-white flex justify-between rounded-3xl"
               >
                 <div class="contentBx">
                   <div class="label">
                     <h4>Example text</h4>
                     <p class="content-activity-subtitle">Example Fəaliyyət</p>
                   </div>
-                  <div class="content flex mt-10 flex-wrap sm:block">
+                  <div class="content flex flex-wrap sm:block">
                     <div class="w-4/12 pr-10 sm:w-full sm:pr-0">
                       <div class="accordion-item sm:mb-4 p-6">
                         <div class="item-title">
@@ -890,11 +890,11 @@
           </div>
         </div>
       </section>
-      <section id="statics" class="pt-32">
+      <section id="statics" class="pt-32 sm:pt-20">
         <div class="container">
           <div class="wrapper sm:overflow-hidden">
             <div class="statics-head">
-              <div class="about-us-title my-7 flex">
+              <div class="about-us-title mb-7 sm:mb-3 flex">
                 <span class="title-dot">
                   <svg
                     width="8"
@@ -1008,11 +1008,11 @@
           </div>
         </div>
       </section>
-      <section id="projects" class="pt-32">
+      <section id="projects" class="pt-32 sm:pt-20">
         <div class="container">
           <div class="wrapper">
             <div class="project-head">
-              <div class="about-us-title my-7 flex">
+              <div class="about-us-title mb-7 sm:mb-3 flex">
                 <span class="title-dot">
                   <svg
                     width="8"
@@ -1027,7 +1027,7 @@
                 <h2 class="font-14 title-info-dot">LAYİHƏLƏR</h2>
               </div>
               <div class="project-info-wrapper flex justify-between sm:block">
-                <div class="title-head-style w-6/12 sm:w-full">
+                <div class="title-head-style w-6/12 sm:w-full sm:mb-6">
                   Layİhələrİmİz
                 </div>
                 <div class="title-large-info w-6/12 sm:w-full">
@@ -1038,8 +1038,8 @@
               </div>
             </div>
             <div class="project-card-wrapper flex flex-wrap pt-10 sm:block">
-              <div class="w-1/2 pr-6 pb-10 sm:w-full sm:pr-0">
-                <div class="project-card card-style p-6">
+              <div class="w-1/2 pr-6 pb-10 sm:pb-4 sm:w-full sm:pr-0">
+                <div class="project-card card-style p-6 sm:p-4">
                   <div class="image-wrapper">
                     <span class="img-date">24 NOY 2023</span>
                     <img
@@ -1060,8 +1060,8 @@
                   </div>
                 </div>
               </div>
-              <div class="w-1/2 pr-6 pb-10 sm:w-full sm:pr-0">
-                <div class="project-card card-style p-6">
+              <div class="w-1/2 pr-6 pb-10 sm:pb-4 sm:w-full sm:pr-0">
+                <div class="project-card card-style p-6 sm:p-4">
                   <div class="image-wrapper">
                     <span class="img-date">24 NOY 2023</span>
                     <img
@@ -1082,8 +1082,8 @@
                   </div>
                 </div>
               </div>
-              <div class="w-1/2 pr-6 pb-10 sm:w-full sm:pr-0">
-                <div class="project-card card-style p-6">
+              <div class="w-1/2 pr-6 sm:pb-4 sm:w-full sm:pr-0">
+                <div class="project-card card-style p-6 sm:p-4">
                   <div class="image-wrapper">
                     <span class="img-date">24 NOY 2023</span>
                     <img
@@ -1104,8 +1104,8 @@
                   </div>
                 </div>
               </div>
-              <div class="w-1/2 pr-6 pb-10 sm:w-full sm:pr-0">
-                <div class="project-card card-style p-6">
+              <div class="w-1/2 pr-6 sm:pb-0 sm:w-full sm:pr-0">
+                <div class="project-card card-style p-6 sm:p-4">
                   <div class="image-wrapper">
                     <span class="img-date">24 NOY 2023</span>
                     <img
@@ -1132,9 +1132,9 @@
       </section>
       <section id="customer-ideas">
         <div class="container">
-          <div class="wrapper">
+          <div class="wrapper mt-32 sm:mt-20">
             <div class="customer-head pb-10">
-              <div class="about-us-title my-7 flex">
+              <div class="about-us-title mb-7 sm:mb-3 flex">
                 <span class="title-dot">
                   <svg
                     width="8"
@@ -1156,7 +1156,7 @@
                   FİKİRLƏRİ
                 </div>
                 <div
-                  class="customer-result-info title-large-info w-6/12 sm:w-full sm:mb-10"
+                  class="customer-result-info title-large-info w-6/12 sm:w-full"
                 >
                   Biz neft hasilatı sahəsində fəaliyyət göstərən bir şirkət
                   olaraq, müştərilərimizin razılığını və dəstəyini həmişə
@@ -1349,29 +1349,29 @@
             <div class="hidden sm:block overflow-hidden" id="hidden-slider">
               <div class="wrapper overflow-scroll">
                 <div class="flex w-max">
-                  <div
-                    class="customer-card rounded-3xl p-4 bg-white w-4/12 mr-3"
-                  >
-                    <span class="mb-4">
-                      <svg
-                        width="60"
-                        height="60"
-                        viewBox="0 0 60 60"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M25.4351 29.0872V52.1742H1.30469V27.7829L14.609 8.47852H27.3916L16.0438 29.0872H25.4351ZM56.8699 29.0872V52.1742H32.7395V27.7829L46.0438 8.47852H58.8264L47.4786 29.0872H56.8699Z"
-                          fill="#CDD4E0"
-                        />
-                      </svg>
-                    </span>
-                    <p class="mb-4 text-lg text-slider">
-                      “Şirkətinizin neft quyularından alınan neftin keyfiyyəti
-                      həqiqətən əladır və sifariş etdiyimiz məhsullar vaxtında
-                      və problemsiz çatdırılıb.”
-                    </p>
-                    <div class="customer-detail flex">
+                  <div class="customer-card rounded-3xl bg-white w-4/12 mr-3">
+                    <div class="wrapper-customer-feedback p-4">
+                      <span class="mb-4">
+                        <svg
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M25.4351 29.0872V52.1742H1.30469V27.7829L14.609 8.47852H27.3916L16.0438 29.0872H25.4351ZM56.8699 29.0872V52.1742H32.7395V27.7829L46.0438 8.47852H58.8264L47.4786 29.0872H56.8699Z"
+                            fill="#CDD4E0"
+                          />
+                        </svg>
+                      </span>
+                      <p class="text-lg text-slider">
+                        “Şirkətinizin neft quyularından alınan neftin keyfiyyəti
+                        həqiqətən əladır və sifariş etdiyimiz məhsullar vaxtında
+                        və problemsiz çatdırılıb.”
+                      </p>
+                    </div>
+                    <div class="customer-detail flex p-4">
                       <div class="customer-image">
                         <img
                           src="../assets/image/customer-image.jpg"
@@ -1386,29 +1386,29 @@
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="customer-card rounded-3xl p-4 bg-white w-4/12 mr-3"
-                  >
-                    <span class="mb-4">
-                      <svg
-                        width="60"
-                        height="60"
-                        viewBox="0 0 60 60"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M25.4351 29.0872V52.1742H1.30469V27.7829L14.609 8.47852H27.3916L16.0438 29.0872H25.4351ZM56.8699 29.0872V52.1742H32.7395V27.7829L46.0438 8.47852H58.8264L47.4786 29.0872H56.8699Z"
-                          fill="#CDD4E0"
-                        />
-                      </svg>
-                    </span>
-                    <p class="mb-4 text-lg text-slider">
-                      “Şirkətinizin neft quyularından alınan neftin keyfiyyəti
-                      həqiqətən əladır və sifariş etdiyimiz məhsullar vaxtında
-                      və problemsiz çatdırılıb.”
-                    </p>
-                    <div class="customer-detail flex">
+                  <div class="customer-card rounded-3xl bg-white w-4/12 mr-3">
+                    <div class="wrapper-customer-feedback p-4">
+                      <span class="mb-4">
+                        <svg
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M25.4351 29.0872V52.1742H1.30469V27.7829L14.609 8.47852H27.3916L16.0438 29.0872H25.4351ZM56.8699 29.0872V52.1742H32.7395V27.7829L46.0438 8.47852H58.8264L47.4786 29.0872H56.8699Z"
+                            fill="#CDD4E0"
+                          />
+                        </svg>
+                      </span>
+                      <p class="text-lg text-slider">
+                        “Şirkətinizin neft quyularından alınan neftin keyfiyyəti
+                        həqiqətən əladır və sifariş etdiyimiz məhsullar vaxtında
+                        və problemsiz çatdırılıb.”
+                      </p>
+                    </div>
+                    <div class="customer-detail p-4 flex">
                       <div class="customer-image">
                         <img
                           src="../assets/image/customer-image.jpg"
@@ -1423,27 +1423,29 @@
                       </div>
                     </div>
                   </div>
-                  <div class="customer-card rounded-3xl p-4 bg-white w-4/12">
-                    <span class="mb-4">
-                      <svg
-                        width="60"
-                        height="60"
-                        viewBox="0 0 60 60"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M25.4351 29.0872V52.1742H1.30469V27.7829L14.609 8.47852H27.3916L16.0438 29.0872H25.4351ZM56.8699 29.0872V52.1742H32.7395V27.7829L46.0438 8.47852H58.8264L47.4786 29.0872H56.8699Z"
-                          fill="#CDD4E0"
-                        />
-                      </svg>
-                    </span>
-                    <p class="mb-4 text-lg text-slider">
-                      “Şirkətinizin neft quyularından alınan neftin keyfiyyəti
-                      həqiqətən əladır və sifariş etdiyimiz məhsullar vaxtında
-                      və problemsiz çatdırılıb.”
-                    </p>
-                    <div class="customer-detail flex">
+                  <div class="customer-card rounded-3xl bg-white w-4/12">
+                    <div class="wrapper-customer-feedback p-4">
+                      <span class="mb-4">
+                        <svg
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M25.4351 29.0872V52.1742H1.30469V27.7829L14.609 8.47852H27.3916L16.0438 29.0872H25.4351ZM56.8699 29.0872V52.1742H32.7395V27.7829L46.0438 8.47852H58.8264L47.4786 29.0872H56.8699Z"
+                            fill="#CDD4E0"
+                          />
+                        </svg>
+                      </span>
+                      <p class="text-lg text-slider">
+                        “Şirkətinizin neft quyularından alınan neftin keyfiyyəti
+                        həqiqətən əladır və sifariş etdiyimiz məhsullar vaxtında
+                        və problemsiz çatdırılıb.”
+                      </p>
+                    </div>
+                    <div class="customer-detail p-4 flex">
                       <div class="customer-image">
                         <img
                           src="../assets/image/customer-image.jpg"
@@ -1466,8 +1468,8 @@
       </section>
       <section id="partnors">
         <div class="container">
-          <div class="wrapper pb-32 sm:overflow-hidden sm:pb-20">
-            <div class="partnor-head pb-10">
+          <div class="wrapper mt-32 sm:mt-20 pb-32 sm:overflow-hidden sm:pb-20">
+            <div class="partnor-head sm:pb-0">
               <div class="my-7 flex sm:my-0">
                 <span class="title-dot">
                   <svg
@@ -1482,7 +1484,9 @@
                 </span>
                 <h2 class="font-14 title-info-dot">ƏMƏKDAŞLIQ</h2>
               </div>
-              <div class="partnor-info mb-20 flex justify-between sm:block">
+              <div
+                class="partnor-info mb-20 sm:mb-10 flex justify-between sm:block"
+              >
                 <div class="title-head-style w-6/12 sm:w-full sm:mt-3 sm:mb-6">
                   Partnyorlar
                 </div>
@@ -1877,7 +1881,7 @@
         <div class="container">
           <div class="wrapper pb-32 sm:pb-20">
             <div class="partnor-head pb-10">
-              <div class="my-7 flex sm:my-3">
+              <div class="mb-7 flex sm:mb-3">
                 <span class="title-dot">
                   <svg
                     width="8"
@@ -1907,7 +1911,7 @@
             </div>
             <div class="navigate-to-link flex sm:block">
               <div class="w-4/12 pr-3 sm:w-full sm:pr-0 sm:mb-4">
-                <div class="link-card p-6 bg-white flex">
+                <div class="link-card p-6 sm:p-4 bg-white flex">
                   <div>
                     <p class="link-title mb-2">Heydər Əliyev</p>
                     <p class="url">https://www.heydaraliyevcenter.az/</p>
@@ -1948,7 +1952,7 @@
                 </div>
               </div>
               <div class="w-4/12 pl-3 pr-3 sm:w-full sm:pl-0 sm:pr-0 sm:mb-4">
-                <div class="link-card p-6 flex bg-white">
+                <div class="link-card p-6 sm:p-4 flex bg-white">
                   <div>
                     <p class="link-title mb-2">Heydər Əliyev</p>
                     <p class="url">https://www.heydaraliyevcenter.az/</p>
@@ -1989,7 +1993,7 @@
                 </div>
               </div>
               <div class="w-4/12 pl-3 sm:w-full sm:pl-0">
-                <div class="link-card p-6 flex bg-white">
+                <div class="link-card p-6 sm:p-4 flex bg-white">
                   <div>
                     <p class="link-title mb-2">Heydər Əliyev</p>
                     <p class="url">https://www.heydaraliyevcenter.az/</p>
@@ -2040,12 +2044,35 @@
       <div class="first-ellipse"></div>
       <div class="second-ellipse"></div>
       <div class="third-ellipse"></div>
-      -->
+
       <section id="header">
         <div class="container">
           <div class="wrapper header-title items-start">
-            <h4 class="footer-title sm:mb-10">Balakhani</h4>
-            <div class="flex items-center language-wrapper">
+            <div class="hidden sm:flex sm:flex-col">
+              <h4 class="footer-title sm:mb-10">Balakhani</h4>
+              <div class="flex items-center language-wrapper">
+                <button>
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 2C15.0013 4.73835 16.4228 8.29203 16.5 12C16.4228 15.708 15.0013 19.2616 12.5 22M12.5 2C9.99872 4.73835 8.57725 8.29203 8.5 12C8.57725 15.708 9.99872 19.2616 12.5 22M12.5 2C6.97715 2 2.5 6.47715 2.5 12C2.5 17.5228 6.97715 22 12.5 22M12.5 2C18.0228 2 22.5 6.47715 22.5 12C22.5 17.5228 18.0228 22 12.5 22M3.00002 9H22M3 15H22"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <span class="select-language ml-3">AZ</span>
+              </div>
+            </div>
+            <h4 class="footer-title sm:mb-10 sm:hidden">Balakhani</h4>
+            <div class="flex items-center language-wrapper sm:hidden">
               <button>
                 <svg
                   width="25"
@@ -2136,22 +2163,12 @@
             </span>
           </div>
         </div>
-        <div class="rectangle">
-          <svg
-            width="1420"
-            height="2"
-            viewBox="0 0 1440 2"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="1720" height="2" fill="white" fill-opacity="0.1" />
-          </svg>
-        </div>
+        <div class="rectangle"></div>
       </section>
-      <section id="links" class="2xl:py-20 sm:py-10">
+      <section id="links" class="2xl:pt-20 sm:pt-10">
         <div class="container">
-          <div class="wrapper wrapper-footer-link sm:flex-none pb-20">
-            <div class="main link-list 2xl:w-3/12 sm:pb-16">
+          <div class="wrapper wrapper-footer-link sm:flex-none">
+            <div class="main link-list 2xl:w-3/12">
               <p class="link-title">Əsas</p>
               <ul>
                 <li><a href="">Layihələr</a></li>
@@ -2159,7 +2176,7 @@
                 <li><a href="">Karyera</a></li>
               </ul>
             </div>
-            <div class="about-us link-list 2xl:w-3/12 sm:pb-16">
+            <div class="about-us link-list 2xl:w-3/12">
               <p class="link-title">Haqqımızda</p>
               <ul>
                 <li><a href="">Balakhani tarixi</a></li>
@@ -2169,7 +2186,7 @@
                 <li><a href="">Rəhbərlik</a></li>
               </ul>
             </div>
-            <div class="media link-list 2xl:w-3/12 sm:pb-16">
+            <div class="media link-list 2xl:w-3/12">
               <p class="link-title">Media & press</p>
               <ul>
                 <li><a href="">Foto qalereya</a></li>
@@ -2178,7 +2195,7 @@
                 <li><a href="">Sosial layihələr</a></li>
               </ul>
             </div>
-            <div class="another link-list 2xl:w-3/12 sm:pb-16">
+            <div class="another link-list 2xl:w-3/12">
               <p class="link-title">Digər</p>
               <ul>
                 <li><a href="./FAQ.html">FAQ</a></li>
@@ -2187,27 +2204,17 @@
             </div>
           </div>
         </div>
-        <div class="rectangle">
-          <svg
-            width="1420"
-            height="2"
-            viewBox="0 0 1440 2"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="1720" height="2" fill="white" fill-opacity="0.1" />
-          </svg>
-        </div>
+        <div class="rectangle 2xl:mt-20"></div>
       </section>
       <section id="address-info">
         <div class="container">
           <div class="address-info-wrapper md:flex sm:flex-none">
             <div class="left-side w-6/12 md:flex sm:flex-none sm:mb-9">
-              <div class="mobile-info w-2/6 sm:w-full sm:mb-9">
+              <div class="mobile-info w-2/6 sm:w-full sm:mb-8">
                 <p class="info-title">Telefon</p>
                 <p class="info-value">+994 (50) 478 34 34</p>
               </div>
-              <div class="apply w-2/6 sm:w-full sm:mb-9">
+              <div class="apply w-2/6 sm:w-full sm:mb-8">
                 <p class="info-title">Müraciət et</p>
                 <p class="info-value">support@balakhani.az</p>
               </div>
@@ -2228,17 +2235,7 @@
             </div>
           </div>
         </div>
-        <div class="rectangle">
-          <svg
-            width="1420"
-            height="2"
-            viewBox="0 0 1440 2"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="1720" height="2" fill="white" fill-opacity="0.1" />
-          </svg>
-        </div>
+        <div class="rectangle"></div>
       </section>
       <section id="author-info" class="py-10">
         <div class="container">
@@ -2253,6 +2250,7 @@
     </footer>
     <!-- footer end -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
       var mySwiper = new Swiper(".mySwiper", {
@@ -2305,6 +2303,29 @@
           prevEl: ".swiper-button-prev",
         },
         on: {},
+      });
+      $(window).scroll(function () {
+        var scrollTop = $(this).scrollTop();
+        var elementOffset = $("#changeable-text").offset().top;
+        var distance = elementOffset - scrollTop;
+
+        if (distance < $(window).height() - 100) {
+          var words = $("#changeable-text").text().split(" ");
+          $("#changeable-text").empty();
+          words.forEach(function (word) {
+            var span = $("<span>" + word + " </span>").css("opacity", "0.3");
+            $("#changeable-text").append(span);
+          });
+
+          $("#changeable-text span").each(function (index) {
+            var delay = index * 100;
+            var spanElement = $(this);
+
+            setTimeout(function () {
+              spanElement.css("opacity", "1");
+            }, delay);
+          });
+        }
       });
     </script>
   </body>

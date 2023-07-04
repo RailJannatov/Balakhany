@@ -4,6 +4,9 @@ header.main-header {
 header .logo {
   margin-top: -8px;
 }
+header .nav-list.main-page .menu .nav-link {
+  cursor: pointer;
+}
 header .nav-list.main-page .menu .nav-link .main-links {
   color: #13171a;
 }
@@ -257,6 +260,21 @@ main #about-us .main-about-us {
   font-size: 68px;
   line-height: 72px;
 }
+main #about-us .card-button {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 24px;
+}
+main #about-us .card-button svg path {
+  stroke: #c59b48;
+}
+main #about-us .card-button:hover svg path {
+  stroke: #fff;
+}
 main #about-us .short-about-us p {
   font-family: "Suisse Intl-Regular";
   font-style: normal;
@@ -273,6 +291,16 @@ main #company-activity.activy-detail {
 }
 main #company-activity .activity-main-title {
   margin-bottom: 60px;
+}
+main #company-activity .accordion .wrapper-accordion {
+  position: relative;
+}
+main #company-activity .accordion .wrapper-accordion:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+main #company-activity .accordion .wrapper-accordion .svg-icon {
+  position: absolute;
+  right: 40px;
 }
 main #company-activity .accordion .contentBx h4 {
   font-family: "Suisse Intl-Regular";
@@ -309,7 +337,7 @@ main #company-activity .accordion .contentBx .accordion-item p {
   font-family: "Suisse Intl-SemiBold";
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 32px;
   line-height: 52px;
   color: #c59b48;
 }
@@ -344,6 +372,7 @@ main #cover-black-oil .black-oil-info p {
   line-height: 32px;
   text-align: center;
   color: #ffffff;
+  width: 872px;
 }
 main #cover-black-oil .black-oil-title {
   font-family: "HeadingNow-66Bold";
@@ -387,8 +416,13 @@ main #statics .card-number {
   text-align: right;
   color: #dfdee7;
 }
+main #projects .project-card:hover .card-info-subtitle-style {
+  color: #c59b48;
+}
 main #projects .image-wrapper {
   position: relative;
+  overflow: hidden;
+  border-radius: 20px;
 }
 main #projects .image-wrapper .img-date {
   position: absolute;
@@ -406,10 +440,18 @@ main #projects .image-wrapper .img-date {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
+  z-index: 2;
+}
+main #projects .image-wrapper:hover img {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
 }
 main #customer-ideas #customer-slider {
   background-color: white;
   position: relative;
+}
+main #customer-ideas .swiper {
+  border-radius: 24px;
 }
 main #customer-ideas .swiper-slide {
   display: flex;
@@ -470,30 +512,25 @@ main #customer-ideas .customer-feedback-info {
   line-height: 44px;
   color: #22292e;
 }
-main #partnors .wrapper {
-  padding-top: 100px;
-}
 
 footer {
   background-color: #0e0e0e;
   position: relative;
+  overflow: hidden;
 }
 footer .rectangle {
   background: rgba(255, 255, 255, 0.1);
+  height: 2px;
+  width: 100%;
 }
 footer .first-ellipse {
   height: 189.1463470459px;
   width: 376px;
   left: -105px;
-  top: 0px;
-  border-radius: 0px;
-  background-color: #003152;
+  border-radius: 200px;
+  background: #003152;
   filter: blur(200px);
   position: absolute;
-  left: -7.29%;
-  right: 81.18%;
-  top: 0%;
-  bottom: 80.97%;
 }
 footer .second-ellipse {
   height: 378.2926940918px;
@@ -554,6 +591,10 @@ footer #links .link-title {
 }
 footer #links li {
   margin-bottom: 16px;
+  position: relative;
+}
+footer #links li:last-child {
+  margin-bottom: 0;
 }
 footer #links li a {
   font-family: "Suisse Intl-Regular";
@@ -566,6 +607,9 @@ footer #links li a {
 footer #links li a:hover {
   opacity: 0.75;
   cursor: pointer;
+}
+footer #address-info {
+  padding-top: 60px;
 }
 footer #address-info .info-title {
   font-family: "Suisse Intl-Regular";
@@ -583,6 +627,7 @@ footer #address-info .info-value {
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
+  position: relative;
 }
 footer #address-info .info-value-social {
   font-family: "Suisse Intl-Regular";
@@ -656,8 +701,8 @@ footer #author-info .author-privacy {
 #oil .oil-plant-image .img-loc,
 #oil .oil-plant-image .img-date {
   position: absolute;
-  top: 24px;
-  left: 24px;
+  top: 32px;
+  left: 32px;
   color: white;
   font-family: "Suisse Intl-Medium";
   font-style: normal;
@@ -673,13 +718,15 @@ footer #author-info .author-privacy {
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
   border-radius: 100px;
+  margin-right: 12px;
 }
 #oil .oil-plant-image .img-date {
-  left: 151px;
+  left: 163px;
   width: 127px;
 }
 #oil .oil-plant-image img {
   width: -webkit-fill-available;
+  height: 520px;
 }
 #oil .oil-plant-image .oil-plant-text {
   position: absolute;
@@ -722,15 +769,12 @@ footer #author-info .author-privacy {
   line-height: 52px;
   color: #13171a;
 }
-#oil-consumer-info .consumer-title .scrolling-text {
-  opacity: 0.4;
-  transition: opacity 2s ease;
-}
-#oil-consumer-info .consumer-title .scrolling-text.fade {
-  opacity: 1;
-}
 #oil-consumer-info .consumer-image-wrapper .large-image img {
   width: -webkit-fill-available;
+  height: 480px;
+}
+#oil-consumer-info .consumer-image-wrapper .full-image {
+  height: 400px;
 }
 #oil-consumer-info .consumer-image-wrapper .oil-plant-image {
   position: relative;
@@ -762,6 +806,7 @@ footer #author-info .author-privacy {
 }
 #oil-consumer-info .consumer-image-wrapper .oil-plant-image img {
   width: -webkit-fill-available;
+  height: 400px;
 }
 #oil-consumer-info .consumer-image-wrapper .oil-plant-image .oil-plant-text {
   position: absolute;
@@ -794,11 +839,20 @@ footer #author-info .author-privacy {
   color: #6d7a84;
 }
 
+#connect-projects .project-card:hover .card-info-subtitle-style {
+  color: #c59b48;
+}
 #connect-projects img {
   width: -webkit-fill-available;
 }
 #connect-projects .image-wrapper {
   position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+}
+#connect-projects .image-wrapper:hover img {
+  transform: scale(1.1);
+  transition: transform 1s ease-in-out;
 }
 #connect-projects .image-wrapper .img-date {
   background: rgba(0, 0, 0, 0.2);
@@ -816,6 +870,7 @@ footer #author-info .author-privacy {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
+  z-index: 2;
 }
 #connect-projects .card-info .card-title {
   font-family: "Suisse Intl-Medium";
@@ -835,6 +890,7 @@ footer #author-info .author-privacy {
 }
 #managers .president-company .image-wrapper img {
   transition: transform 0.3s ease;
+  height: 340px;
 }
 #managers .president-company .image-wrapper:hover img {
   transform: scale(1.1);
@@ -856,7 +912,7 @@ footer #author-info .author-privacy {
   color: #c59b48;
 }
 #managers .detail-description {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 #managers .detail-description p {
   font-family: "Suisse Intl-Regular";
@@ -872,6 +928,7 @@ footer #author-info .author-privacy {
   border: 1px solid #c59b48;
   border-radius: 100px;
   padding: 10px 20px;
+  margin-bottom: -20px;
 }
 #managers .more-btn button {
   font-family: "Suisse Intl";
@@ -941,6 +998,9 @@ footer #author-info .author-privacy {
   padding: 140px 60px;
   height: 100vh;
 }
+#managers .president-detail-modal .modal-content .president-image img {
+  height: 600px;
+}
 #managers .president-detail-modal .modal-content .close {
   color: #aaa;
   float: right;
@@ -971,6 +1031,9 @@ footer #author-info .author-privacy {
 }
 #managers .president-detail-modal .modal-content .president-social span {
   margin-right: 12px;
+}
+#managers .president-detail-modal .modal-content .president-social span[class*=-address]:hover {
+  cursor: pointer;
 }
 #managers .president-detail-modal .modal-content .president-social span[class*=-address]:hover svg path {
   fill: #6d7a84;
@@ -1040,6 +1103,7 @@ footer #author-info .author-privacy {
   font-size: 18px;
   line-height: 28px;
   color: #46525a;
+  width: 760px;
 }
 
 #contact-form {
@@ -1379,6 +1443,9 @@ footer #author-info .author-privacy {
   font-size: 18px;
   line-height: 28px;
   color: #46525a;
+  width: 760px;
+  margin-right: auto;
+  margin-left: 178px;
 }
 
 #gallery-info .info-date {
@@ -1547,6 +1614,7 @@ footer #author-info .author-privacy {
   font-size: 18px;
   line-height: 28px;
   color: #46525a;
+  width: 760px;
 }
 
 #news-content {
@@ -2201,6 +2269,7 @@ footer #author-info .author-privacy {
   font-size: 18px;
   line-height: 28px;
   color: #46525a;
+  width: 760px;
 }
 
 #career-info {
@@ -2300,6 +2369,9 @@ footer #author-info .author-privacy {
 #benefit-links .navigate-to-link .link-card:hover {
   opacity: 0.75;
 }
+#benefit-links .navigate-to-link .link-card svg:hover {
+  cursor: pointer;
+}
 #benefit-links .navigate-to-link .link-title {
   font-family: "Suisse Intl-Regular";
   font-style: normal;
@@ -2363,6 +2435,7 @@ footer #author-info .author-privacy {
   font-size: 18px;
   line-height: 28px;
   color: #46525a;
+  width: 760px;
 }
 
 #social-project-content {
@@ -2639,6 +2712,9 @@ footer #author-info .author-privacy {
   color: #ffffff;
 }
 
+#foto-gallery-wrapper .card:hover .card-description p {
+  color: #c59b48;
+}
 #foto-gallery-wrapper .card-date {
   font-family: "Suisse Intl-Regular";
   font-style: normal;
@@ -2744,11 +2820,9 @@ footer #author-info .author-privacy {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s;
 }
-#video-gallery-wrapper .wrapper .card:hover .play-icon {
-  opacity: 1;
+#video-gallery-wrapper .wrapper .card:hover .play-icon svg path {
+  fill: white;
 }
 #video-gallery-wrapper .wrapper .card:hover .card-description p {
   color: #c59b48;
@@ -2800,6 +2874,15 @@ footer #author-info .author-privacy {
   footer {
     overflow: hidden;
   }
+  footer #header .header-title {
+    padding-bottom: 40px;
+  }
+  footer #links .link-list {
+    margin-top: 60px;
+  }
+  footer #links .link-list:first-child {
+    margin-top: 0px;
+  }
   footer #links .link-title {
     font-size: 16px;
     line-height: 24px;
@@ -2811,6 +2894,12 @@ footer #author-info .author-privacy {
   footer #links .wrapper-footer-link {
     display: block;
     padding-bottom: 48px;
+  }
+  footer #address-info {
+    padding-top: 48px;
+  }
+  footer #address-info .rectangle {
+    margin-top: 48px;
   }
   footer #address-info .info-title {
     margin-bottom: 8px;
@@ -2829,7 +2918,7 @@ footer #author-info .author-privacy {
     margin-left: 0;
   }
   footer #address-info .mobile-info {
-    margin-bottom: 60px;
+    margin-bottom: 32px;
   }
   footer .first-ellipse {
     top: 39px;
@@ -2858,9 +2947,16 @@ footer #author-info .author-privacy {
   }
   #managers .president-company .image-wrapper img {
     transition: transform 0.3s ease;
+    height: 280px;
   }
   #managers .president-company .image-wrapper:hover img {
     transform: scale(1.1);
+  }
+  #managers .vitse-presidents img {
+    height: 280px;
+  }
+  #managers .head-of-departament img {
+    height: 280px;
   }
   #managers .president-name {
     font-size: 20px;
@@ -2880,7 +2976,7 @@ footer #author-info .author-privacy {
     font-family: "Suisse Intl-Medium";
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
     color: #13171a;
   }
@@ -2917,6 +3013,9 @@ footer #author-info .author-privacy {
   #managers .president-detail-modal .modal-content .wrapper-modal-content {
     display: block;
   }
+  #managers .president-detail-modal .modal-content .president-image img {
+    height: 440px;
+  }
   #managers .president-detail-modal .modal-content .close {
     color: #aaa;
     float: right;
@@ -2924,8 +3023,8 @@ footer #author-info .author-privacy {
     font-weight: bold;
     cursor: pointer;
     position: absolute;
-    top: 60px;
-    right: 40px;
+    top: 44px;
+    right: 17px;
   }
   #managers .president-detail-modal .modal-content .close:hover {
     visibility: hidden;
@@ -2954,7 +3053,7 @@ footer #author-info .author-privacy {
   #managers .president-detail-modal .president-more-detail .sub-title {
     font-size: 20px;
     line-height: 28px;
-    color: #46525a;
+    color: #c59b48;
   }
   #managers .president-detail-modal .president-description p {
     font-size: 16px;
@@ -2986,14 +3085,22 @@ footer #author-info .author-privacy {
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
-    padding: 60px 16px;
-    height: 768px;
+    padding: 0;
+    padding-bottom: 60px;
+    height: 640px;
     display: flex;
     align-items: end;
   }
   #detail-head .head-text {
     font-size: 48px;
     line-height: 56px;
+  }
+  #general-info .info-title h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  #oil .oil-plant-image img {
+    height: 192px;
   }
   #oil .oil-plant-text {
     display: none;
@@ -3014,18 +3121,22 @@ footer #author-info .author-privacy {
     line-height: 20px;
     color: #9ba5b5;
   }
-  #oil-consumer-info .consumer-title {
+  #oil-consumer .info-title h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  #oil-consumer .consumer-title {
     font-size: 32px;
     line-height: 44px;
   }
-  #oil-consumer-info .consumer-title .scrolling-text {
+  #oil-consumer .consumer-title .scrolling-text {
     opacity: 0.3;
     transition: opacity 2s ease;
   }
-  #oil-consumer-info .consumer-title .scrolling-text.fade {
+  #oil-consumer .consumer-title .scrolling-text.fade {
     opacity: 1;
   }
-  #oil-consumer-info .consumer-image-wrapper .text-in-mobile {
+  #oil-consumer .consumer-image-wrapper .text-in-mobile {
     display: block;
     font-family: "Suisse Intl-Regular";
     font-style: normal;
@@ -3033,6 +3144,38 @@ footer #author-info .author-privacy {
     font-size: 14px;
     line-height: 20px;
     color: #9ba5b5;
+  }
+  #oil-consumer .info-description p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #oil-consumer-info .consumer-title {
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 60px;
+  }
+  #oil-consumer-info .consumer-image-wrapper .oil-plant-image img,
+  #oil-consumer-info .consumer-image-wrapper .large-image img {
+    height: 192px;
+  }
+  #oil-consumer-info .consumer-image-wrapper .full-image {
+    height: 192px;
+  }
+  #oil-consumer-info .consumer-image-wrapper .oil-plant-image .img-loc {
+    top: 16px;
+    left: 16px;
+  }
+  #oil-consumer-info .consumer-image-wrapper .oil-plant-image .img-date {
+    top: 16px;
+    left: 144px;
+  }
+  #oil-consumer-info .consumer-images-list .text-in-mobile {
+    color: #9ba5b5;
+    font-size: 14px;
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
   }
   #connect-projects .card-info .card-title {
     font-size: 16px;
@@ -3045,6 +3188,13 @@ footer #author-info .author-privacy {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  #connect-projects .image-wrapper .img-date {
+    top: 12px;
+    left: 12px;
+  }
+  #gallery-title {
+    padding-top: 40px;
+  }
   #gallery-title .project-main-title {
     font-size: 40px;
     line-height: 40px;
@@ -3054,6 +3204,11 @@ footer #author-info .author-privacy {
     content: url("../assets/SVG/Frame 633.svg");
     left: 0px;
     top: calc(50% + 2.66px + 0.34px);
+  }
+  #gallery-title .project-short-info {
+    width: 328px;
+    margin: 0;
+    margin-top: 20px;
   }
   #gallery-info .head-date {
     font-family: "Suisse Intl";
@@ -3371,43 +3526,152 @@ footer #author-info .author-privacy {
     top: 96%;
     right: 40px;
   }
+  main #oil-slider {
+    height: 81vh;
+    background-color: rgba(0, 0, 0, 0.4784313725);
+  }
+  main #oil-slider video {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
   main #oil-slider .slider-text-style {
     font-size: 40px;
     line-height: 40px;
   }
+  main #oil-slider .swiper {
+    border-radius: 24px;
+  }
+  main #oil-slider .swiper .slider-text-substyle {
+    font-size: 16px;
+    width: unset;
+  }
   main #oil-slider .swiper .swiper-pagination.pagination-list {
     position: absolute;
-    right: 10%;
+    right: -13px;
     top: 20%;
     transform: translateY(-50%);
     display: flex;
-    row-gap: 10px;
     align-items: flex-end;
     flex-direction: row;
   }
-  main #oil-slider .swiper .slider-text-style {
-    font-size: 40px;
-    line-height: 40px;
+  main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-item {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    min-width: 25px;
+    height: 48px;
+    border: 1px solid white;
+    opacity: 1;
+    background-color: transparent;
+    border-radius: 40px;
+    align-items: center;
+    padding: 8px 20px;
+    width: 100px;
+    transition: width 2s ease;
+    cursor: pointer;
+  }
+  main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-item.swiper-pagination-bullet-active {
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 1000px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 10%, rgba(255, 255, 255, 0.2) 60%, transparent 0) right;
+    background-size: 200%;
+    background-position: right;
+    animation: makeItfadeIn 3s forwards;
+  }
+  main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-item.swiper-pagination-bullet-active .pagination-list-item-title {
+    font-family: "Suisse Intl-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    width: 100%;
+    opacity: 1;
+  }
+  @keyframes makeItfadeIn {
+    100% {
+      background-position: left;
+    }
+  }
+  main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-item .pagination-list-item-title {
+    width: 0;
+    opacity: 0;
+    white-space: pre;
+    transition: 1s ease;
+  }
+  main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-item:not(.swiper-pagination-bullet-active) {
+    justify-content: center;
+    width: 48px;
+  }
+  main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-item:not(.swiper-pagination-bullet-active):hover {
+    background-color: white;
+    color: black;
   }
   main #about-us .main-about-us {
     font-size: 32px;
     line-height: 44px;
   }
+  main #about-us #changeable-text {
+    opacity: 0.3;
+    transition: opacity 1s ease-in-out;
+  }
+  main #about-us .short-about-us p {
+    font-size: 20px;
+    line-height: 28px;
+  }
   main #company-activity .title-main {
     font-size: 32px;
     line-height: 32px;
   }
-  main #company-activity .accordion h4 {
+  main #company-activity .activity-main-title {
+    margin-bottom: 40px;
+  }
+  main #company-activity .wrapper .accordion h4 {
     font-size: 14px;
     line-height: 20px;
   }
-  main #company-activity .accordion .wrapper-accordion .label h4 {
+  main #company-activity .wrapper .accordion .wrapper-accordion {
+    position: relative;
+  }
+  main #company-activity .wrapper .accordion .wrapper-accordion .contentBx .content p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  main #company-activity .wrapper .accordion .wrapper-accordion .contentBx .content .item-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  main #company-activity .wrapper .accordion .wrapper-accordion .contentBx .label h4 {
     font-size: 14px;
     line-height: 20px;
   }
-  main #company-activity .accordion .wrapper-accordion .content-activity-subtitle {
+  main #company-activity .wrapper .accordion .wrapper-accordion .contentBx .content-activity-subtitle {
     font-size: 20px;
     line-height: 28px;
+  }
+  main #company-activity .wrapper .accordion .wrapper-accordion .contentBx .content {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+  }
+  main #company-activity .wrapper .accordion .wrapper-accordion .contentBx.active .content {
+    height: unset;
+  }
+  main #company-activity .wrapper .accordion .wrapper-accordion .svg-icon {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+  main #company-activity .wrapper .accordion .wrapper-accordion .svg-icon svg {
+    width: 40px;
+    height: 40px;
   }
   main #cover-black-oil .black-oil-title {
     font-size: 32px;
@@ -3416,6 +3680,7 @@ footer #author-info .author-privacy {
   main #cover-black-oil .black-oil-title + p {
     font-size: 14px;
     line-height: 20px;
+    width: 328px;
   }
   main #statics .statics-result {
     font-size: 32px;
@@ -3440,6 +3705,10 @@ footer #author-info .author-privacy {
   }
   #hidden-slider .customer-card {
     width: 304px;
+    height: 312px;
+  }
+  #hidden-slider .customer-card .wrapper-customer-feedback {
+    border-bottom: 1px solid #eeedf2;
   }
   #hidden-slider .text-slider {
     font-family: "Suisse Intl-Regular";
@@ -3497,7 +3766,7 @@ footer #author-info .author-privacy {
   margin-left: 12px;
   margin-right: 12px;
 }
-#main-projects .ject-short-info {
+#main-projects .project-short-info {
   font-family: "Suisse Intl-Regular";
   font-style: normal;
   font-weight: 400;
@@ -3508,9 +3777,6 @@ footer #author-info .author-privacy {
   width: 70%;
   display: flex;
   margin-right: auto;
-}
-#main-projects .tab {
-  overflow: hidden;
 }
 #main-projects .tab button {
   cursor: pointer;
@@ -3537,8 +3803,19 @@ footer #author-info .author-privacy {
   background-color: #c59b48;
   color: #ffffff;
 }
+#main-projects .project-card .image-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+}
 #main-projects .project-card img {
   width: 738px;
+}
+#main-projects .project-card:hover img {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+#main-projects .project-card:hover .card-info-subtitle-style {
+  color: #c59b48;
 }
 #main-projects .project-card .card-info-title {
   font-family: "Suisse Intl-Medium";
@@ -3576,6 +3853,7 @@ footer #author-info .author-privacy {
   font-size: 14px;
   line-height: 20px;
   padding: 6px 16px;
+  z-index: 2;
 }
 #main-projects .tabcontent {
   display: none;
@@ -3615,14 +3893,17 @@ footer .author-info {
 }
 
 @media screen and (max-width: 480px) {
+  #main-projects {
+    padding-top: 48px;
+  }
   #main-projects .project-main-title {
     font-size: 40px;
     line-height: 40px;
     color: #13171a;
   }
   #main-projects .project-card .card-info-title {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 24px;
   }
   #main-projects .project-card .card-info-subtitle-style {
     font-size: 14px;
@@ -3654,6 +3935,7 @@ body #main-projects .project-short-info {
   font-size: 18px;
   line-height: 28px;
   color: #46525a;
+  width: 760px;
 }
 body .title-head-style {
   font-family: "HeadingNow-66Bold";
@@ -3724,6 +4006,23 @@ body .card-button:hover {
   color: #fff;
   background-color: #c59b48;
   transition: color 0.5s, background-color 0.5s ease;
+}
+body .card-button:hover svg path {
+  stroke: #fff;
+  transition: stroke 0.5s ease;
+}
+body .ellipsis {
+  font-family: "Suisse Intl-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #46525a;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 body .swiper {
   width: 100%;
@@ -3811,6 +4110,9 @@ body .pagination-dots:hover {
 }
 
 @media screen and (max-width: 567px) {
+  body #main-projects .project-short-info {
+    width: 328px;
+  }
   body .title-head-style {
     font-size: 32px;
     line-height: 32px;

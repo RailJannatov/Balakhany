@@ -30,7 +30,7 @@
   margin-left: 12px;
   margin-right: 12px;
 }
-#main-projects .ject-short-info {
+#main-projects .project-short-info {
   font-family: "Suisse Intl-Regular";
   font-style: normal;
   font-weight: 400;
@@ -41,9 +41,6 @@
   width: 70%;
   display: flex;
   margin-right: auto;
-}
-#main-projects .tab {
-  overflow: hidden;
 }
 #main-projects .tab button {
   cursor: pointer;
@@ -70,8 +67,19 @@
   background-color: #c59b48;
   color: #ffffff;
 }
+#main-projects .project-card .image-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+}
 #main-projects .project-card img {
   width: 738px;
+}
+#main-projects .project-card:hover img {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+#main-projects .project-card:hover .card-info-subtitle-style {
+  color: #c59b48;
 }
 #main-projects .project-card .card-info-title {
   font-family: "Suisse Intl-Medium";
@@ -109,6 +117,7 @@
   font-size: 14px;
   line-height: 20px;
   padding: 6px 16px;
+  z-index: 2;
 }
 #main-projects .tabcontent {
   display: none;
@@ -148,14 +157,17 @@ footer .author-info {
 }
 
 @media screen and (max-width: 480px) {
+  #main-projects {
+    padding-top: 48px;
+  }
   #main-projects .project-main-title {
     font-size: 40px;
     line-height: 40px;
     color: #13171a;
   }
   #main-projects .project-card .card-info-title {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 24px;
   }
   #main-projects .project-card .card-info-subtitle-style {
     font-size: 14px;
