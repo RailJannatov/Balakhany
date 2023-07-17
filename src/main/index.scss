@@ -1366,16 +1366,22 @@ footer {
       height: 100vh;
       .close {
         color: #aaa;
-        float: right;
         font-size: 28px;
         font-weight: bold;
         cursor: pointer;
-        position: absolute;
-        top: 60px;
-        right: 60px;
+        display: flex;
+        justify-content: flex-end;
         &:hover {
           visibility: hidden;
           transition: visibility 0.3s ease;
+          svg {
+            path {
+              stroke: #9ba5b5;
+            }
+            rect {
+              stroke: #9ba5b5;
+            }
+          }
           .close-hover {
             visibility: visible;
           }
@@ -1675,13 +1681,22 @@ footer {
 }
 #news-content {
   padding-top: 100px;
-  .card {
+  .project-card {
+    .image-wrapper {
+      overflow: hidden;
+      border-radius: 24px;
+      &:hover {
+        img {
+          transform: scale(1.1);
+          transition: transform 0.5s ease-in-out;
+          border-radius: 24px;
+        }
+      }
+    }
     &:hover {
-      .card-content {
-        .card-description {
-          .ellipsis {
-            color: #c59b48;
-          }
+      .card-info {
+        .card-info-subtitle-style {
+          color: #c59b48;
         }
       }
     }
@@ -1738,12 +1753,9 @@ footer {
     font-family: "Suisse Intl-Medium";
     font-weight: 500;
     line-height: 56px;
-    .info-style {
-      color: rgba(0, 0, 0, 0.1);
-      transition: color 0.3s ease;
-      &.highlight {
-        color: rgba(19, 23, 26, 1);
-      }
+    #info-style {
+      opacity: 0.3;
+      transition: opacity 4s;
     }
   }
   .image-about {
@@ -2186,7 +2198,6 @@ footer {
     }
   }
   .title-description {
-    width: 872px;
     font-family: "Suisse Intl-Regular";
     font-style: normal;
     font-weight: 400;
@@ -2196,6 +2207,14 @@ footer {
   }
   .image-wrapper {
     margin-top: 44px;
+    img {
+      height: 600px;
+    }
+  }
+  .content-center {
+    width: 872px;
+    margin-left: 172px;
+    margin-right: auto;
   }
 }
 #who-us {
@@ -2231,7 +2250,7 @@ footer {
     color: #c59b48;
   }
   .wrapper {
-    padding: 40px;
+    padding: 120px 40px;
     border-radius: 24px;
   }
   .values-header {
@@ -2246,7 +2265,7 @@ footer {
     color: #6d7a84;
   }
   .parallax-container {
-    height: 100vh;
+    // height: 762px;
     overflow: hidden;
     position: sticky;
     background-color: #ffffff;
@@ -2314,9 +2333,6 @@ footer {
   }
   .current-section {
     z-index: 2;
-  }
-  .spacer {
-    height: 50vh;
   }
 }
 #key-principles {
@@ -2393,12 +2409,11 @@ footer {
   .swiper-button-prev {
     position: absolute;
     top: 40px;
-    width: 100%;
-    left: 678px;
+    left: 88%;
   }
   .history-title {
     p {
-      font-family: "HeadingNow-65Medium";
+      font-family: "HeadingNow-66Bold";
       font-style: normal;
       font-weight: 500;
       font-size: 48px;
@@ -2488,6 +2503,13 @@ footer {
     line-height: 28px;
     color: #46525a;
     width: 760px;
+    margin-left: 178px;
+    margin-right: auto;
+  }
+  .image-wrapper {
+    img {
+      height: 600px;
+    }
   }
 }
 #career-info {
@@ -2499,9 +2521,6 @@ footer {
     font-weight: 500;
     font-size: 68px;
     line-height: 72px;
-    .changeable-text {
-      color: #474646;
-    }
   }
 }
 #career-applies {
@@ -2576,12 +2595,14 @@ footer {
     }
   }
   .tech-support {
-    padding-top: 60px;
     .wrapper-tech-apply {
       &:hover {
-        opacity: 0.75;
+        background-color: rgb(255, 255, 255, 0.75);
       }
     }
+  }
+  .tech-support-employee {
+    margin-top: 60px;
   }
 }
 #benefit-links {
@@ -2662,9 +2683,51 @@ footer {
     line-height: 28px;
     color: #46525a;
     width: 760px;
+    margin-left: 178px;
+    margin-right: auto;
   }
 }
 #social-project-content {
+  .card {
+    &:hover {
+      .card-description {
+        .ellipsis {
+          color: #c59b48;
+          transition: color 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+  .img-container {
+    border-radius: 20px;
+    overflow: hidden;
+    &:hover {
+      img {
+        transform: scale(1.1);
+        transition: transform 0.5s ease-in-out;
+      }
+    }
+  }
+  .first-row {
+    img {
+      height: 320px;
+    }
+  }
+  .second-row {
+    img {
+      height: 260px;
+    }
+  }
+  .third-row {
+    img {
+      height: 200px;
+    }
+  }
+  .fourth-row {
+    img {
+      height: 200px;
+    }
+  }
   padding-top: 80px;
   .card-date {
     p {
@@ -2721,10 +2784,16 @@ footer {
       line-height: 44px;
       color: #22292e;
     }
+    .news-description {
+      p {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
     .modal-content {
       background-color: #fff;
       margin-left: 20%;
-      padding: 140px 60px;
+      padding: 60px;
       .close {
         color: #aaa;
         float: right;
@@ -2734,11 +2803,15 @@ footer {
         position: absolute;
         top: 60px;
         right: 60px;
-        &:hover,
-        close {
-          color: black;
-          text-decoration: none;
-          cursor: pointer;
+        &:hover {
+          svg {
+            path {
+              stroke: #9ba5b5;
+            }
+            rect {
+              stroke: #9ba5b5;
+            }
+          }
         }
       }
       .president-social {
@@ -2754,15 +2827,11 @@ footer {
         line-height: 36px;
         color: #22292e;
         & + p {
-          font-family: "Suisse Intl";
+          font-family: "Suisse Intl-Regular";
           font-style: normal;
           font-weight: 400;
           font-size: 18px;
           line-height: 28px;
-          /* or 156% */
-
-          /* Utility/400 */
-
           color: #6d7a84;
         }
       }
@@ -2808,8 +2877,8 @@ footer {
         font-family: "Suisse Intl-Medium";
         font-style: normal;
         font-weight: 500;
-        font-size: 48px;
-        line-height: 56px;
+        font-size: 32px;
+        line-height: 44px;
         color: #22292e;
       }
     }
@@ -2818,20 +2887,37 @@ footer {
         font-family: "Suisse Intl-Regular";
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        color: #6d7a84;
+        font-size: 18px;
         line-height: 28px;
-        color: #46525a;
       }
     }
     .news-social-adress {
       span {
         margin-right: 20px;
+        cursor: pointer;
+        &:hover {
+          svg {
+            path {
+              fill: #6d7a84;
+            }
+            rect {
+              stroke: #6d7a84;
+            }
+          }
+        }
       }
     }
     .news-image {
       margin-top: 60px;
+      img {
+        height: 440px;
+      }
     }
     .oil-images {
+      img {
+        height: 340px;
+      }
       .image-wrapper {
         position: relative;
       }
@@ -2909,8 +2995,8 @@ footer {
         position: relative;
         .location {
           position: absolute;
-          top: 27px;
-          left: 25px;
+          top: 32px;
+          left: 32px;
           background: rgba(0, 0, 0, 0.2);
           border: 1px solid rgba(0, 0, 0, 0.1);
           backdrop-filter: blur(6px);
@@ -2927,8 +3013,8 @@ footer {
         }
         .date {
           position: absolute;
-          top: 27px;
-          left: 169px;
+          top: 32px;
+          left: 174px;
           background: rgba(0, 0, 0, 0.2);
           border: 1px solid rgba(0, 0, 0, 0.1);
           backdrop-filter: blur(6px);
@@ -3120,7 +3206,7 @@ footer {
 @media screen and (max-width: 567px) {
   #main-projects {
     &.legislation-wrapper {
-      padding-top: 52px;
+      padding-top: 40px;
       margin-bottom: 20px;
     }
     .project-short-info {
@@ -3136,13 +3222,18 @@ footer {
   }
   #main-social-projects {
     &.social-projects {
-      padding-top: 52px;
+      padding-top: 40px;
     }
     .wrapper {
       .project-main-title {
         font-size: 40px;
         line-height: 40px;
       }
+    }
+    .project-short-info {
+      width: 328px;
+      margin: auto;
+      margin-top: 20px;
     }
   }
   nav {
@@ -3370,11 +3461,11 @@ footer {
         content: url("../assets/SVG/Vector 61 (1).svg");
         position: absolute;
         width: 219.07px;
-        top: 15px;
+        top: 24px;
         left: 0;
       }
       .hidden-height {
-        height: 5px;
+        height: 20px;
       }
     }
   }
@@ -3615,8 +3706,11 @@ footer {
       font-family: "Suisse Intl-Medium";
       font-weight: 500;
       line-height: 44px;
-      .info-style {
-        color: rgba(0, 0, 0, 0.1);
+      .active-span {
+        color: black;
+      }
+      #info-style {
+        opacity: 0.3;
       }
     }
     .news-detail-modal {
@@ -3808,7 +3902,17 @@ footer {
         .modal-content {
           margin-left: 0;
           height: unset;
-          padding: 140px 16px;
+          padding: 40px 16px;
+          padding-top: 48px;
+
+          .modal-title {
+            font-size: 24px;
+            line-height: 36px;
+          }
+          .modal-description {
+            font-size: 16px;
+            line-height: 24px;
+          }
           .close {
             top: 100px;
             right: 16px;
@@ -3835,10 +3939,20 @@ footer {
     }
   }
   #social-project-content {
+    padding-top: 48px;
+    div[class*="-row"] {
+      img {
+        height: 160px;
+      }
+    }
+
     .news-detail-modal {
       .modal-content {
         margin: 0;
         padding: 40px 16px;
+        .close {
+          position: unset;
+        }
         .news-title {
           .social-project-title {
             font-size: 24px;
@@ -3857,6 +3971,7 @@ footer {
           li {
             font-size: 16px;
             line-height: 24px;
+            margin-left: 14px;
           }
         }
         .notes {
@@ -3866,6 +3981,9 @@ footer {
           }
         }
         .footer-image {
+          img {
+            border-radius: 24px;
+          }
           .location,
           .date {
             top: 12px;
@@ -3879,18 +3997,46 @@ footer {
             color: #9ba5b5;
           }
         }
+        .news-image {
+          img {
+            height: 192px;
+          }
+        }
+        .oil-images {
+          img {
+            height: 192px;
+          }
+        }
+
+        .news-description {
+          p {
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
       }
     }
   }
   #career-header {
-    padding-top: 52px;
+    padding-top: 40px;
     .project-main-title {
       font-size: 40px;
       line-height: 40px;
     }
+    .project-short-info {
+      width: 328px;
+      margin: 0;
+      margin-top: 20px;
+    }
+    .image-wrapper {
+      img {
+        height: 192px;
+      }
+    }
   }
   #career-info {
     padding-top: 20px;
+    padding-bottom: 0;
     .main-about-us {
       font-size: 32px;
       line-height: 44px;
@@ -3911,9 +4057,6 @@ footer {
         line-height: 16px;
       }
     }
-    .tech-support {
-      padding-top: 48px;
-    }
     .tech-apply-tech-apply-btn-sm {
       span {
         border: 1px solid #c59b48;
@@ -3928,11 +4071,29 @@ footer {
         align-items: center;
       }
     }
+    .tech-support-employee {
+      margin-top: 48px;
+    }
   }
   #who-we-header {
+    padding-top: 40px;
+    .title-description {
+      margin-top: 40px;
+    }
+    .content-center {
+      margin: 0;
+      width: 328px;
+    }
+    .image-wrapper {
+      margin-top: 48px;
+      img {
+        height: 192px;
+      }
+    }
     .who-we-title {
       font-size: 40px;
       line-height: 40px;
+      width: unset;
       &::after {
         content: url("../assets/SVG/Vector 61 (3).svg");
         position: absolute;
@@ -3950,12 +4111,21 @@ footer {
   #who-us {
     .description {
       column-count: unset;
+      font-size: 16px;
+      line-height: 24px;
     }
   }
   #values {
+    .wrapper {
+      padding: 16px;
+    }
     .values-title {
-      font-size: 20px;
-      line-height: 28px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    span[class^="label-text"] {
+      font-size: 14px;
+      line-height: 20px;
     }
     .head-info {
       font-size: 16px;
@@ -3968,7 +4138,11 @@ footer {
     .description-number {
       font-size: 120px;
       line-height: 120px;
-      text-align: center;
+      text-align: left;
+    }
+    .description-title {
+      font-size: 32px;
+      line-height: 32px;
     }
   }
   #key-principles {
@@ -3990,19 +4164,20 @@ footer {
     .history-title {
       margin-bottom: 60px;
       p {
-        width: 200px;
+        font-size: 32px;
+        line-height: 32px;
       }
     }
     .year-description {
       border-bottom: none;
-      width: 320px;
+      width: 284px;
     }
     .swiper-button-prev {
-      top: 96%;
-      left: 15%;
+      top: 94%;
+      left: 57%;
     }
     .swiper-button-next {
-      top: 96%;
+      top: 94%;
       right: 40px;
     }
   }

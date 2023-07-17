@@ -1332,17 +1332,21 @@ footer #author-info .author-privacy {
 }
 #accordion-question .legacy-detail-modal .modal-content .close {
   color: #aaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
-  position: absolute;
-  top: 60px;
-  right: 60px;
+  display: flex;
+  justify-content: flex-end;
 }
 #accordion-question .legacy-detail-modal .modal-content .close:hover {
   visibility: hidden;
   transition: visibility 0.3s ease;
+}
+#accordion-question .legacy-detail-modal .modal-content .close:hover svg path {
+  stroke: #9ba5b5;
+}
+#accordion-question .legacy-detail-modal .modal-content .close:hover svg rect {
+  stroke: #9ba5b5;
 }
 #accordion-question .legacy-detail-modal .modal-content .close:hover .close-hover {
   visibility: visible;
@@ -1627,7 +1631,16 @@ footer #author-info .author-privacy {
 #news-content {
   padding-top: 100px;
 }
-#news-content .card:hover .card-content .card-description .ellipsis {
+#news-content .project-card .image-wrapper {
+  overflow: hidden;
+  border-radius: 24px;
+}
+#news-content .project-card .image-wrapper:hover img {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+  border-radius: 24px;
+}
+#news-content .project-card:hover .card-info .card-info-subtitle-style {
   color: #c59b48;
 }
 #news-content .img-container {
@@ -1681,12 +1694,9 @@ footer #author-info .author-privacy {
   font-weight: 500;
   line-height: 56px;
 }
-#news-content .activity-info .info-style {
-  color: rgba(0, 0, 0, 0.1);
-  transition: color 0.3s ease;
-}
-#news-content .activity-info .info-style.highlight {
-  color: rgb(19, 23, 26);
+#news-content .activity-info #info-style {
+  opacity: 0.3;
+  transition: opacity 4s;
 }
 #news-content .image-about {
   font-family: "Suisse Intl-Regular";
@@ -2106,7 +2116,6 @@ footer #author-info .author-privacy {
   top: calc(50% - 7px - 0.03px);
 }
 #who-we-header .title-description {
-  width: 872px;
   font-family: "Suisse Intl-Regular";
   font-style: normal;
   font-weight: 400;
@@ -2116,6 +2125,14 @@ footer #author-info .author-privacy {
 }
 #who-we-header .image-wrapper {
   margin-top: 44px;
+}
+#who-we-header .image-wrapper img {
+  height: 600px;
+}
+#who-we-header .content-center {
+  width: 872px;
+  margin-left: 172px;
+  margin-right: auto;
 }
 
 #who-us h3 {
@@ -2150,7 +2167,7 @@ footer #author-info .author-privacy {
   color: #c59b48;
 }
 #values .wrapper {
-  padding: 40px;
+  padding: 120px 40px;
   border-radius: 24px;
 }
 #values .values-header {
@@ -2165,7 +2182,6 @@ footer #author-info .author-privacy {
   color: #6d7a84;
 }
 #values .parallax-container {
-  height: 100vh;
   overflow: hidden;
   position: sticky;
   background-color: #ffffff;
@@ -2231,9 +2247,6 @@ footer #author-info .author-privacy {
 }
 #values .current-section {
   z-index: 2;
-}
-#values .spacer {
-  height: 50vh;
 }
 
 #key-principles h3 {
@@ -2302,14 +2315,13 @@ footer #author-info .author-privacy {
 #history-slider .swiper-button-prev {
   position: absolute;
   top: 40px;
-  width: 100%;
-  left: 678px;
+  left: 88%;
 }
 #history-slider .history-title {
   margin-bottom: 138px;
 }
 #history-slider .history-title p {
-  font-family: "HeadingNow-65Medium";
+  font-family: "HeadingNow-66Bold";
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -2388,6 +2400,11 @@ footer #author-info .author-privacy {
   line-height: 28px;
   color: #46525a;
   width: 760px;
+  margin-left: 178px;
+  margin-right: auto;
+}
+#career-header .image-wrapper img {
+  height: 600px;
 }
 
 #career-info {
@@ -2400,9 +2417,6 @@ footer #author-info .author-privacy {
   font-weight: 500;
   font-size: 68px;
   line-height: 72px;
-}
-#career-info .main-about-us .changeable-text {
-  color: #474646;
 }
 
 #career-applies button {
@@ -2473,11 +2487,11 @@ footer #author-info .author-privacy {
   display: flex;
   align-items: center;
 }
-#career-applies .tech-support {
-  padding-top: 60px;
-}
 #career-applies .tech-support .wrapper-tech-apply:hover {
-  opacity: 0.75;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+#career-applies .tech-support-employee {
+  margin-top: 60px;
 }
 
 #benefit-links .navigate-to-link .link-card {
@@ -2554,10 +2568,36 @@ footer #author-info .author-privacy {
   line-height: 28px;
   color: #46525a;
   width: 760px;
+  margin-left: 178px;
+  margin-right: auto;
 }
 
 #social-project-content {
   padding-top: 80px;
+}
+#social-project-content .card:hover .card-description .ellipsis {
+  color: #c59b48;
+  transition: color 0.5s ease-in-out;
+}
+#social-project-content .img-container {
+  border-radius: 20px;
+  overflow: hidden;
+}
+#social-project-content .img-container:hover img {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+#social-project-content .first-row img {
+  height: 320px;
+}
+#social-project-content .second-row img {
+  height: 260px;
+}
+#social-project-content .third-row img {
+  height: 200px;
+}
+#social-project-content .fourth-row img {
+  height: 200px;
 }
 #social-project-content .card-date p {
   font-family: "Suisse Intl-Regular";
@@ -2610,10 +2650,14 @@ footer #author-info .author-privacy {
   line-height: 44px;
   color: #22292e;
 }
+#social-project-content .news-detail-modal .news-description p {
+  font-size: 18px;
+  line-height: 28px;
+}
 #social-project-content .news-detail-modal .modal-content {
   background-color: #fff;
   margin-left: 20%;
-  padding: 140px 60px;
+  padding: 60px;
 }
 #social-project-content .news-detail-modal .modal-content .close {
   color: #aaa;
@@ -2625,11 +2669,11 @@ footer #author-info .author-privacy {
   top: 60px;
   right: 60px;
 }
-#social-project-content .news-detail-modal .modal-content .close:hover,
-#social-project-content .news-detail-modal .modal-content .close close {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+#social-project-content .news-detail-modal .modal-content .close:hover svg path {
+  stroke: #9ba5b5;
+}
+#social-project-content .news-detail-modal .modal-content .close:hover svg rect {
+  stroke: #9ba5b5;
 }
 #social-project-content .news-detail-modal .modal-content .president-social span {
   margin-right: 12px;
@@ -2643,13 +2687,11 @@ footer #author-info .author-privacy {
   color: #22292e;
 }
 #social-project-content .news-detail-modal .modal-content .image-subtitle + p {
-  font-family: "Suisse Intl";
+  font-family: "Suisse Intl-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
-  /* Utility/400 */
   color: #6d7a84;
 }
 #social-project-content .news-detail-modal .president-more-detail .title {
@@ -2688,23 +2730,36 @@ footer #author-info .author-privacy {
   font-family: "Suisse Intl-Medium";
   font-style: normal;
   font-weight: 500;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 32px;
+  line-height: 44px;
   color: #22292e;
 }
 #social-project-content .news-detail-modal .news-description p {
   font-family: "Suisse Intl-Regular";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  color: #6d7a84;
+  font-size: 18px;
   line-height: 28px;
-  color: #46525a;
 }
 #social-project-content .news-detail-modal .news-social-adress span {
   margin-right: 20px;
+  cursor: pointer;
+}
+#social-project-content .news-detail-modal .news-social-adress span:hover svg path {
+  fill: #6d7a84;
+}
+#social-project-content .news-detail-modal .news-social-adress span:hover svg rect {
+  stroke: #6d7a84;
 }
 #social-project-content .news-detail-modal .news-image {
   margin-top: 60px;
+}
+#social-project-content .news-detail-modal .news-image img {
+  height: 440px;
+}
+#social-project-content .news-detail-modal .oil-images img {
+  height: 340px;
 }
 #social-project-content .news-detail-modal .oil-images .image-wrapper {
   position: relative;
@@ -2782,8 +2837,8 @@ footer #author-info .author-privacy {
 }
 #social-project-content .news-detail-modal .footer-image .wrapper-image .location {
   position: absolute;
-  top: 27px;
-  left: 25px;
+  top: 32px;
+  left: 32px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(6px);
@@ -2801,8 +2856,8 @@ footer #author-info .author-privacy {
 }
 #social-project-content .news-detail-modal .footer-image .wrapper-image .date {
   position: absolute;
-  top: 27px;
-  left: 169px;
+  top: 32px;
+  left: 174px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(6px);
@@ -2966,7 +3021,7 @@ footer #author-info .author-privacy {
 
 @media screen and (max-width: 567px) {
   #main-projects.legislation-wrapper {
-    padding-top: 52px;
+    padding-top: 40px;
     margin-bottom: 20px;
   }
   #main-projects .project-short-info {
@@ -2980,11 +3035,16 @@ footer #author-info .author-privacy {
     padding-top: 52px;
   }
   #main-social-projects.social-projects {
-    padding-top: 52px;
+    padding-top: 40px;
   }
   #main-social-projects .wrapper .project-main-title {
     font-size: 40px;
     line-height: 40px;
+  }
+  #main-social-projects .project-short-info {
+    width: 328px;
+    margin: auto;
+    margin-top: 20px;
   }
   nav .hamburger {
     display: block;
@@ -3185,11 +3245,11 @@ footer #author-info .author-privacy {
     content: url("../assets/SVG/Vector 61 (1).svg");
     position: absolute;
     width: 219.07px;
-    top: 15px;
+    top: 24px;
     left: 0;
   }
   #main-social-projects .project-main-title .hidden-height {
-    height: 5px;
+    height: 20px;
   }
   #project-detail-header {
     background: url("../assets/image/Rectangle 143 (1).png");
@@ -3390,8 +3450,11 @@ footer #author-info .author-privacy {
     font-weight: 500;
     line-height: 44px;
   }
-  #news-content .activity-info .info-style {
-    color: rgba(0, 0, 0, 0.1);
+  #news-content .activity-info .active-span {
+    color: black;
+  }
+  #news-content .activity-info #info-style {
+    opacity: 0.3;
   }
   #news-content .news-detail-modal .modal-content .close {
     right: 20px;
@@ -3545,7 +3608,16 @@ footer #author-info .author-privacy {
   #accordion-question .accordion .legacy-detail-modal .modal-content {
     margin-left: 0;
     height: unset;
-    padding: 140px 16px;
+    padding: 40px 16px;
+    padding-top: 48px;
+  }
+  #accordion-question .accordion .legacy-detail-modal .modal-content .modal-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  #accordion-question .accordion .legacy-detail-modal .modal-content .modal-description {
+    font-size: 16px;
+    line-height: 24px;
   }
   #accordion-question .accordion .legacy-detail-modal .modal-content .close {
     top: 100px;
@@ -3562,9 +3634,18 @@ footer #author-info .author-privacy {
   #accordion-question .legacy-links li:last-child {
     margin-bottom: 60px;
   }
+  #social-project-content {
+    padding-top: 48px;
+  }
+  #social-project-content div[class*=-row] img {
+    height: 160px;
+  }
   #social-project-content .news-detail-modal .modal-content {
     margin: 0;
     padding: 40px 16px;
+  }
+  #social-project-content .news-detail-modal .modal-content .close {
+    position: unset;
   }
   #social-project-content .news-detail-modal .modal-content .news-title .social-project-title {
     font-size: 24px;
@@ -3581,10 +3662,14 @@ footer #author-info .author-privacy {
   #social-project-content .news-detail-modal .modal-content .export-procedure li {
     font-size: 16px;
     line-height: 24px;
+    margin-left: 14px;
   }
   #social-project-content .news-detail-modal .modal-content .notes li {
     font-size: 16px;
     line-height: 24px;
+  }
+  #social-project-content .news-detail-modal .modal-content .footer-image img {
+    border-radius: 24px;
   }
   #social-project-content .news-detail-modal .modal-content .footer-image .location,
   #social-project-content .news-detail-modal .modal-content .footer-image .date {
@@ -3598,15 +3683,34 @@ footer #author-info .author-privacy {
     line-height: 20px;
     color: #9ba5b5;
   }
+  #social-project-content .news-detail-modal .modal-content .news-image img {
+    height: 192px;
+  }
+  #social-project-content .news-detail-modal .modal-content .oil-images img {
+    height: 192px;
+  }
+  #social-project-content .news-detail-modal .modal-content .news-description p {
+    font-size: 18px;
+    line-height: 28px;
+  }
   #career-header {
-    padding-top: 52px;
+    padding-top: 40px;
   }
   #career-header .project-main-title {
     font-size: 40px;
     line-height: 40px;
   }
+  #career-header .project-short-info {
+    width: 328px;
+    margin: 0;
+    margin-top: 20px;
+  }
+  #career-header .image-wrapper img {
+    height: 192px;
+  }
   #career-info {
     padding-top: 20px;
+    padding-bottom: 0;
   }
   #career-info .main-about-us {
     font-size: 32px;
@@ -3624,9 +3728,6 @@ footer #author-info .author-privacy {
     font-size: 12px;
     line-height: 16px;
   }
-  #career-applies .tech-support {
-    padding-top: 48px;
-  }
   #career-applies .tech-apply-tech-apply-btn-sm span {
     border: 1px solid #c59b48;
     border-radius: 100px;
@@ -3639,9 +3740,29 @@ footer #author-info .author-privacy {
     display: flex;
     align-items: center;
   }
+  #career-applies .tech-support-employee {
+    margin-top: 48px;
+  }
+  #who-we-header {
+    padding-top: 40px;
+  }
+  #who-we-header .title-description {
+    margin-top: 40px;
+  }
+  #who-we-header .content-center {
+    margin: 0;
+    width: 328px;
+  }
+  #who-we-header .image-wrapper {
+    margin-top: 48px;
+  }
+  #who-we-header .image-wrapper img {
+    height: 192px;
+  }
   #who-we-header .who-we-title {
     font-size: 40px;
     line-height: 40px;
+    width: unset;
   }
   #who-we-header .who-we-title::after {
     content: url("../assets/SVG/Vector 61 (3).svg");
@@ -3658,10 +3779,19 @@ footer #author-info .author-privacy {
   #who-us .description {
     -moz-column-count: unset;
          column-count: unset;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #values .wrapper {
+    padding: 16px;
   }
   #values .values-title {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #values span[class^=label-text] {
+    font-size: 14px;
+    line-height: 20px;
   }
   #values .head-info {
     font-size: 16px;
@@ -3674,7 +3804,11 @@ footer #author-info .author-privacy {
   #values .description-number {
     font-size: 120px;
     line-height: 120px;
-    text-align: center;
+    text-align: left;
+  }
+  #values .description-title {
+    font-size: 32px;
+    line-height: 32px;
   }
   #key-principles {
     overflow: hidden;
@@ -3691,18 +3825,19 @@ footer #author-info .author-privacy {
     margin-bottom: 60px;
   }
   #history-slider .history-title p {
-    width: 200px;
+    font-size: 32px;
+    line-height: 32px;
   }
   #history-slider .year-description {
     border-bottom: none;
-    width: 320px;
+    width: 284px;
   }
   #history-slider .swiper-button-prev {
-    top: 96%;
-    left: 15%;
+    top: 94%;
+    left: 57%;
   }
   #history-slider .swiper-button-next {
-    top: 96%;
+    top: 94%;
     right: 40px;
   }
   main #oil-slider {

@@ -256,7 +256,7 @@
             </div>
             <div>
               <h1 class="who-we-title mt-10">Biz kimik</h1>
-              <div class="flex justify-center content-center mt-5">
+              <div class="flex justify-center content-center mt-8">
                 <p class="title-description">
                   Hər bir layihə hər bir müştərinin ehtiyaclarına əsaslanaraq
                   fərdi şəkildə hazırlanır. İstənilən növ, istər kiçik, istərsə
@@ -357,7 +357,7 @@
                       </span>
                       <span class="label-text">Dürüstlük</span>
                     </h3>
-                    <p class="label-title">01</p>
+                    <p class="label-title-1">01</p>
                   </div>
                   <div
                     class="flex justify-between description-wrapper sm:block"
@@ -396,9 +396,9 @@
                           <circle cx="4" cy="4" r="4" fill="#CDD4E0" />
                         </svg>
                       </span>
-                      Əməkdaşlıq
+                      <span class="label-text-2"> Əməkdaşlıq</span>
                     </h3>
-                    <p class="label-title">02</p>
+                    <p class="label-title-2">02</p>
                   </div>
                   <div
                     class="flex justify-between description-wrapper sm:block"
@@ -437,9 +437,9 @@
                           <circle cx="4" cy="4" r="4" fill="#CDD4E0" />
                         </svg>
                       </span>
-                      Keyfiyyət
+                      <span class="label-text-3"> Keyfiyyət</span>
                     </h3>
-                    <p class="label-title">03</p>
+                    <p class="label-title-3">03</p>
                   </div>
                   <div
                     class="flex justify-between description-wrapper sm:block"
@@ -478,9 +478,9 @@
                           <circle cx="4" cy="4" r="4" fill="#CDD4E0" />
                         </svg>
                       </span>
-                      Məqsəd
+                      <span class="label-text-4">Məqsəd </span>
                     </h3>
-                    <p class="label-title">04</p>
+                    <p class="label-title-4">04</p>
                   </div>
                   <div
                     class="flex justify-between description-wrapper sm:block"
@@ -503,8 +503,6 @@
                   </div>
                 </div>
               </div>
-
-              <div class="spacer"></div>
             </div>
           </div>
         </div>
@@ -1089,15 +1087,19 @@
       $(window).on("scroll", function () {
         if ($("#one").position().top >= $(document).scrollTop()) {
           $(".label-text").css("color", "#22292E");
+          $(".label-title-1").css("color", "#22292E");
         }
-        if ($(document).scrollTop() >= $("#one").position().top) {
-          $(".label-text").css("color", "#cdd4e0");
+        if ($(document).scrollTop() >= $("#two").position().top - 150) {
+          $(".label-text-2").css("color", "#22292E");
+          $(".label-title-2").css("color", "#22292E");
         }
-        if ($("#two").position().top >= $(document).scrollTop()) {
-          $(".label-text").css("color", "#22292E");
+        if ($(document).scrollTop() >= $("#three").position().top - 220) {
+          $(".label-text-3").css("color", "#22292E");
+          $(".label-title-3").css("color", "#22292E");
         }
-        if ($("#three").position().top >= $(document).scrollTop()) {
-          $(".label-text").css("color", "#22292E");
+        if ($(document).scrollTop() >= $("#four").position().top - 290) {
+          $(".label-text-4").css("color", "#22292E");
+          $(".label-title-4").css("color", "#22292E");
         }
       });
       //   $(document).ready(function () {

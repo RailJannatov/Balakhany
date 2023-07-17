@@ -284,7 +284,7 @@
                 <p>
                   Neftin sıxılmış hava vasitəsilə çıxarılması erlift, sıxılmış
                   qaz ilə çıxarılması isə qazlift adlanır. Neftin kompressor
-                  <span class="info-style">
+                  <span id="info-style">
                     üsulu ilə çıxarılması keçmiş Sovet İttifaqında geniş
                     yayılmışdı.
                   </span>
@@ -1154,17 +1154,30 @@
         </div>
       </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       window.addEventListener("scroll", function () {
-        var infoElement = document.querySelector(".info-style");
-        var containerElement = document.querySelector(".activity-info");
-        var rect = containerElement.getBoundingClientRect();
-
-        if (rect.top < 0) {
-          infoElement.classList.add("highlight");
-        } else {
-          infoElement.classList.remove("highlight");
+        var infoStyleElement = document.getElementById("info-style");
+        var words = infoStyleElement.textContent.trim().split(" ");
+        var currentWordIndex = 0;
+        var originalText = infoStyleElement.textContent;
+        console.log({ infoStyleElement, words, originalText });
+        // Recursive function to change opacity word by word
+        function changeOpacity() {
+          if (currentWordIndex < words.length) {
+            var newText = originalText.replace(
+              words[currentWordIndex],
+              '<span style="opacity: 1;">' + words[currentWordIndex] + "</span>"
+            );
+            infoStyleElement.innerHTML = newText;
+            currentWordIndex++;
+            setTimeout(changeOpacity, 1000); // Delay the opacity change for each word
+          }
         }
+
+        // Reset opacity and start changing opacity on scroll
+        infoStyleElement.innerHTML = originalText;
+        window.addEventListener("scroll", changeOpacity);
       });
     </script>
   </body>

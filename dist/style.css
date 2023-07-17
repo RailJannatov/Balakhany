@@ -1008,6 +1008,10 @@ headers nav .sub-menu {
     order: 2;
   }
 
+  .sm\:m-8 {
+    margin: 2rem;
+  }
+
   .sm\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;

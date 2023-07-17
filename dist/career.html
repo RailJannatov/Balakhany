@@ -50,13 +50,6 @@
         font-family: "Suisse Intl-SemiBold";
         src: url("../assets/font/SuisseIntl-SemiBold.otf");
       }
-      #career-info .main-about-us .main-description .changeable-text {
-        opacity: 0.2;
-        transition: opacity 0.8s ease;
-      }
-      #career-info .main-about-us .main-description .changeable-text.fade {
-        opacity: 1;
-      }
     </style>
   </head>
   <body>
@@ -255,7 +248,7 @@
                 <span class="slash">/</span>
                 <span class="current-page">Karyera</span>
               </div>
-              <div class="page-nav pt-10">
+              <div class="page-nav pt-10 sm:pt-7">
                 <h1 class="project-main-title">KARYERA</h1>
                 <div class="project-short-info mt-10 sm:text-left">
                   Hər bir layihə hər bir müştərinin ehtiyaclarına əsaslanaraq
@@ -281,7 +274,7 @@
             <p class="main-description">
               «Balakhanı Operating Company LTD» Şirkətinin Azərbaycan
               Respublikasındakı filialı 01
-              <span class="changeable-text" id="scrolling-text"
+              <span id="changeable-text"
                 >yanvar 2012-ci ildə «Balaxanıneft» NQÇİ-nin bazasında
                 yaradılıb.</span
               >
@@ -289,94 +282,16 @@
           </div>
         </div>
       </section>
-      <section id="career-applies" class="pb-32">
+      <section id="career-applies" class="pb-32 sm:pb-20">
         <div class="container">
-          <div class="tab sm:flex">
-            <button
-              class="career-tabs career-tab-active sm:mr-1"
-              onclick="openCity(event, 'Absheron')"
-            >
-              Balakhani-da iş imkanı
-            </button>
-            <button
-              class="career-tabs sm:mr-1"
-              onclick="openCity(event, 'Qobustan')"
-            >
-              Balakhani-da iş həyatı
-            </button>
-            <button
-              class="career-tabs sm:mr-1"
-              onclick="openCity(event, 'Qazax')"
-            >
-              Balakhani-da öyrənmə və inkişaf
-            </button>
-          </div>
           <div class="tech-support flex sm:block sm:pt-8">
             <div class="w-4/12 sm:w-full sm:mb-5">
               <p class="tech-title sm:mb-1">Texniki əməliyyatçılar</p>
               <p class="tech-subtitle">Komandamızda açıq vakansiyalar</p>
             </div>
             <div class="w-8/12 sm:w-full">
-              <div class="rounded-3xl p-6 bg-white flex justify-between mb-6">
-                <div class="tech-apply-info">
-                  <p class="tech-employee mb-1">Texniki işçi</p>
-                  <p class="tech-position mb-2">Neft və qaz üzərində nəzarət</p>
-                  <div>
-                    <p class="tech-date">18 NOYABR 2023</p>
-                  </div>
-                </div>
-                <div class="tech-apply-btn sm:hidden">
-                  <button class="flex">
-                    Müraciət et
-                    <span
-                      ><svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5 15L15 5M15 5H8.33333M15 5V11.6667"
-                          stroke="#C59B48"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                </div>
-                <div class="tech-apply-btn-sm hidden sm:block">
-                  <span>
-                    <svg
-                      width="36"
-                      height="36"
-                      viewBox="0 0 36 36"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M13 23L23 13M23 13H16.3333M23 13V19.6667"
-                        stroke="#C59B48"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <rect
-                        x="0.5"
-                        y="0.5"
-                        width="35"
-                        height="35"
-                        rx="17.5"
-                        stroke="#C59B48"
-                      />
-                    </svg>
-                  </span>
-                </div>
-              </div>
               <div
-                class="wrapper-tech-apply rounded-3xl p-6 bg-white flex justify-between mb-6"
+                class="wrapper-tech-apply rounded-3xl p-6 sm:p-4 bg-white flex justify-between mb-6 sm:mb-5"
               >
                 <div class="tech-apply-info">
                   <p class="tech-employee mb-1">Texniki işçi</p>
@@ -436,7 +351,7 @@
                 </div>
               </div>
               <div
-                class="wrapper-tech-apply rounded-3xl p-6 bg-white flex justify-between mb-6"
+                class="wrapper-tech-apply rounded-3xl p-6 sm:p-4 bg-white flex justify-between mb-6 sm:mb-5"
               >
                 <div class="tech-apply-info">
                   <p class="tech-employee mb-1">Texniki işçi</p>
@@ -496,7 +411,67 @@
                 </div>
               </div>
               <div
-                class="wrapper-tech-apply rounded-3xl p-6 bg-white flex justify-between"
+                class="wrapper-tech-apply rounded-3xl p-6 sm:p-4 bg-white flex justify-between mb-6 sm:mb-5"
+              >
+                <div class="tech-apply-info">
+                  <p class="tech-employee mb-1">Texniki işçi</p>
+                  <p class="tech-position mb-2">Neft və qaz üzərində nəzarət</p>
+                  <div>
+                    <p class="tech-date">18 NOYABR 2023</p>
+                  </div>
+                </div>
+                <div class="tech-apply-btn sm:hidden">
+                  <button class="flex">
+                    Müraciət et
+                    <span
+                      ><svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5 15L15 5M15 5H8.33333M15 5V11.6667"
+                          stroke="#C59B48"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="tech-apply-btn-sm hidden sm:block">
+                  <span>
+                    <svg
+                      width="36"
+                      height="36"
+                      viewBox="0 0 36 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13 23L23 13M23 13H16.3333M23 13V19.6667"
+                        stroke="#C59B48"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="35"
+                        height="35"
+                        rx="17.5"
+                        stroke="#C59B48"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="wrapper-tech-apply rounded-3xl p-6 sm:p-4 bg-white flex justify-between"
               >
                 <div class="tech-apply-info">
                   <p class="tech-employee mb-1">Texniki işçi</p>
@@ -557,7 +532,7 @@
               </div>
             </div>
           </div>
-          <div class="tech-support flex sm:block">
+          <div class="tech-support-employee flex sm:block">
             <div class="w-4/12 sm:w-full">
               <p class="tech-title sm:mb-1">Təchizat işçiləri</p>
               <p class="tech-subtitle sm:mb-5">
@@ -566,7 +541,7 @@
             </div>
             <div class="w-8/12 sm:w-full">
               <div
-                class="wrapper-tech-apply rounded-3xl p-6 bg-white flex justify-between mb-6"
+                class="wrapper-tech-apply rounded-3xl p-6 sm:p-4 bg-white flex justify-between mb-6 sm:mb-5"
               >
                 <div class="tech-apply-info">
                   <p class="tech-employee mb-1">Geoloq</p>
@@ -628,7 +603,7 @@
                 </div>
               </div>
               <div
-                class="wrapper-tech-apply rounded-3xl p-6 bg-white flex justify-between mb-6"
+                class="wrapper-tech-apply rounded-3xl p-6 sm:p-4 bg-white flex justify-between mb-6 sm:mb-5"
               >
                 <div class="tech-apply-info">
                   <p class="tech-employee mb-1">Texniki işçi</p>
@@ -688,7 +663,7 @@
                 </div>
               </div>
               <div
-                class="wrapper-tech-apply rounded-3xl p-6 bg-white flex justify-between mb-6"
+                class="wrapper-tech-apply rounded-3xl p-6 sm:p-4 bg-white flex justify-between mb-6 sm:mb-5"
               >
                 <div class="tech-apply-info">
                   <p class="tech-employee mb-1">Texniki işçi</p>
@@ -748,7 +723,7 @@
                 </div>
               </div>
               <div
-                class="wrapper-tech-apply rounded-3xl p-6 bg-white flex justify-between mb-6"
+                class="wrapper-tech-apply rounded-3xl p-6 sm:p-4 bg-white flex justify-between"
               >
                 <div class="tech-apply-info">
                   <p class="tech-employee mb-1">Texniki işçi</p>
@@ -1020,5 +995,35 @@
         </div>
       </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          var scrollTop = $(this).scrollTop();
+          var elementOffset = $("#changeable-text").offset().top;
+          var distance = elementOffset - scrollTop;
+          let count = 100;
+          if (distance < $(window).height() - count) {
+            var words = $("#changeable-text").text().split(" ");
+            $("#changeable-text").empty();
+            words.forEach(function (word) {
+              count -= 10;
+              var span = $("<span>" + word + " </span>").css("opacity", "0.3");
+              $("#changeable-text").append(span);
+              if (count === 0) return;
+            });
+
+            var delay = 0;
+            $("#changeable-text span").each(function () {
+              var spanElement = $(this);
+              setTimeout(function () {
+                spanElement.animate({ opacity: "1" }, 50);
+              }, delay);
+              delay += 20;
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>
