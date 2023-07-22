@@ -132,8 +132,7 @@ main #oil-slider video {
   left: 0;
   width: 100%;
   height: 880px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: -1;
 }
 main #oil-slider .slider-text-style {
@@ -186,7 +185,6 @@ main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-ite
   border-radius: 40px;
   align-items: center;
   padding: 8px 20px;
-  width: -moz-fit-content;
   width: fit-content;
   transition: width 2s ease;
   overflow: hidden;
@@ -196,8 +194,7 @@ main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-ite
   width: 100%;
   border-radius: 1000px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 10%, rgba(255, 255, 255, 0.2) 60%, transparent 0) right;
   background-size: 200%;
   background-position: right;
@@ -428,8 +425,7 @@ main #projects .image-wrapper .img-date {
   position: absolute;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   top: 24px;
   left: 24px;
@@ -715,8 +711,7 @@ footer #author-info .author-privacy {
   height: 40px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   margin-right: 12px;
 }
@@ -796,8 +791,7 @@ footer #author-info .author-privacy {
   height: 40px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
 }
 #oil-consumer-info .consumer-image-wrapper .oil-plant-image .img-date {
@@ -857,8 +851,7 @@ footer #author-info .author-privacy {
 #connect-projects .image-wrapper .img-date {
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   position: absolute;
   top: 24px;
@@ -1339,17 +1332,13 @@ footer #author-info .author-privacy {
   justify-content: flex-end;
 }
 #accordion-question .legacy-detail-modal .modal-content .close:hover {
-  visibility: hidden;
-  transition: visibility 0.3s ease;
+  transition: all 0.3s ease;
 }
 #accordion-question .legacy-detail-modal .modal-content .close:hover svg path {
   stroke: #9ba5b5;
 }
 #accordion-question .legacy-detail-modal .modal-content .close:hover svg rect {
   stroke: #9ba5b5;
-}
-#accordion-question .legacy-detail-modal .modal-content .close:hover .close-hover {
-  visibility: visible;
 }
 #accordion-question .legacy-detail-modal .modal-content .close-hover {
   visibility: hidden;
@@ -1524,8 +1513,7 @@ footer #author-info .author-privacy {
   opacity: 1;
 }
 #foto-gallery .card-item img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: transform 0.3s;
 }
 #foto-gallery .card-item .zoom-icon {
@@ -1539,7 +1527,6 @@ footer #author-info .author-privacy {
 
 #video-gallery video {
   position: unset;
-  height: -moz-fit-content;
   height: fit-content;
   width: 100%;
 }
@@ -1662,8 +1649,7 @@ footer #author-info .author-privacy {
   border-radius: 100px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   padding: 10px 16px;
   color: #fff;
 }
@@ -1674,8 +1660,7 @@ footer #author-info .author-privacy {
   border-radius: 100px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   padding: 10px 16px;
   color: #fff;
 }
@@ -1849,8 +1834,7 @@ footer #author-info .author-privacy {
   left: 24px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   padding: 10px 16px;
 }
@@ -1868,8 +1852,7 @@ footer #author-info .author-privacy {
   left: 162px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   padding: 10px 16px;
 }
@@ -1913,8 +1896,7 @@ footer #author-info .author-privacy {
   left: 32px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   padding: 10px 16px;
 }
@@ -1932,8 +1914,7 @@ footer #author-info .author-privacy {
   left: 162px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   padding: 10px 16px;
 }
@@ -1954,8 +1935,7 @@ footer #author-info .author-privacy {
   left: 32px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   padding: 10px 16px;
 }
@@ -1973,8 +1953,7 @@ footer #author-info .author-privacy {
   left: 162px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   padding: 10px 16px;
 }
@@ -2028,8 +2007,7 @@ footer #author-info .author-privacy {
   left: 32px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   padding: 10px 16px;
 }
@@ -2047,8 +2025,7 @@ footer #author-info .author-privacy {
   left: 169px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   padding: 10px 16px;
 }
@@ -2071,6 +2048,16 @@ footer #author-info .author-privacy {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
+}
+#news-content .first-row img {
+  border-radius: 24px;
+}
+#news-content .second-row img {
+  border-radius: 24px;
+  height: 400px;
+}
+#news-content .card:hover .card-content .card-description .ellipsis {
+  color: #c59b48;
 }
 
 #who-we-header {
@@ -2152,8 +2139,7 @@ footer #author-info .author-privacy {
   font-size: 18px;
   line-height: 28px;
   color: #6d7a84;
-  -moz-column-count: 2;
-       column-count: 2;
+  column-count: 2;
 }
 
 #values .values-title {
@@ -2315,7 +2301,7 @@ footer #author-info .author-privacy {
 #history-slider .swiper-button-prev {
   position: absolute;
   top: 40px;
-  left: 88%;
+  left: 91%;
 }
 #history-slider .history-title {
   margin-bottom: 138px;
@@ -2330,7 +2316,7 @@ footer #author-info .author-privacy {
   color: #22292e;
 }
 #history-slider .year-description {
-  font-family: "Suisse Intl";
+  font-family: "Suisse Intl-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2486,6 +2472,14 @@ footer #author-info .author-privacy {
   color: #c59b48;
   display: flex;
   align-items: center;
+}
+#career-applies .tech-apply-btn button:hover {
+  transition: all 0.5s ease;
+  background-color: #c59b48;
+  color: white;
+}
+#career-applies .tech-apply-btn button:hover svg path {
+  stroke: white;
 }
 #career-applies .tech-support .wrapper-tech-apply:hover {
   background-color: rgba(255, 255, 255, 0.75);
@@ -2770,8 +2764,7 @@ footer #author-info .author-privacy {
   left: 32px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   padding: 10px 16px;
 }
@@ -2789,8 +2782,7 @@ footer #author-info .author-privacy {
   left: 162px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   padding: 10px 16px;
 }
@@ -2841,8 +2833,7 @@ footer #author-info .author-privacy {
   left: 32px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   padding: 10px 16px;
 }
@@ -2860,8 +2851,7 @@ footer #author-info .author-privacy {
   left: 174px;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   padding: 10px 16px;
 }
@@ -2926,8 +2916,7 @@ footer #author-info .author-privacy {
   position: absolute;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   bottom: 24px;
   right: 24px;
@@ -2975,8 +2964,7 @@ footer #author-info .author-privacy {
   position: absolute;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   bottom: 24px;
   right: 24px;
@@ -3429,8 +3417,7 @@ footer #author-info .author-privacy {
     left: 32px;
     background: rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    -webkit-backdrop-filter: blur(6px);
-            backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
     border-radius: 100px;
     padding: 10px 16px;
   }
@@ -3540,7 +3527,7 @@ footer #author-info .author-privacy {
     position: absolute;
     width: unset;
     height: 14px;
-    right: 30px;
+    right: 70px;
     top: 50%;
   }
   #contact-header .contact-number,
@@ -3777,10 +3764,12 @@ footer #author-info .author-privacy {
     color: #9ba5b5;
   }
   #who-us .description {
-    -moz-column-count: unset;
-         column-count: unset;
+    column-count: unset;
     font-size: 16px;
     line-height: 24px;
+  }
+  #values .values-header {
+    padding-bottom: 20px;
   }
   #values .wrapper {
     padding: 16px;
@@ -3810,6 +3799,9 @@ footer #author-info .author-privacy {
     font-size: 32px;
     line-height: 32px;
   }
+  #values .description-wrapper {
+    margin-top: 40px;
+  }
   #key-principles {
     overflow: hidden;
   }
@@ -3821,6 +3813,14 @@ footer #author-info .author-privacy {
     font-size: 24px;
     line-height: 36px;
   }
+  #key-principles .section-item .section-number {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  #key-principles .section-item p {
+    font-size: 16px;
+    line-height: 24px;
+  }
   #history-slider .history-title {
     margin-bottom: 60px;
   }
@@ -3830,7 +3830,8 @@ footer #author-info .author-privacy {
   }
   #history-slider .year-description {
     border-bottom: none;
-    width: 284px;
+    width: 331px;
+    height: 249px;
   }
   #history-slider .swiper-button-prev {
     top: 94%;
@@ -3840,13 +3841,15 @@ footer #author-info .author-privacy {
     top: 94%;
     right: 40px;
   }
+  #history-slider .swiper-wrapper {
+    padding: 16px;
+  }
   main #oil-slider {
     height: 81vh;
     background-color: rgba(0, 0, 0, 0.4784313725);
   }
   main #oil-slider video {
-    -o-object-fit: fill;
-       object-fit: fill;
+    object-fit: fill;
   }
   main #oil-slider .slider-text-style {
     font-size: 40px;
@@ -3887,12 +3890,10 @@ footer #author-info .author-privacy {
     cursor: pointer;
   }
   main #oil-slider .swiper .swiper-pagination.pagination-list .pagination-list-item.swiper-pagination-bullet-active {
-    width: -moz-fit-content;
     width: fit-content;
     border-radius: 1000px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
     background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 10%, rgba(255, 255, 255, 0.2) 60%, transparent 0) right;
     background-size: 200%;
     background-position: right;
@@ -4051,6 +4052,12 @@ footer #author-info .author-privacy {
 #main-projects {
   padding-top: 114px;
 }
+#main-projects.faq-wrapper {
+  margin-bottom: 80px;
+}
+#main-projects.legislation-wrapper {
+  margin-bottom: 80px;
+}
 #main-projects .project-main-title {
   font-family: "HeadingNow-66Bold";
   font-style: normal;
@@ -4153,8 +4160,7 @@ footer #author-info .author-privacy {
 #main-projects .image-wrapper .img-date {
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 100px;
   position: absolute;
   top: 24px;
@@ -4356,8 +4362,7 @@ body .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 body .swiper-pagination-bullet {
   width: 48px;
@@ -4415,8 +4420,7 @@ body .pagination-dots:hover {
   border-radius: 1000px;
   border: 1px solid var(--alpha-white-30, rgba(255, 255, 255, 0.3));
   background: var(--alpha-white-20, rgba(255, 255, 255, 0.2));
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
 }
 
 .svg-icon {

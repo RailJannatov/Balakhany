@@ -264,7 +264,7 @@
         <div class="container">
           <div class="wrapper">
             <div class="customer-head pb-10">
-              <div class="about-us-title my-7 flex sm:hidden">
+              <div class="about-us-title mb-3 flex sm:hidden">
                 <span class="title-dot">
                   <svg
                     width="8"
@@ -284,7 +284,7 @@
                 <p>
                   Neftin sıxılmış hava vasitəsilə çıxarılması erlift, sıxılmış
                   qaz ilə çıxarılması isə qazlift adlanır. Neftin kompressor
-                  <span id="info-style">
+                  <span id="changeable-text">
                     üsulu ilə çıxarılması keçmiş Sovet İttifaqında geniş
                     yayılmışdı.
                   </span>
@@ -295,7 +295,7 @@
               <div class="w-full pr-3 sm:w-full sm:pr-0 sm:mb-5">
                 <div class="image-wrapper">
                   <img
-                    src="../assets/image/Rectangle 19 (1).png"
+                    src="../assets/image/6f4eb394efa249ddd52283acb0127d89.jpeg"
                     alt="oil image"
                   />
                   <span class="location flex">
@@ -373,7 +373,7 @@
               <div class="w-6/12 pr-3 sm:w-full sm:pr-0 sm:mb-5">
                 <div class="image-wrapper">
                   <img
-                    src="../assets/image/Rectangle 19 (1).png"
+                    src="../assets/image/actiity-detail-small(1).jpeg"
                     alt="oil image"
                   />
                   <span class="location flex">
@@ -450,7 +450,7 @@
               <div class="w-6/12 pr-3 sm:w-full sm:pr-0 sm:mb-5">
                 <div class="image-wrapper">
                   <img
-                    src="../assets/image/Rectangle 19 (1).png"
+                    src="../assets/image/actiity-detail-small(1).jpeg"
                     alt="oil image"
                   />
                   <span class="location flex">
@@ -566,7 +566,7 @@
                     <h4>Example text</h4>
                     <p class="content-activity-subtitle">Example Fəaliyyət</p>
                   </div>
-                  <div class="content flex mt-10 flex-wrap sm:block">
+                  <div class="content flex flex-wrap sm:block">
                     <div class="w-4/12 pr-10 sm:w-full sm:pr-0">
                       <div class="accordion-item p-6 sm:mb-4">
                         <div class="">
@@ -663,7 +663,7 @@
                     <h4>Example text</h4>
                     <p class="content-activity-subtitle">Example Fəaliyyət</p>
                   </div>
-                  <div class="content flex mt-10 flex-wrap sm:block">
+                  <div class="content flex flex-wrap sm:block">
                     <div class="w-4/12 pr-10 sm:w-full sm:pr-0">
                       <div class="accordion-item sm:mb-4 p-6">
                         <div class="item-title">
@@ -766,7 +766,7 @@
                     <h4>Example text</h4>
                     <p class="content-activity-subtitle">Example Fəaliyyət</p>
                   </div>
-                  <div class="content flex mt-10 flex-wrap sm:block">
+                  <div class="content flex flex-wrap sm:block">
                     <div class="w-4/12 pr-10 sm:w-full sm:pr-0">
                       <div class="accordion-item sm:mb-4 p-6">
                         <div class="item-title">
@@ -882,7 +882,10 @@
                   DİGƏR <br />
                   FƏALİYYƏTLƏR
                 </div>
-                <div class="title-large-info w-6/12 sm:w-full">
+                <div
+                  class="title-large-info w-6/12 sm:w-full"
+                  style="height: 100px"
+                >
                   Şirkətimizin neft hasilatı sahəsindəki uğurlarını və
                   üstünlüklərini sizə təqdim edirik. Bizim neft hasilatında
                   qazandığımız nailiyyətləri, performansımızı və rekordlarımızı
@@ -1156,28 +1159,32 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-      window.addEventListener("scroll", function () {
-        var infoStyleElement = document.getElementById("info-style");
-        var words = infoStyleElement.textContent.trim().split(" ");
-        var currentWordIndex = 0;
-        var originalText = infoStyleElement.textContent;
-        console.log({ infoStyleElement, words, originalText });
-        // Recursive function to change opacity word by word
-        function changeOpacity() {
-          if (currentWordIndex < words.length) {
-            var newText = originalText.replace(
-              words[currentWordIndex],
-              '<span style="opacity: 1;">' + words[currentWordIndex] + "</span>"
-            );
-            infoStyleElement.innerHTML = newText;
-            currentWordIndex++;
-            setTimeout(changeOpacity, 1000); // Delay the opacity change for each word
-          }
-        }
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          var scrollTop = $(this).scrollTop();
+          var elementOffset = $("#changeable-text").offset().top;
+          var distance = elementOffset - scrollTop;
+          let count = 100;
+          if (distance < $(window).height() - count) {
+            var words = $("#changeable-text").text().split(" ");
+            $("#changeable-text").empty();
+            words.forEach(function (word) {
+              count -= 10;
+              var span = $("<span>" + word + " </span>").css("opacity", "0.3");
+              $("#changeable-text").append(span);
+              if (count === 0) return;
+            });
 
-        // Reset opacity and start changing opacity on scroll
-        infoStyleElement.innerHTML = originalText;
-        window.addEventListener("scroll", changeOpacity);
+            var delay = 0;
+            $("#changeable-text span").each(function () {
+              var spanElement = $(this);
+              setTimeout(function () {
+                spanElement.animate({ opacity: "1" }, 50);
+              }, delay);
+              delay += 20;
+            });
+          }
+        });
       });
     </script>
   </body>

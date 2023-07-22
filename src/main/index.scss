@@ -1372,8 +1372,7 @@ footer {
         display: flex;
         justify-content: flex-end;
         &:hover {
-          visibility: hidden;
-          transition: visibility 0.3s ease;
+          transition: all 0.3s ease;
           svg {
             path {
               stroke: #9ba5b5;
@@ -1381,9 +1380,6 @@ footer {
             rect {
               stroke: #9ba5b5;
             }
-          }
-          .close-hover {
-            visibility: visible;
           }
         }
       }
@@ -2155,6 +2151,28 @@ footer {
       }
     }
   }
+  .first-row {
+    img {
+      border-radius: 24px;
+    }
+  }
+  .second-row {
+    img {
+      border-radius: 24px;
+      height: 400px;
+    }
+  }
+  .card {
+    &:hover {
+      .card-content {
+        .card-description {
+          .ellipsis {
+            color: #c59b48;
+          }
+        }
+      }
+    }
+  }
 }
 #who-we-header {
   padding-top: 114px;
@@ -2409,7 +2427,7 @@ footer {
   .swiper-button-prev {
     position: absolute;
     top: 40px;
-    left: 88%;
+    left: 91%;
   }
   .history-title {
     p {
@@ -2434,7 +2452,7 @@ footer {
   //   color: #c59b48;
   // }
   .year-description {
-    font-family: "Suisse Intl";
+    font-family: "Suisse Intl-Regular";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -2592,6 +2610,16 @@ footer {
       color: #c59b48;
       display: flex;
       align-items: center;
+      &:hover {
+        transition: all 0.5s ease;
+        background-color: #c59b48;
+        color: white;
+        svg {
+          path {
+            stroke: white;
+          }
+        }
+      }
     }
   }
   .tech-support {
@@ -3815,7 +3843,7 @@ footer {
         position: absolute;
         width: unset;
         height: 14px;
-        right: 30px;
+        right: 70px;
         top: 50%;
       }
     }
@@ -4116,6 +4144,9 @@ footer {
     }
   }
   #values {
+    .values-header {
+      padding-bottom: 20px;
+    }
     .wrapper {
       padding: 16px;
     }
@@ -4144,6 +4175,9 @@ footer {
       font-size: 32px;
       line-height: 32px;
     }
+    .description-wrapper {
+      margin-top: 40px;
+    }
   }
   #key-principles {
     overflow: hidden;
@@ -4158,6 +4192,14 @@ footer {
         font-size: 24px;
         line-height: 36px;
       }
+      .section-number {
+        font-size: 48px;
+        line-height: 56px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
   }
   #history-slider {
@@ -4170,7 +4212,8 @@ footer {
     }
     .year-description {
       border-bottom: none;
-      width: 284px;
+      width: 331px;
+      height: 249px;
     }
     .swiper-button-prev {
       top: 94%;
@@ -4179,6 +4222,9 @@ footer {
     .swiper-button-next {
       top: 94%;
       right: 40px;
+    }
+    .swiper-wrapper {
+      padding: 16px;
     }
   }
   main {

@@ -1,5 +1,11 @@
 #main-projects {
   padding-top: 114px;
+  &.faq-wrapper {
+    margin-bottom: 80px;
+  }
+  &.legislation-wrapper {
+    margin-bottom: 80px;
+  }
   .project-main-title {
     font-family: "HeadingNow-66Bold";
     font-style: normal;
